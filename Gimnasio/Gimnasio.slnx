@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CadGimnasio/CadGimnasio.csproj" Id="7d31e03d-45ee-49e3-ab2d-34731e1ef012" />
+  <Project Path="ClnGimnasio/ClnGimnasio.csproj" Id="aac8dd76-f06c-49c5-8ce9-04c4d19724a5" />
+  <Project Path="CpGimnasio/CpGimnasio.csproj" Id="4013cf69-509b-4697-b989-8dfaf174dd79" />
+</Solution>

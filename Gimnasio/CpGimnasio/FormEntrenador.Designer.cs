@@ -149,6 +149,7 @@
             this.btnNuevo.TabIndex = 11;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // GuardarEntrenador
             // 
@@ -168,6 +169,7 @@
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -194,6 +196,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(186, 26);
             this.txtBuscar.TabIndex = 16;
+            this.txtBuscar.Click += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // erpEntrenador
             // 

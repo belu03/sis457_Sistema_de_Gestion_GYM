@@ -94,3 +94,9 @@ WHERE TABLE_NAME = 'Usuario';
 -- Ejecuta esto en tu consulta SQL
 DROP TABLE dbo.Recepcionista;
 GO
+
+ALTER TABLE Horario ALTER COLUMN hora_inicio TIME;
+ALTER TABLE Horario ALTER COLUMN hora_fin TIME;
+
+ALTER TABLE dbo.Horario ALTER COLUMN hora_inicio TIME;
+ALTER TABLE dbo.Horario ALTER COLUMN hora_fin TIME;

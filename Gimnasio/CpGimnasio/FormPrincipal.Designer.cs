@@ -35,9 +35,9 @@
             this.btnUsuario.Location = new System.Drawing.Point(56, 118);
             this.btnUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(150, 46);
+            this.btnUsuario.Size = new System.Drawing.Size(200, 46);
             this.btnUsuario.TabIndex = 0;
-            this.btnUsuario.Text = "Usuario";
+            this.btnUsuario.Text = "Registro de Usuarios";
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // btnEntrenador

@@ -44,16 +44,13 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
-                var servicio = context.Servicio.Find(id);
+                var servicio = context.Servicio.Find(id); // <--- ¿Aquí encuentra el entrendor?
                 if (servicio != null)
                 {
                     context.Servicio.Remove(servicio);
                     return context.SaveChanges();
                 }
-                else
-                {
-                    return 0; // Servicio no encontrado
-                }
+                return 0;
             }
         }
         public static Servicio obtenerUno(int id)
@@ -68,15 +65,21 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
+                context.Configuration.LazyLoadingEnabled = false; // AGREGA ESTA LÍNEA
                 return context.Servicio.ToList();
             }
         }
 
-        public static List<spServicioListar_Result> listar(string parametro)
+        public static List<Servicio> listar(string parametro)
         {
             using (var context = new GimnasioEntities())
             {
-                return context.spServicioListar(parametro.Trim()).ToList();
+                context.Configuration.LazyLoadingEnabled = false;
+
+                // Esto busca en la tabla real, sin importar el procedimiento almacenado
+                return context.Servicio
+                    .Where(u => u.nombre.Contains(parametro) || u.descripcion.Contains(parametro))
+                    .ToList();
             }
         }
     }

@@ -58,3 +58,39 @@ VALUES ('admin', 'dAFoRWBCRBpcRyECjAsQqw==');
 UPDATE UsuarioSistema 
 SET contraseña = '/iWStCpyfpd/BVlHOFtwnMgrFrmof4jGq/OQDWXQzcM=' 
 WHERE nombre = 'admin';
+
+-- 1. Renombramos la columna 'tipo' a 'telefono'
+EXEC sp_rename 'Usuario.tipo', 'telefono', 'COLUMN';
+
+-- 2. Modificamos el tipo de dato y eliminamos la restricción (CHECK) que tenía 'tipo'
+-- Como no podemos borrar la restricción (CHECK) tan fácil, a veces es mejor:
+ALTER TABLE Usuario ALTER COLUMN telefono VARCHAR(20);
+
+USE Gimnasio
+GO
+-- Primero, agregamos la columna telefono (más seguro que renombrar)
+ALTER TABLE dbo.Usuario ADD telefono VARCHAR(20);
+GO
+
+-- Luego, si ya no quieres la columna 'tipo', simplemente elimínala:
+ALTER TABLE dbo.Usuario DROP COLUMN tipo;
+GO
+
+ALTER TABLE dbo.Usuario DROP CONSTRAINT CK__Usuario__tipo__5CD6CB2B;
+GO
+
+-- Ahora, como la columna ya está libre, podemos borrarla
+ALTER TABLE dbo.Usuario DROP COLUMN tipo;
+GO
+
+-- Y finalmente agregamos la nueva columna de teléfono
+ALTER TABLE dbo.Usuario ADD telefono VARCHAR(20);
+GO
+
+SELECT COLUMN_NAME 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Usuario';
+
+-- Ejecuta esto en tu consulta SQL
+DROP TABLE dbo.Recepcionista;
+GO

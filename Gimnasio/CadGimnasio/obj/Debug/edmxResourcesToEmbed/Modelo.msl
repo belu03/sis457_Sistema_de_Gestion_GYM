@@ -208,7 +208,7 @@
     <EntitySetMapping Name="Usuario">
       <EntityTypeMapping TypeName="GimnasioModel.Usuario">
         <MappingFragment StoreEntitySet="Usuario">
-          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="correo" ColumnName="correo" />
           <ScalarProperty Name="apellido" ColumnName="apellido" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />

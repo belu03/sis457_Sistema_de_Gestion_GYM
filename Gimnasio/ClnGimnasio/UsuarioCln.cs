@@ -29,7 +29,7 @@ namespace ClnGimnasio
                     existente.nombre = usuario.nombre;
                     existente.apellido = usuario.apellido;
                     existente.correo = usuario.correo;
-                    existente.tipo = usuario.tipo;
+                    existente.telefono = usuario.telefono;
                     return context.SaveChanges();
 
                 }
@@ -70,11 +70,16 @@ namespace ClnGimnasio
             }
         }
 
-        public static List<spUsuarioListar1_Result> listar(string parametro)
+        public static List<Usuario> listar(string parametro)
         {
             using (var context = new GimnasioEntities())
             {
-                return context.spUsuarioListar1(parametro.Trim()).ToList();
+                context.Configuration.LazyLoadingEnabled = false;
+
+                // Esto busca en la tabla real, sin importar el procedimiento almacenado
+                return context.Usuario
+                    .Where(u => u.nombre.Contains(parametro) || u.apellido.Contains(parametro))
+                    .ToList();
             }
         }
     }

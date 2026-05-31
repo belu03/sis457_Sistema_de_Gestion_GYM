@@ -35,10 +35,11 @@
             // dgvLista
             // 
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(34, 90);
+            this.dgvLista.Location = new System.Drawing.Point(32, 165);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.Size = new System.Drawing.Size(707, 239);
             this.dgvLista.TabIndex = 0;
+            this.dgvLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellContentClick);
             // 
             // FormEntrenador
             // 

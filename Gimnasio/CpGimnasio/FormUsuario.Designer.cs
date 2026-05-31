@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.grpDatos = new System.Windows.Forms.GroupBox();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -47,9 +48,11 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
+            this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.grpDatos.SuspendLayout();
             this.pnlBotones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -204,6 +207,7 @@
             this.btnEditar.TabIndex = 2;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // GuardarUsuario
             // 
@@ -234,6 +238,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(68, 20);
             this.txtBuscar.TabIndex = 3;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // lblBuscar
             // 
@@ -244,6 +249,10 @@
             this.lblBuscar.Size = new System.Drawing.Size(40, 13);
             this.lblBuscar.TabIndex = 4;
             this.lblBuscar.Text = "Buscar";
+            // 
+            // erpUsuario
+            // 
+            this.erpUsuario.ContainerControl = this;
             // 
             // FormUsuario
             // 
@@ -262,6 +271,7 @@
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.pnlBotones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,6 +298,7 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.ErrorProvider erpUsuario;
     }
 }
 

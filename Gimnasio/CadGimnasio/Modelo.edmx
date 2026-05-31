@@ -86,7 +86,7 @@
           <Property Name="nombre" Type="varchar" MaxLength="50" />
           <Property Name="apellido" Type="varchar" MaxLength="50" />
           <Property Name="correo" Type="varchar" MaxLength="100" />
-          <Property Name="tipo" Type="varchar" MaxLength="10" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="UsuarioSistema">
           <Key>
@@ -475,7 +475,7 @@
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Reserva" EntitySet="Reserva" />
           </AssociationSet>
-        </EntityContainer>
+          </EntityContainer>
         <ComplexType Name="spUsuarioListar_Result">
           <Property Type="Int32" Name="id" Nullable="false" />
           <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
@@ -619,7 +619,7 @@
           <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="tipo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Asistencia" Relationship="GimnasioModel.FK__Asistenci__id_us__72C60C4A" FromRole="Usuario" ToRole="Asistencia" />
           <NavigationProperty Name="Membresia" Relationship="GimnasioModel.FK__Membresia__id_us__6B24EA82" FromRole="Usuario" ToRole="Membresia" />
           <NavigationProperty Name="Pago" Relationship="GimnasioModel.FK__Pago__id_usuario__6E01572D" FromRole="Usuario" ToRole="Pago" />
@@ -673,7 +673,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -886,7 +886,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="GimnasioModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
-                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
                 <ScalarProperty Name="correo" ColumnName="correo" />
                 <ScalarProperty Name="apellido" ColumnName="apellido" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />

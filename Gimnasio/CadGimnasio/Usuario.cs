@@ -41,7 +41,7 @@ public partial class Usuario
 
     public string correo { get; set; }
 
-    public string tipo { get; set; }
+    public string telefono { get; set; }
 
 
 

@@ -22,5 +22,10 @@ namespace CpGimnasio
         {
             dgvLista.DataSource = EntrenadorCln.listar(" ");
         }
+
+        private void dgvLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

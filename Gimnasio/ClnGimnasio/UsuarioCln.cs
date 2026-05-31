@@ -44,16 +44,13 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
-                var usuario = context.Usuario.Find(id);
+                var usuario = context.Usuario.Find(id); // <--- ¿Aquí encuentra el usuario?
                 if (usuario != null)
                 {
                     context.Usuario.Remove(usuario);
                     return context.SaveChanges();
                 }
-                else
-                {
-                    return 0; // Usuario no encontrado
-                }
+                return 0;
             }
         }
         public static Usuario obtenerUno(int id)
@@ -68,6 +65,7 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
+                context.Configuration.LazyLoadingEnabled = false; // AGREGA ESTA LÍNEA
                 return context.Usuario.ToList();
             }
         }

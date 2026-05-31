@@ -28,8 +28,8 @@ namespace ClnGimnasio
                 {
                     existente.nombre = entrenador.nombre;
                     existente.apellido = entrenador.apellido;
-                    existente.telefono = entrenador.telefono;
                     existente.especialidad = entrenador.especialidad;
+                    existente.telefono = entrenador.telefono;
                     existente.correo = entrenador.correo;
                     return context.SaveChanges();
 
@@ -45,16 +45,13 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
-                var entrenador = context.Entrenador.Find(id);
+                var entrenador = context.Entrenador.Find(id); // <--- ¿Aquí encuentra el entrendor?
                 if (entrenador != null)
                 {
                     context.Entrenador.Remove(entrenador);
                     return context.SaveChanges();
                 }
-                else
-                {
-                    return 0; // Entrenador no encontrado
-                }
+                return 0;
             }
         }
         public static Entrenador obtenerUno(int id)
@@ -69,15 +66,21 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
+                context.Configuration.LazyLoadingEnabled = false; // AGREGA ESTA LÍNEA
                 return context.Entrenador.ToList();
             }
         }
 
-        public static List<spEntrenadorListar_Result> listar(string parametro)
+        public static List<Entrenador> listar(string parametro)
         {
             using (var context = new GimnasioEntities())
             {
-                return context.spEntrenadorListar(parametro.Trim()).ToList();
+                context.Configuration.LazyLoadingEnabled = false;
+
+                // Esto busca en la tabla real, sin importar el procedimiento almacenado
+                return context.Entrenador
+                    .Where(u => u.nombre.Contains(parametro) || u.apellido.Contains(parametro))
+                    .ToList();
             }
         }
     }

@@ -81,8 +81,15 @@
     <Property Name="nombre" Type="varchar" MaxLength="50" />
     <Property Name="apellido" Type="varchar" MaxLength="50" />
     <Property Name="correo" Type="varchar" MaxLength="100" />
-    <Property Name="contraseña" Type="varchar" MaxLength="50" />
     <Property Name="tipo" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="UsuarioSistema">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="contraseña" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <Association Name="FK__Asistenci__id_ho__73BA3083">
     <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
@@ -225,6 +232,7 @@
     <EntitySet Name="Reserva" EntityType="Self.Reserva" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Servicio" EntityType="Self.Servicio" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioSistema" EntityType="Self.UsuarioSistema" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK__Asistenci__id_ho__73BA3083" Association="Self.FK__Asistenci__id_ho__73BA3083">
       <End Role="Horario" EntitySet="Horario" />
       <End Role="Asistencia" EntitySet="Asistencia" />

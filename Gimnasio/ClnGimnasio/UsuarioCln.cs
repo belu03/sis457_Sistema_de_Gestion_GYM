@@ -29,7 +29,6 @@ namespace ClnGimnasio
                     existente.nombre = usuario.nombre;
                     existente.apellido = usuario.apellido;
                     existente.correo = usuario.correo;
-                    existente.contraseña = usuario.contraseña;
                     existente.tipo = usuario.tipo;
                     return context.SaveChanges();
 

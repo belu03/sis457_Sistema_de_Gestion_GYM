@@ -10,7 +10,7 @@
     <Property Name="id_usuario" Type="Int32" />
     <Property Name="id_horario" Type="Int32" />
     <NavigationProperty Name="Horario" Relationship="Self.FK__Asistenci__id_ho__71D1E811" FromRole="Asistencia" ToRole="Horario" />
-    <NavigationProperty Name="Usuario" Relationship="Self.FK__Asistenci__id_us__70DDC3D8" FromRole="Asistencia" ToRole="Usuario" />
+    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Asistenci__id_us__72C60C4A" FromRole="Asistencia" ToRole="Usuario" />
   </EntityType>
   <EntityType Name="Entrenador">
     <Key>
@@ -48,8 +48,8 @@
     <Property Name="precio" Type="Decimal" Precision="10" Scale="2" />
     <Property Name="duracion" Type="Int32" />
     <Property Name="id_usuario" Type="Int32" />
-    <NavigationProperty Name="Usuario" Relationship="Self.FK__Membresia__id_us__693CA210" FromRole="Membresia" ToRole="Usuario" />
     <NavigationProperty Name="Pago" Relationship="Self.FK__Pago__id_membres__6D0D32F4" FromRole="Membresia" ToRole="Pago" />
+    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Membresia__id_us__6B24EA82" FromRole="Membresia" ToRole="Usuario" />
   </EntityType>
   <EntityType Name="Pago">
     <Key>
@@ -62,7 +62,7 @@
     <Property Name="id_usuario" Type="Int32" />
     <Property Name="id_membresia" Type="Int32" />
     <NavigationProperty Name="Membresia" Relationship="Self.FK__Pago__id_membres__6D0D32F4" FromRole="Pago" ToRole="Membresia" />
-    <NavigationProperty Name="Usuario" Relationship="Self.FK__Pago__id_usuario__6C190EBB" FromRole="Pago" ToRole="Usuario" />
+    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Pago__id_usuario__6E01572D" FromRole="Pago" ToRole="Usuario" />
   </EntityType>
   <EntityType Name="Reserva">
     <Key>
@@ -74,7 +74,7 @@
     <Property Name="id_usuario" Type="Int32" />
     <Property Name="id_horario" Type="Int32" />
     <NavigationProperty Name="Horario" Relationship="Self.FK__Reserva__id_hora__66603565" FromRole="Reserva" ToRole="Horario" />
-    <NavigationProperty Name="Usuario" Relationship="Self.FK__Reserva__id_usua__656C112C" FromRole="Reserva" ToRole="Usuario" />
+    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Reserva__id_usua__6754599E" FromRole="Reserva" ToRole="Usuario" />
   </EntityType>
   <EntityType Name="Servicio">
     <Key>
@@ -87,21 +87,6 @@
     <Property Name="capacidad_maxima" Type="Int32" />
     <NavigationProperty Name="Horario" Relationship="GimnasioModel.FK__Horario__id_serv__6383C8BA" FromRole="Servicio" ToRole="Horario" />
   </EntityType>
-  <EntityType Name="Usuario">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="tipo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Asistencia" Relationship="Self.FK__Asistenci__id_us__70DDC3D8" FromRole="Usuario" ToRole="Asistencia" />
-    <NavigationProperty Name="Membresia" Relationship="Self.FK__Membresia__id_us__693CA210" FromRole="Usuario" ToRole="Membresia" />
-    <NavigationProperty Name="Pago" Relationship="Self.FK__Pago__id_usuario__6C190EBB" FromRole="Usuario" ToRole="Pago" />
-    <NavigationProperty Name="Reserva" Relationship="Self.FK__Reserva__id_usua__656C112C" FromRole="Usuario" ToRole="Reserva" />
-  </EntityType>
   <Association Name="FK__Asistenci__id_ho__71D1E811">
     <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
     <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
@@ -111,18 +96,6 @@
       </Principal>
       <Dependent Role="Asistencia">
         <PropertyRef Name="id_horario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Asistenci__id_us__70DDC3D8">
-    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
-    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Usuario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Asistencia">
-        <PropertyRef Name="id_usuario" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -138,18 +111,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Membresia__id_us__693CA210">
-    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
-    <End Role="Membresia" Type="Self.Membresia" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Usuario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Membresia">
-        <PropertyRef Name="id_usuario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Pago__id_membres__6D0D32F4">
     <End Role="Membresia" Type="Self.Membresia" Multiplicity="0..1" />
     <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
@@ -162,30 +123,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Pago__id_usuario__6C190EBB">
-    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
-    <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Usuario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Pago">
-        <PropertyRef Name="id_usuario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Reserva__id_usua__656C112C">
-    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
-    <End Role="Reserva" Type="Self.Reserva" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Usuario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Reserva">
-        <PropertyRef Name="id_usuario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="GimnasioEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Asistencia" EntityType="Self.Asistencia" />
     <EntitySet Name="Entrenador" EntityType="Self.Entrenador" />
@@ -194,34 +131,17 @@
     <EntitySet Name="Pago" EntityType="Self.Pago" />
     <EntitySet Name="Reserva" EntityType="Self.Reserva" />
     <EntitySet Name="Servicio" EntityType="Self.Servicio" />
-    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
     <AssociationSet Name="FK__Asistenci__id_ho__71D1E811" Association="Self.FK__Asistenci__id_ho__71D1E811">
       <End Role="Horario" EntitySet="Horario" />
-      <End Role="Asistencia" EntitySet="Asistencia" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Asistenci__id_us__70DDC3D8" Association="Self.FK__Asistenci__id_us__70DDC3D8">
-      <End Role="Usuario" EntitySet="Usuario" />
       <End Role="Asistencia" EntitySet="Asistencia" />
     </AssociationSet>
     <AssociationSet Name="FK__Reserva__id_hora__66603565" Association="Self.FK__Reserva__id_hora__66603565">
       <End Role="Horario" EntitySet="Horario" />
       <End Role="Reserva" EntitySet="Reserva" />
     </AssociationSet>
-    <AssociationSet Name="FK__Membresia__id_us__693CA210" Association="Self.FK__Membresia__id_us__693CA210">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Membresia" EntitySet="Membresia" />
-    </AssociationSet>
     <AssociationSet Name="FK__Pago__id_membres__6D0D32F4" Association="Self.FK__Pago__id_membres__6D0D32F4">
       <End Role="Membresia" EntitySet="Membresia" />
       <End Role="Pago" EntitySet="Pago" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Pago__id_usuario__6C190EBB" Association="Self.FK__Pago__id_usuario__6C190EBB">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Pago" EntitySet="Pago" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Reserva__id_usua__656C112C" Association="Self.FK__Reserva__id_usua__656C112C">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Reserva" EntitySet="Reserva" />
     </AssociationSet>
     <FunctionImport Name="spUsuarioListar" ReturnType="Collection(GimnasioModel.spUsuarioListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
@@ -258,6 +178,24 @@
     <FunctionImport Name="spServicioListar" ReturnType="Collection(GimnasioModel.spServicioListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
+    <EntitySet Name="UsuarioSistema" EntityType="GimnasioModel.UsuarioSistema" />
+    <EntitySet Name="Usuario" EntityType="GimnasioModel.Usuario" />
+    <AssociationSet Name="FK__Asistenci__id_us__72C60C4A" Association="GimnasioModel.FK__Asistenci__id_us__72C60C4A">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Membresia__id_us__6B24EA82" Association="GimnasioModel.FK__Membresia__id_us__6B24EA82">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Membresia" EntitySet="Membresia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pago__id_usuario__6E01572D" Association="GimnasioModel.FK__Pago__id_usuario__6E01572D">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reserva__id_usua__6754599E" Association="GimnasioModel.FK__Reserva__id_usua__6754599E">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Reserva" EntitySet="Reserva" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="spUsuarioListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
@@ -386,4 +324,74 @@
     <Property Type="Int32" Name="duracion" Nullable="true" />
     <Property Type="Int32" Name="capacidad_maxima" Nullable="true" />
   </ComplexType>
+  <EntityType Name="UsuarioSistema">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contraseña" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tipo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Asistencia" Relationship="GimnasioModel.FK__Asistenci__id_us__72C60C4A" FromRole="Usuario" ToRole="Asistencia" />
+    <NavigationProperty Name="Membresia" Relationship="GimnasioModel.FK__Membresia__id_us__6B24EA82" FromRole="Usuario" ToRole="Membresia" />
+    <NavigationProperty Name="Pago" Relationship="GimnasioModel.FK__Pago__id_usuario__6E01572D" FromRole="Usuario" ToRole="Pago" />
+    <NavigationProperty Name="Reserva" Relationship="GimnasioModel.FK__Reserva__id_usua__6754599E" FromRole="Usuario" ToRole="Reserva" />
+  </EntityType>
+  <Association Name="FK__Asistenci__id_us__72C60C4A">
+    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+    <End Type="GimnasioModel.Asistencia" Role="Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Membresia__id_us__6B24EA82">
+    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+    <End Type="GimnasioModel.Membresia" Role="Membresia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Membresia">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pago__id_usuario__6E01572D">
+    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+    <End Type="GimnasioModel.Pago" Role="Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reserva__id_usua__6754599E">
+    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+    <End Type="GimnasioModel.Reserva" Role="Reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Reserva">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

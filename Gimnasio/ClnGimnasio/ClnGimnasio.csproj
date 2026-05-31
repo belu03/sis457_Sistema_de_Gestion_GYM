@@ -63,6 +63,7 @@
     <Compile Include="ReservaCln.cs" />
     <Compile Include="ServicioCln.cs" />
     <Compile Include="UsuarioCln.cs" />
+    <Compile Include="UsuarioSistemaCln.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -192,28 +192,30 @@ namespace CpGimnasio
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            // 1. Reseteamos el ID seleccionado a 0 (indica que el formulario está en modo "nuevo")
+            // Cambiamos el tamaño del formulario para el nuevo registro
+            this.Size = new Size(1476, 874);
+
+            // 1. Reseteamos el ID seleccionado a 0
             idHorarioSeleccionado = 0;
 
-            // 2. Limpiamos los ComboBox (usando SelectedIndex = -1)
+            // 2. Limpiamos los ComboBox
             cboDia.SelectedIndex = -1;
             cboHoraInicio.SelectedIndex = -1;
             cboHoraFin.SelectedIndex = -1;
             cboServicio.SelectedIndex = -1;
             cboEntrenador.SelectedIndex = -1;
 
-            // 3. Limpiamos cualquier texto guía que pudieras haber dejado en los campos
+            // 3. Limpiamos campos de texto
             cboDia.Text = "";
             cboHoraInicio.Text = "";
             cboHoraFin.Text = "";
 
-            // 4. Ponemos el foco en el primer campo para que el usuario empiece a escribir
+            // 4. Ponemos el foco en el primer campo
             cboDia.Focus();
 
-            // 5. Opcional: Limpiamos los errores del ErrorProvider si los hubiera
+            // 5. Limpiamos los errores del ErrorProvider
             // erpHorario.Clear();
         }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (idHorarioSeleccionado == 0)
@@ -310,6 +312,19 @@ namespace CpGimnasio
             return esValido;
         }
 
-        
+        private void btnEntrenador_Click(object sender, EventArgs e)
+        {
+            new FormEntrenador().Show();
+        }
+
+        private void btnServicio_Click(object sender, EventArgs e)
+        {
+            new FormServicio().Show();
+        }
+
+        private void btnAsistencia_Click(object sender, EventArgs e)
+        {
+            new FormAsistencia().Show();
+        }
     }
 }

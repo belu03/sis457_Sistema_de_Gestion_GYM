@@ -22,5 +22,30 @@ namespace CpGimnasio
         {
             dgvLista.DataSource = AsistenciaCln.listar(" ");
         }
+
+        private void btnServicio_Click(object sender, EventArgs e)
+        {
+            new FormServicio().Show();
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            new FormUsuario().Show();
+        }
+
+        private void btnHorario_Click(object sender, EventArgs e)
+        {
+            new FormHorario().Show();
+        }
+
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            new FormMembresia().Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

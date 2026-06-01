@@ -114,12 +114,18 @@ namespace CpGimnasio
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            idEntrenadorSeleccionado = 0; // Reiniciamos el ID
+            // Cambiamos el tamaño del formulario para mostrar el panel de registro
+            this.Size = new Size(1476, 874);
+
+            // Lógica para preparar el registro de un nuevo entrenador
+            idEntrenadorSeleccionado = 0;
             txtNombre.Clear();
             txtApellido.Clear();
             txtCorreo.Clear();
             txtTelefono.Clear();
-            txtNombre.Focus(); // Ponemos el cursor listo para escribir
+
+            // Ponemos el cursor listo para escribir
+            txtNombre.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -209,6 +215,36 @@ namespace CpGimnasio
             }
 
             return esValido;
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCorreo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTelefono_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApellido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEspecialidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHorario_Click(object sender, EventArgs e)
+        {
+            new FormHorario().Show();
         }
     }
 }

@@ -53,5 +53,10 @@ namespace CpGimnasio
         {
             new FormAsistencia().Show();
         }
+
+        private void pnlSuperior_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

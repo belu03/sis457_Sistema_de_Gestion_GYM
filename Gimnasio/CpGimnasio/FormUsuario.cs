@@ -45,16 +45,23 @@ namespace CpGimnasio
 
         private void dgvLista_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verificamos que el clic no sea en el encabezado (el encabezado tiene índice -1)
             if (e.RowIndex >= 0)
             {
-                // Guardamos el ID de la fila seleccionada
+                // 1. Guardamos el ID
                 idUsuarioSeleccionado = Convert.ToInt32(dgvLista.Rows[e.RowIndex].Cells["id"].Value);
 
-                // Llenamos los TextBox con los datos de la fila
-                txtNombre.Text = dgvLista.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
-                txtApellido.Text = dgvLista.Rows[e.RowIndex].Cells["apellido"].Value.ToString();
-                txtEmail.Text = dgvLista.Rows[e.RowIndex].Cells["correo"].Value.ToString();
+                // 2. Llenamos los TextBox con seguridad
+                // Usamos .ToString() con cuidado por si algún valor es nulo
+                txtNombre.Text = dgvLista.Rows[e.RowIndex].Cells["nombre"].Value?.ToString() ?? "";
+                txtApellido.Text = dgvLista.Rows[e.RowIndex].Cells["apellido"].Value?.ToString() ?? "";
+
+                // CORRECCIÓN AQUÍ: Asegúrate de que el nombre de la columna en el Grid sea exactamente "correo" o "telefono"
+                // Si tu columna se llama "correo" en el SP, usa "correo". Si ya no existe, bórralo.
+                txtEmail.Text = dgvLista.Rows[e.RowIndex].Cells["correo"].Value?.ToString() ?? "";
+
+                // 3. AGREGA ESTO: Asegúrate de que txtTelefono tenga el campo correcto
+                // Si la columna en el Grid se llama "telefono", pon "telefono".
+                txtTelefono.Text = dgvLista.Rows[e.RowIndex].Cells["telefono"].Value?.ToString() ?? "";
             }
         }
         private void GuardarUsuario_Click(object sender, EventArgs e)
@@ -113,11 +120,15 @@ namespace CpGimnasio
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            idUsuarioSeleccionado = 0; // Reiniciamos el ID
+            // 1. Cambiamos el tamaño del formulario
+            this.Size = new Size(1476, 874);
+
+            // 2. Lógica existente
+            idUsuarioSeleccionado = 0;
             txtNombre.Clear();
             txtApellido.Clear();
             txtEmail.Clear();
-            txtNombre.Focus(); // Ponemos el cursor listo para escribir
+            txtNombre.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -128,7 +139,6 @@ namespace CpGimnasio
                 return;
             }
 
-            // AÑADE ESTO: Una confirmación simple
             DialogResult confirmacion = MessageBox.Show("¿Desea guardar los cambios realizados en este usuario?", "Confirmar edición", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (confirmacion == DialogResult.Yes)
@@ -141,6 +151,10 @@ namespace CpGimnasio
                         usuarioModificar.nombre = txtNombre.Text;
                         usuarioModificar.apellido = txtApellido.Text;
                         usuarioModificar.correo = txtEmail.Text;
+
+                        // --- AÑADE ESTA LÍNEA AQUÍ ---
+                        usuarioModificar.telefono = txtTelefono.Text;
+                        // -----------------------------
 
                         context.SaveChanges();
                     }
@@ -200,5 +214,32 @@ namespace CpGimnasio
 
             return esValido;
         }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnServicio_Click(object sender, EventArgs e)
+        {
+            new FormServicio().Show();
+        }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            new FormReserva().Show();
+        }
+
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            new FormMembresia().Show();
+        }
+
+        private void btnPago_Click(object sender, EventArgs e)
+        {
+            new FormPago().Show();
+        }
+
+       
     }
 }

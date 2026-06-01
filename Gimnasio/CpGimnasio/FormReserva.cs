@@ -22,5 +22,25 @@ namespace CpGimnasio
         {
             dgvLista.DataSource = ReservaCln.listar(" ");
         }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            new FormUsuario().Show();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboFecha_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

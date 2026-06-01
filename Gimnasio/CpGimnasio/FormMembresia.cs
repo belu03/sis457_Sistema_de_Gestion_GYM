@@ -22,5 +22,15 @@ namespace CpGimnasio
         {
             dgvLista.DataSource = MembresiaCln.listar(" ");
         }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            new FormUsuario().Show();
+        }
+
+        private void btnPago_Click(object sender, EventArgs e)
+        {
+            new FormPago().Show();
+        }
     }
 }

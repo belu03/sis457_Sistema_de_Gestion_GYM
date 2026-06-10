@@ -19,7 +19,7 @@ namespace CpGimnasio.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -75,7 +75,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap buscar_rojo {
             get {
-                object obj = ResourceManager.GetObject("buscar rojo", resourceCulture);
+                object obj = ResourceManager.GetObject("buscar_rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap buscar_rojo1 {
             get {
-                object obj = ResourceManager.GetObject("buscar rojo1", resourceCulture);
+                object obj = ResourceManager.GetObject("buscar_rojo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap editar_rojo {
             get {
-                object obj = ResourceManager.GetObject("editar rojo", resourceCulture);
+                object obj = ResourceManager.GetObject("editar_rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap eliminar_rojo {
             get {
-                object obj = ResourceManager.GetObject("eliminar rojo", resourceCulture);
+                object obj = ResourceManager.GetObject("eliminar_rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,19 +143,9 @@ namespace CpGimnasio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ENTRENADOR {
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_repjchrepjchrepj_copiaa {
             get {
-                object obj = ResourceManager.GetObject("ENTRENADOR", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Gemini_Generated_Image_repjchrepjchrepj_copiaa_jpg {
-            get {
-                object obj = ResourceManager.GetObject("Gemini_Generated_Image_repjchrepjchrepj copiaa.jpg", resourceCulture);
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_repjchrepjchrepj_copiaa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +155,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap guardar_blanco {
             get {
-                object obj = ResourceManager.GetObject("guardar blanco", resourceCulture);
+                object obj = ResourceManager.GetObject("guardar_blanco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -175,7 +165,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap guardar_rojo {
             get {
-                object obj = ResourceManager.GetObject("guardar rojo", resourceCulture);
+                object obj = ResourceManager.GetObject("guardar_rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +175,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_fondo {
             get {
-                object obj = ResourceManager.GetObject("gym fondo", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_fondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +185,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_fondo1 {
             get {
-                object obj = ResourceManager.GetObject("gym fondo1", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_fondo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +195,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_fondo2 {
             get {
-                object obj = ResourceManager.GetObject("gym fondo2", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_fondo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,7 +205,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_fondo3 {
             get {
-                object obj = ResourceManager.GetObject("gym fondo3", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_fondo3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +215,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_fondo4 {
             get {
-                object obj = ResourceManager.GetObject("gym fondo4", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_fondo4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -235,7 +225,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_login {
             get {
-                object obj = ResourceManager.GetObject("gym login", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +235,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap gym_logo_2 {
             get {
-                object obj = ResourceManager.GetObject("gym logo 2", resourceCulture);
+                object obj = ResourceManager.GetObject("gym_logo_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -275,7 +265,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ingresar_blanco {
             get {
-                object obj = ResourceManager.GetObject("ingresar blanco", resourceCulture);
+                object obj = ResourceManager.GetObject("ingresar_blanco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,7 +285,7 @@ namespace CpGimnasio.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap nuevo_rojo {
             get {
-                object obj = ResourceManager.GetObject("nuevo rojo", resourceCulture);
+                object obj = ResourceManager.GetObject("nuevo_rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,250 +1,224 @@
 ﻿using CadGimnasio;
 using ClnGimnasio;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 
 namespace CpGimnasio
 {
-
     public partial class FormEntrenador : Form
     {
-        int idEntrenadorSeleccionado = 0;
+        private bool esNuevo = false;
+        private int idSeleccionado = 0;
+
         public FormEntrenador()
         {
             InitializeComponent();
         }
-        private void CargarLista()
-        {
-            dgvLista.DataSource = null;
-            dgvLista.DataSource = EntrenadorCln.listar();
-            if (dgvLista.Columns["id"] != null) dgvLista.Columns["id"].Visible = false;
-        }
 
         private void FormEntrenador_Load(object sender, EventArgs e)
         {
-            // Limpiamos cualquier rastro previo
-            dgvLista.DataSource = null;
-            // Recargamos directamente desde la base de datos al abrir
-            dgvLista.DataSource = EntrenadorCln.listar();
-            // Ocultamos las columnas técnicas que no quieres mostrar
-            dgvLista.Columns["id"].Visible = false; // El ID es necesario internamente, pero oculto
-            CargarLista();
+            this.BackgroundImage = Properties.Resources.gym_fondo;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BackColor = Color.White;
+            SetLabelsTransparent();
+            pbLogo.Image = Properties.Resources.SERVICIOS; // Temporal (no hay ENTRENADOR.png)
+            AplicarEstilosVisuales();
+            ListarEntrenadores();
+            EstadoInicialBotones();
         }
 
-        private void dgvLista_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void SetLabelsTransparent()
         {
-            // Verificamos que el clic no sea en el encabezado (el encabezado tiene índice -1)
-            if (e.RowIndex >= 0)
+            foreach (Control c in this.Controls)
             {
-                // Guardamos el ID de la fila seleccionada
-                idEntrenadorSeleccionado = Convert.ToInt32(dgvLista.Rows[e.RowIndex].Cells["id"].Value);
-
-                // Llenamos los TextBox con los datos de la fila
-                txtNombre.Text = dgvLista.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
-                txtApellido.Text = dgvLista.Rows[e.RowIndex].Cells["apellido"].Value.ToString();
-                txtEspecialidad.Text = dgvLista.Rows[e.RowIndex].Cells["especialidad"].Value.ToString();
-                txtCorreo.Text = dgvLista.Rows[e.RowIndex].Cells["correo"].Value.ToString();
-                txtTelefono.Text = dgvLista.Rows[e.RowIndex].Cells["telefono"].Value.ToString();
+                if (c is Label) c.BackColor = Color.Transparent;
+                if (c is Panel || c is GroupBox) SetLabelsTransparentRecursive(c);
             }
         }
-        private void GuardarEntrenador_Click(object sender, EventArgs e)
+        private void SetLabelsTransparentRecursive(Control parent)
         {
-            // 1. Ejecutamos la validación
-            if (!validar())
+            foreach (Control c in parent.Controls)
             {
-                // Si validar() devuelve false, el "!" lo convierte en true
-                // y entramos aquí para detener todo.
-                MessageBox.Show("Por favor, corrija los errores en el formulario antes de guardar.", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // <--- ESTE "RETURN" ES LA CLAVE. Detiene la ejecución.
-            }
-
-            // 2. Si el código llega hasta aquí, es porque la validación fue exitosa.
-            Entrenador entrenador = new Entrenador();
-            entrenador.nombre = txtNombre.Text;
-            entrenador.apellido = txtApellido.Text;
-            entrenador.telefono = txtTelefono.Text;
-            entrenador.especialidad = txtEspecialidad.Text;
-            entrenador.correo = txtCorreo.Text;// Asegúrate que tu objeto Entrenador tenga este campo
-
-            int resultado = EntrenadorCln.crear(entrenador);
-
-            if (resultado > 0)
-            {
-                MessageBox.Show("Guardado con éxito");
-                dgvLista.DataSource = EntrenadorCln.listar();
-                btnNuevo_Click(null, null);
+                if (c is Label) c.BackColor = Color.Transparent;
+                if (c.HasChildren) SetLabelsTransparentRecursive(c);
             }
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void AplicarEstilosVisuales()
         {
-            if (idEntrenadorSeleccionado == 0)
-            {
-                MessageBox.Show("Por favor, seleccione un entrenador de la lista.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            ConfigurarBoton(btnNuevo, Color.FromArgb(37, 99, 235));
+            ConfigurarBoton(btnGuardar, Color.FromArgb(16, 185, 129));
+            ConfigurarBoton(btnEditar, Color.FromArgb(245, 158, 11));
+            ConfigurarBoton(btnEliminar, Color.FromArgb(225, 29, 72));
+            ConfigurarBoton(btnCancelar, Color.FromArgb(75, 85, 99));
 
-            DialogResult confirmacion = MessageBox.Show("¿Está segura de que desea eliminar este entrenador?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dgvLista.BackgroundColor = Color.White;
+            dgvLista.BorderStyle = BorderStyle.None;
+            dgvLista.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvLista.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 242, 254);
+            dgvLista.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dgvLista.RowHeadersVisible = false;
+            dgvLista.EnableHeadersVisualStyles = false;
+            dgvLista.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(31, 41, 55);
+            dgvLista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvLista.ColumnHeadersHeight = 35;
+        }
 
-            if (confirmacion == DialogResult.Yes)
-            {
-                int eliminado = EntrenadorCln.eliminar(idEntrenadorSeleccionado);
+        private void ConfigurarBoton(Button btn, Color backColor)
+        {
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.BackColor = backColor;
+            btn.ForeColor = Color.White;
+            btn.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btn.Cursor = Cursors.Hand;
+            btn.Image = null;
+        }
 
-                if (eliminado > 0)
-                {
-                    MessageBox.Show("Entrenador eliminado exitosamente.");
-                    dgvLista.DataSource = EntrenadorCln.listar();
-                    btnNuevo_Click(null, null); // Limpiar formulario
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo eliminar. El entrenador podría tener registros relacionados (como asistencias).");
-                }
-            }
+        private void ListarEntrenadores(string filtro = "")
+        {
+            var lista = Repositorio<Entrenador>.Listar().Where(e => e.activo == true).ToList();
+            if (!string.IsNullOrEmpty(filtro))
+                lista = lista.Where(e => e.nombre.Contains(filtro) || e.apellido.Contains(filtro)).ToList();
+
+            dgvLista.DataSource = lista;
+            dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            if (dgvLista.Columns["id"] != null) dgvLista.Columns["id"].Visible = false;
+            if (dgvLista.Columns["activo"] != null) dgvLista.Columns["activo"].Visible = false;
+            if (dgvLista.Columns["HorarioClase"] != null) dgvLista.Columns["HorarioClase"].Visible = false;
+        }
+
+        private void EstadoInicialBotones()
+        {
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnNuevo.Enabled = true;
+            HabilitarCampos(false);
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            // Cambiamos el tamaño del formulario para mostrar el panel de registro
-            this.Size = new Size(1476, 874);
-
-            // Lógica para preparar el registro de un nuevo entrenador
-            idEntrenadorSeleccionado = 0;
-            txtNombre.Clear();
-            txtApellido.Clear();
-            txtCorreo.Clear();
-            txtTelefono.Clear();
-
-            // Ponemos el cursor listo para escribir
+            esNuevo = true;
+            LimpiarCampos();
+            HabilitarCampos(true);
+            btnGuardar.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnNuevo.Enabled = false;
             txtNombre.Focus();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (!ValidarCampos()) return;
+
+            if (esNuevo)
+            {
+                var entrenador = new Entrenador
+                {
+                    nombre = txtNombre.Text.Trim(),
+                    apellido = txtApellido.Text.Trim(),
+                    telefono = txtTelefono.Text.Trim(),
+                    especialidad = txtEspecialidad.Text.Trim(),
+                    activo = true
+                };
+                Repositorio<Entrenador>.Crear(entrenador);
+            }
+            else
+            {
+                var entrenador = Repositorio<Entrenador>.ObtenerUno(idSeleccionado);
+                entrenador.nombre = txtNombre.Text.Trim();
+                entrenador.apellido = txtApellido.Text.Trim();
+                entrenador.telefono = txtTelefono.Text.Trim();
+                entrenador.especialidad = txtEspecialidad.Text.Trim();
+                Repositorio<Entrenador>.Modificar(entrenador);
+            }
+
+            ListarEntrenadores();
+            CancelarOperacion();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (idEntrenadorSeleccionado == 0)
+            if (idSeleccionado == 0) return;
+            esNuevo = false;
+            var e_db = Repositorio<Entrenador>.ObtenerUno(idSeleccionado);
+            txtNombre.Text = e_db.nombre;
+            txtApellido.Text = e_db.apellido;
+            txtTelefono.Text = e_db.telefono;
+            txtEspecialidad.Text = e_db.especialidad;
+            HabilitarCampos(true);
+            btnGuardar.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnNuevo.Enabled = false;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (idSeleccionado == 0) return;
+            if (MessageBox.Show("¿Eliminar este entrenador?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Seleccione un entrenador de la lista para editar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            DialogResult confirmacion = MessageBox.Show("¿Desea guardar los cambios?", "Confirmar edición", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (confirmacion == DialogResult.Yes)
-            {
-                // AUDITORÍA: Usamos la capa de negocio, no el contexto directo aquí
-                // Esto garantiza que la lógica de guardado sea consistente en todo el sistema
-                var entrenador = new Entrenador();
-                entrenador.id = idEntrenadorSeleccionado;
-                entrenador.nombre = txtNombre.Text;
-                entrenador.apellido = txtApellido.Text;
-                entrenador.telefono = txtTelefono.Text;
-                entrenador.especialidad = txtEspecialidad.Text;
-                entrenador.correo = txtCorreo.Text;
-
-                // Llamamos a nuestra lógica probada
-                int resultado = EntrenadorCln.modificar(entrenador);
-
-                if (resultado > 0)
-                {
-                    MessageBox.Show("Entrenador editado con éxito.");
-
-                    // FORZAR REFRESH
-                    CargarLista();
-                    btnNuevo_Click(null, null);
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo guardar el cambio. El entrenador podría haber sido eliminado o el ID es incorrecto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                var e_db = Repositorio<Entrenador>.ObtenerUno(idSeleccionado);
+                e_db.activo = false;
+                Repositorio<Entrenador>.Modificar(e_db);
+                ListarEntrenadores();
+                CancelarOperacion();
             }
         }
 
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            string filtro = txtBuscar.Text;
+        private void btnCancelar_Click(object sender, EventArgs e) => CancelarOperacion();
 
-            if (string.IsNullOrWhiteSpace(filtro))
-            {
-                // Si está vacío, usamos el listar normal que devuelve objetos tipo Entrenador
-                dgvLista.DataSource = EntrenadorCln.listar();
-            }
-            else
-            {
-                // Si tiene texto, usamos el que devuelve spEntrenadorListar1_Result
-                dgvLista.DataSource = EntrenadorCln.listar(filtro);
-            }
-        }
-        private bool validar()
+        private void CancelarOperacion()
         {
-            bool esValido = true;
+            esNuevo = false;
+            idSeleccionado = 0;
+            LimpiarCampos();
+            EstadoInicialBotones();
+        }
+
+        private void LimpiarCampos()
+        {
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtTelefono.Clear();
+            txtEspecialidad.Clear();
             erpEntrenador.Clear();
+        }
 
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+        private void HabilitarCampos(bool habilitar)
+        {
+            txtNombre.Enabled = habilitar;
+            txtApellido.Enabled = habilitar;
+            txtTelefono.Enabled = habilitar;
+            txtEspecialidad.Enabled = habilitar;
+        }
+
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+            erpEntrenador.Clear();
+            if (string.IsNullOrWhiteSpace(txtNombre.Text)) { erpEntrenador.SetError(txtNombre, "Requerido"); ok = false; }
+            if (string.IsNullOrWhiteSpace(txtApellido.Text)) { erpEntrenador.SetError(txtApellido, "Requerido"); ok = false; }
+            return ok;
+        }
+
+        private void dgvLista_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
             {
-                erpEntrenador.SetError(txtNombre, "El nombre es obligatorio");
-                esValido = false;
+                idSeleccionado = Convert.ToInt32(dgvLista.Rows[e.RowIndex].Cells["id"].Value);
+                btnEditar.Enabled = true;
+                btnEliminar.Enabled = true;
             }
-            if (string.IsNullOrWhiteSpace(txtApellido.Text))
-            {
-                erpEntrenador.SetError(txtApellido, "El apellido es obligatorio");
-                esValido = false;
-            }
-
-            // AQUÍ REALIZAMOS EL CAMBIO:
-            // Ya no validamos correo, ahora validamos teléfono
-            if (string.IsNullOrWhiteSpace(txtTelefono.Text))
-            {
-                erpEntrenador.SetError(txtTelefono, "El teléfono es obligatorio");
-                esValido = false;
-            }
-
-            // Opcional: Validar que el teléfono solo tenga números (Control de calidad)
-            if (!System.Text.RegularExpressions.Regex.IsMatch(txtTelefono.Text, @"^\d+$"))
-            {
-                erpEntrenador.SetError(txtTelefono, "El teléfono solo debe contener números");
-                esValido = false;
-            }
-
-            return esValido;
         }
 
-        private void lblNombre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCorreo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTelefono_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblApellido_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblEspecialidad_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnHorario_Click(object sender, EventArgs e)
-        {
-            new FormHorario().Show();
-        }
+        private void txtBuscar_TextChanged(object sender, EventArgs e) => ListarEntrenadores(txtBuscar.Text.Trim());
     }
 }

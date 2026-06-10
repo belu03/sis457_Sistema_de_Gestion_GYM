@@ -1,397 +1,242 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="GimnasioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Asistencia">
+  <EntityType Name="Cliente">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="fecha" Type="DateTime" Precision="0" />
-    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="id_usuario" Type="Int32" />
-    <Property Name="id_horario" Type="Int32" />
-    <NavigationProperty Name="Horario" Relationship="Self.FK__Asistenci__id_ho__71D1E811" FromRole="Asistencia" ToRole="Horario" />
-    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Asistenci__id_us__72C60C4A" FromRole="Asistencia" ToRole="Usuario" />
+    <Property Name="ci" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_registro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Inscripcion" Relationship="Self.FK__Inscripci__id_cl__5EBF139D" FromRole="Cliente" ToRole="Inscripcion" />
+    <NavigationProperty Name="RegistroAcceso" Relationship="Self.FK__RegistroA__id_cl__6477ECF3" FromRole="Cliente" ToRole="RegistroAcceso" />
+    <NavigationProperty Name="Reserva" Relationship="Self.FK__Reserva__id_clie__6EF57B66" FromRole="Cliente" ToRole="Reserva" />
   </EntityType>
   <EntityType Name="Entrenador">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="especialidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Horario" Relationship="GimnasioModel.FK__Horario__id_entr__6477ECF3" FromRole="Entrenador" ToRole="Horario" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="HorarioClase" Relationship="Self.FK__HorarioCl__id_en__6A30C649" FromRole="Entrenador" ToRole="HorarioClase" />
   </EntityType>
-  <EntityType Name="Horario">
+  <EntityType Name="HorarioClase">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="dia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="hora_inicio" Type="Time" Precision="7" />
-    <Property Name="hora_fin" Type="Time" Precision="7" />
-    <Property Name="id_servicio" Type="Int32" />
-    <Property Name="id_entrenador" Type="Int32" />
-    <NavigationProperty Name="Asistencia" Relationship="Self.FK__Asistenci__id_ho__71D1E811" FromRole="Horario" ToRole="Asistencia" />
-    <NavigationProperty Name="Reserva" Relationship="Self.FK__Reserva__id_hora__66603565" FromRole="Horario" ToRole="Reserva" />
-    <NavigationProperty Name="Entrenador" Relationship="GimnasioModel.FK__Horario__id_entr__6477ECF3" FromRole="Horario" ToRole="Entrenador" />
-    <NavigationProperty Name="Servicio" Relationship="GimnasioModel.FK__Horario__id_serv__6383C8BA" FromRole="Horario" ToRole="Servicio" />
+    <Property Name="id_servicio" Type="Int32" Nullable="false" />
+    <Property Name="id_entrenador" Type="Int32" Nullable="false" />
+    <Property Name="dia_semana" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hora_inicio" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="hora_fin" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="cupos_reservados" Type="Int32" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Entrenador" Relationship="Self.FK__HorarioCl__id_en__6A30C649" FromRole="HorarioClase" ToRole="Entrenador" />
+    <NavigationProperty Name="Servicio" Relationship="Self.FK__HorarioCl__id_se__693CA210" FromRole="HorarioClase" ToRole="Servicio" />
+    <NavigationProperty Name="Reserva" Relationship="Self.FK__Reserva__id_hora__6FE99F9F" FromRole="HorarioClase" ToRole="Reserva" />
+  </EntityType>
+  <EntityType Name="Inscripcion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <Property Name="id_membresia" Type="Int32" Nullable="false" />
+    <Property Name="fecha_inicio" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="fecha_fin" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="monto_pagado" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="metodo_pago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha_transaccion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Inscripci__id_cl__5EBF139D" FromRole="Inscripcion" ToRole="Cliente" />
+    <NavigationProperty Name="Membresia" Relationship="Self.FK__Inscripci__id_me__5FB337D6" FromRole="Inscripcion" ToRole="Membresia" />
   </EntityType>
   <EntityType Name="Membresia">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="precio" Type="Decimal" Precision="10" Scale="2" />
-    <Property Name="duracion" Type="Int32" />
-    <Property Name="id_usuario" Type="Int32" />
-    <NavigationProperty Name="Pago" Relationship="Self.FK__Pago__id_membres__6D0D32F4" FromRole="Membresia" ToRole="Pago" />
-    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Membresia__id_us__6B24EA82" FromRole="Membresia" ToRole="Usuario" />
+    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="duracion_dias" Type="Int32" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Inscripcion" Relationship="Self.FK__Inscripci__id_me__5FB337D6" FromRole="Membresia" ToRole="Inscripcion" />
   </EntityType>
-  <EntityType Name="Pago">
+  <EntityType Name="RegistroAcceso">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="monto" Type="Decimal" Precision="10" Scale="2" />
-    <Property Name="fecha" Type="DateTime" Precision="0" />
-    <Property Name="metodo_pago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="id_usuario" Type="Int32" />
-    <Property Name="id_membresia" Type="Int32" />
-    <NavigationProperty Name="Membresia" Relationship="Self.FK__Pago__id_membres__6D0D32F4" FromRole="Pago" ToRole="Membresia" />
-    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Pago__id_usuario__6E01572D" FromRole="Pago" ToRole="Usuario" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <Property Name="fecha_hora" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tipo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__RegistroA__id_cl__6477ECF3" FromRole="RegistroAcceso" ToRole="Cliente" />
   </EntityType>
   <EntityType Name="Reserva">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="fecha" Type="DateTime" Precision="0" />
-    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="id_usuario" Type="Int32" />
-    <Property Name="id_horario" Type="Int32" />
-    <NavigationProperty Name="Horario" Relationship="Self.FK__Reserva__id_hora__66603565" FromRole="Reserva" ToRole="Horario" />
-    <NavigationProperty Name="Usuario" Relationship="GimnasioModel.FK__Reserva__id_usua__6754599E" FromRole="Reserva" ToRole="Usuario" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <Property Name="id_horarioclase" Type="Int32" Nullable="false" />
+    <Property Name="fecha_reserva" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="asistio" Type="Boolean" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Reserva__id_clie__6EF57B66" FromRole="Reserva" ToRole="Cliente" />
+    <NavigationProperty Name="HorarioClase" Relationship="Self.FK__Reserva__id_hora__6FE99F9F" FromRole="Reserva" ToRole="HorarioClase" />
   </EntityType>
   <EntityType Name="Servicio">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="duracion" Type="Int32" />
-    <Property Name="capacidad_maxima" Type="Int32" />
-    <NavigationProperty Name="Horario" Relationship="GimnasioModel.FK__Horario__id_serv__6383C8BA" FromRole="Servicio" ToRole="Horario" />
+    <Property Name="capacidad_maxima" Type="Int32" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="HorarioClase" Relationship="Self.FK__HorarioCl__id_se__693CA210" FromRole="Servicio" ToRole="HorarioClase" />
   </EntityType>
-  <Association Name="FK__Asistenci__id_ho__71D1E811">
-    <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
-    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Horario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Asistencia">
-        <PropertyRef Name="id_horario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Reserva__id_hora__66603565">
-    <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
-    <End Role="Reserva" Type="Self.Reserva" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Horario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Reserva">
-        <PropertyRef Name="id_horario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Pago__id_membres__6D0D32F4">
-    <End Role="Membresia" Type="Self.Membresia" Multiplicity="0..1" />
-    <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Membresia">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Pago">
-        <PropertyRef Name="id_membresia" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityContainer Name="GimnasioEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Asistencia" EntityType="Self.Asistencia" />
-    <EntitySet Name="Entrenador" EntityType="Self.Entrenador" />
-    <EntitySet Name="Horario" EntityType="Self.Horario" />
-    <EntitySet Name="Membresia" EntityType="Self.Membresia" />
-    <EntitySet Name="Pago" EntityType="Self.Pago" />
-    <EntitySet Name="Reserva" EntityType="Self.Reserva" />
-    <EntitySet Name="Servicio" EntityType="Self.Servicio" />
-    <AssociationSet Name="FK__Asistenci__id_ho__71D1E811" Association="Self.FK__Asistenci__id_ho__71D1E811">
-      <End Role="Horario" EntitySet="Horario" />
-      <End Role="Asistencia" EntitySet="Asistencia" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Reserva__id_hora__66603565" Association="Self.FK__Reserva__id_hora__66603565">
-      <End Role="Horario" EntitySet="Horario" />
-      <End Role="Reserva" EntitySet="Reserva" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Pago__id_membres__6D0D32F4" Association="Self.FK__Pago__id_membres__6D0D32F4">
-      <End Role="Membresia" EntitySet="Membresia" />
-      <End Role="Pago" EntitySet="Pago" />
-    </AssociationSet>
-    <FunctionImport Name="spUsuarioListar" ReturnType="Collection(GimnasioModel.spUsuarioListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <AssociationSet Name="FK__Horario__id_entr__6477ECF3" Association="GimnasioModel.FK__Horario__id_entr__6477ECF3">
-      <End Role="Entrenador" EntitySet="Entrenador" />
-      <End Role="Horario" EntitySet="Horario" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Horario__id_serv__6383C8BA" Association="GimnasioModel.FK__Horario__id_serv__6383C8BA">
-      <End Role="Servicio" EntitySet="Servicio" />
-      <End Role="Horario" EntitySet="Horario" />
-    </AssociationSet>
-    <FunctionImport Name="spEntrenadorListar" ReturnType="Collection(GimnasioModel.spEntrenadorListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spUsuarioListar1" ReturnType="Collection(GimnasioModel.spUsuarioListar1_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spAsistenciaListar" ReturnType="Collection(GimnasioModel.spAsistenciaListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spHorarioListar" ReturnType="Collection(GimnasioModel.spHorarioListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spMembresiaListar" ReturnType="Collection(GimnasioModel.spMembresiaListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spPagoListar" ReturnType="Collection(GimnasioModel.spPagoListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spReservaListar" ReturnType="Collection(GimnasioModel.spReservaListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="spServicioListar" ReturnType="Collection(GimnasioModel.spServicioListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
-    <EntitySet Name="UsuarioSistema" EntityType="GimnasioModel.UsuarioSistema" />
-    <EntitySet Name="Usuario" EntityType="GimnasioModel.Usuario" />
-    <AssociationSet Name="FK__Asistenci__id_us__72C60C4A" Association="GimnasioModel.FK__Asistenci__id_us__72C60C4A">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Asistencia" EntitySet="Asistencia" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Membresia__id_us__6B24EA82" Association="GimnasioModel.FK__Membresia__id_us__6B24EA82">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Membresia" EntitySet="Membresia" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Pago__id_usuario__6E01572D" Association="GimnasioModel.FK__Pago__id_usuario__6E01572D">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Pago" EntitySet="Pago" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Reserva__id_usua__6754599E" Association="GimnasioModel.FK__Reserva__id_usua__6754599E">
-      <End Role="Usuario" EntitySet="Usuario" />
-      <End Role="Reserva" EntitySet="Reserva" />
-    </AssociationSet>
-  </EntityContainer>
-  <ComplexType Name="spUsuarioListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="correo" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="tipo" Nullable="true" MaxLength="10" />
-    <Property Type="DateTime" Name="fechaAsistencia" Nullable="true" />
-    <Property Type="String" Name="asistencia" Nullable="true" MaxLength="20" />
-    <Property Type="DateTime" Name="fechaPago" Nullable="true" />
-    <Property Type="String" Name="metodo_pago" Nullable="true" MaxLength="50" />
-    <Property Type="Decimal" Name="monto" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="String" Name="membresia" Nullable="true" MaxLength="50" />
-    <Property Type="Int32" Name="duracion" Nullable="true" />
-    <Property Type="Decimal" Name="precio" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="DateTime" Name="fechaReserva" Nullable="true" />
-    <Property Type="String" Name="estadoReserva" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="dia" Nullable="true" MaxLength="20" />
-    <Property Type="Time" Name="hora_inicio" Nullable="true" />
-    <Property Type="Time" Name="hora_fin" Nullable="true" />
-  </ComplexType>
-  <Association Name="FK__Horario__id_entr__6477ECF3">
-    <End Type="GimnasioModel.Entrenador" Role="Entrenador" Multiplicity="0..1" />
-    <End Type="GimnasioModel.Horario" Role="Horario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Entrenador">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Horario">
-        <PropertyRef Name="id_entrenador" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Horario__id_serv__6383C8BA">
-    <End Type="GimnasioModel.Servicio" Role="Servicio" Multiplicity="0..1" />
-    <End Type="GimnasioModel.Horario" Role="Horario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Servicio">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Horario">
-        <PropertyRef Name="id_servicio" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <ComplexType Name="spEntrenadorListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="telefono" Nullable="true" MaxLength="15" />
-    <Property Type="String" Name="especialidad" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="correo" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="dia" Nullable="true" MaxLength="20" />
-    <Property Type="Time" Name="hora_inicio" Nullable="true" />
-    <Property Type="Time" Name="hora_fin" Nullable="true" />
-    <Property Type="String" Name="servicio" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="255" />
-    <Property Type="Int32" Name="duracion" Nullable="true" />
-    <Property Type="Int32" Name="capacidad_maxima" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="spUsuarioListar1_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="apellido" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="correo" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="tipo" Nullable="true" MaxLength="10" />
-    <Property Type="DateTime" Name="fechaAsistencia" Nullable="true" />
-    <Property Type="String" Name="asistencia" Nullable="true" MaxLength="20" />
-    <Property Type="DateTime" Name="fechaPago" Nullable="true" />
-    <Property Type="String" Name="metodo_pago" Nullable="true" MaxLength="50" />
-    <Property Type="Decimal" Name="monto" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="String" Name="membresia" Nullable="true" MaxLength="50" />
-    <Property Type="Int32" Name="duracion" Nullable="true" />
-    <Property Type="Decimal" Name="precio" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="DateTime" Name="fechaReserva" Nullable="true" />
-    <Property Type="String" Name="estadoReserva" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="dia" Nullable="true" MaxLength="20" />
-    <Property Type="Time" Name="hora_inicio" Nullable="true" />
-    <Property Type="Time" Name="hora_fin" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="spAsistenciaListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="DateTime" Name="fecha" Nullable="true" />
-    <Property Type="String" Name="estado" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="usuario" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="dia" Nullable="true" MaxLength="20" />
-    <Property Type="Time" Name="hora_inicio" Nullable="true" />
-    <Property Type="Time" Name="hora_fin" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="spHorarioListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="dia" Nullable="true" MaxLength="20" />
-    <Property Type="Time" Name="hora_inicio" Nullable="true" />
-    <Property Type="Time" Name="hora_fin" Nullable="true" />
-    <Property Type="String" Name="servicio" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="entrenador" Nullable="true" MaxLength="50" />
-  </ComplexType>
-  <ComplexType Name="spMembresiaListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="tipo" Nullable="true" MaxLength="50" />
-    <Property Type="Decimal" Name="precio" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="Int32" Name="duracion" Nullable="true" />
-    <Property Type="String" Name="usuario" Nullable="true" MaxLength="50" />
-  </ComplexType>
-  <ComplexType Name="spPagoListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="Decimal" Name="monto" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="DateTime" Name="fecha" Nullable="true" />
-    <Property Type="String" Name="metodo_pago" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="usuario" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="membresia" Nullable="true" MaxLength="50" />
-  </ComplexType>
-  <ComplexType Name="spReservaListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="DateTime" Name="fecha" Nullable="true" />
-    <Property Type="String" Name="estado" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="usuario" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="dia" Nullable="true" MaxLength="20" />
-    <Property Type="Time" Name="hora_inicio" Nullable="true" />
-    <Property Type="Time" Name="hora_fin" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="spServicioListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="255" />
-    <Property Type="Int32" Name="duracion" Nullable="true" />
-    <Property Type="Int32" Name="capacidad_maxima" Nullable="true" />
-  </ComplexType>
   <EntityType Name="UsuarioSistema">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="contraseña" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contraseña" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="salt" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rol" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
   </EntityType>
-  <EntityType Name="Usuario">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Asistencia" Relationship="GimnasioModel.FK__Asistenci__id_us__72C60C4A" FromRole="Usuario" ToRole="Asistencia" />
-    <NavigationProperty Name="Membresia" Relationship="GimnasioModel.FK__Membresia__id_us__6B24EA82" FromRole="Usuario" ToRole="Membresia" />
-    <NavigationProperty Name="Pago" Relationship="GimnasioModel.FK__Pago__id_usuario__6E01572D" FromRole="Usuario" ToRole="Pago" />
-    <NavigationProperty Name="Reserva" Relationship="GimnasioModel.FK__Reserva__id_usua__6754599E" FromRole="Usuario" ToRole="Reserva" />
-  </EntityType>
-  <Association Name="FK__Asistenci__id_us__72C60C4A">
-    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
-    <End Type="GimnasioModel.Asistencia" Role="Asistencia" Multiplicity="*" />
+  <Association Name="FK__Inscripci__id_cl__5EBF139D">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Inscripcion" Type="Self.Inscripcion" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Usuario">
+      <Principal Role="Cliente">
         <PropertyRef Name="id" />
       </Principal>
-      <Dependent Role="Asistencia">
-        <PropertyRef Name="id_usuario" />
+      <Dependent Role="Inscripcion">
+        <PropertyRef Name="id_cliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Membresia__id_us__6B24EA82">
-    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
-    <End Type="GimnasioModel.Membresia" Role="Membresia" Multiplicity="*" />
+  <Association Name="FK__RegistroA__id_cl__6477ECF3">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="RegistroAcceso" Type="Self.RegistroAcceso" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Usuario">
+      <Principal Role="Cliente">
         <PropertyRef Name="id" />
       </Principal>
-      <Dependent Role="Membresia">
-        <PropertyRef Name="id_usuario" />
+      <Dependent Role="RegistroAcceso">
+        <PropertyRef Name="id_cliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Pago__id_usuario__6E01572D">
-    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
-    <End Type="GimnasioModel.Pago" Role="Pago" Multiplicity="*" />
+  <Association Name="FK__Reserva__id_clie__6EF57B66">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Reserva" Type="Self.Reserva" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Usuario">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Pago">
-        <PropertyRef Name="id_usuario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Reserva__id_usua__6754599E">
-    <End Type="GimnasioModel.Usuario" Role="Usuario" Multiplicity="0..1" />
-    <End Type="GimnasioModel.Reserva" Role="Reserva" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Usuario">
+      <Principal Role="Cliente">
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Reserva">
-        <PropertyRef Name="id_usuario" />
+        <PropertyRef Name="id_cliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__HorarioCl__id_en__6A30C649">
+    <End Role="Entrenador" Type="Self.Entrenador" Multiplicity="1" />
+    <End Role="HorarioClase" Type="Self.HorarioClase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Entrenador">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HorarioClase">
+        <PropertyRef Name="id_entrenador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HorarioCl__id_se__693CA210">
+    <End Role="Servicio" Type="Self.Servicio" Multiplicity="1" />
+    <End Role="HorarioClase" Type="Self.HorarioClase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HorarioClase">
+        <PropertyRef Name="id_servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reserva__id_hora__6FE99F9F">
+    <End Role="HorarioClase" Type="Self.HorarioClase" Multiplicity="1" />
+    <End Role="Reserva" Type="Self.Reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HorarioClase">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Reserva">
+        <PropertyRef Name="id_horarioclase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Inscripci__id_me__5FB337D6">
+    <End Role="Membresia" Type="Self.Membresia" Multiplicity="1" />
+    <End Role="Inscripcion" Type="Self.Inscripcion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Membresia">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Inscripcion">
+        <PropertyRef Name="id_membresia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GimnasioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Entrenador" EntityType="Self.Entrenador" />
+    <EntitySet Name="HorarioClase" EntityType="Self.HorarioClase" />
+    <EntitySet Name="Inscripcion" EntityType="Self.Inscripcion" />
+    <EntitySet Name="Membresia" EntityType="Self.Membresia" />
+    <EntitySet Name="RegistroAcceso" EntityType="Self.RegistroAcceso" />
+    <EntitySet Name="Reserva" EntityType="Self.Reserva" />
+    <EntitySet Name="Servicio" EntityType="Self.Servicio" />
+    <EntitySet Name="UsuarioSistema" EntityType="Self.UsuarioSistema" />
+    <AssociationSet Name="FK__Inscripci__id_cl__5EBF139D" Association="Self.FK__Inscripci__id_cl__5EBF139D">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Inscripcion" EntitySet="Inscripcion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RegistroA__id_cl__6477ECF3" Association="Self.FK__RegistroA__id_cl__6477ECF3">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="RegistroAcceso" EntitySet="RegistroAcceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reserva__id_clie__6EF57B66" Association="Self.FK__Reserva__id_clie__6EF57B66">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Reserva" EntitySet="Reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HorarioCl__id_en__6A30C649" Association="Self.FK__HorarioCl__id_en__6A30C649">
+      <End Role="Entrenador" EntitySet="Entrenador" />
+      <End Role="HorarioClase" EntitySet="HorarioClase" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HorarioCl__id_se__693CA210" Association="Self.FK__HorarioCl__id_se__693CA210">
+      <End Role="Servicio" EntitySet="Servicio" />
+      <End Role="HorarioClase" EntitySet="HorarioClase" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reserva__id_hora__6FE99F9F" Association="Self.FK__Reserva__id_hora__6FE99F9F">
+      <End Role="HorarioClase" EntitySet="HorarioClase" />
+      <End Role="Reserva" EntitySet="Reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Inscripci__id_me__5FB337D6" Association="Self.FK__Inscripci__id_me__5FB337D6">
+      <End Role="Membresia" EntitySet="Membresia" />
+      <End Role="Inscripcion" EntitySet="Inscripcion" />
+    </AssociationSet>
+  </EntityContainer>
 </Schema>

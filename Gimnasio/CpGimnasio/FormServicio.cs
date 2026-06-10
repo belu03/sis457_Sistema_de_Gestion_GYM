@@ -1,286 +1,252 @@
 ﻿using CadGimnasio;
 using ClnGimnasio;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
 
 namespace CpGimnasio
 {
-
     public partial class FormServicio : Form
     {
-        int idServicioSeleccionado = 0;
+        private bool esNuevo = false;
+        private int idSeleccionado = 0;
+
         public FormServicio()
         {
             InitializeComponent();
         }
-        private void CargarLista()
-        {
-            dgvLista.DataSource = null;
-            dgvLista.DataSource = ServicioCln.listar();
-            if (dgvLista.Columns["id"] != null) dgvLista.Columns["id"].Visible = false;
-        }
 
         private void FormServicio_Load(object sender, EventArgs e)
         {
-            // Limpiamos cualquier rastro previo
-            dgvLista.DataSource = null;
-            // Recargamos directamente desde la base de datos al abrir
-            dgvLista.DataSource = ServicioCln.listar();
-            // Ocultamos las columnas técnicas que no quieres mostrar
-            dgvLista.Columns["id"].Visible = false; // El ID es necesario internamente, pero oculto
-            CargarLista();
+            this.BackgroundImage = Properties.Resources.gym_fondo;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BackColor = Color.White;
+            SetLabelsTransparent();
+            pbLogo.Image = Properties.Resources.SERVICIOS;
+            AplicarEstilosVisuales();
+            ListarServicios();
+            EstadoInicialBotones();
+        }
+
+        private void SetLabelsTransparent()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Label) c.BackColor = Color.Transparent;
+                if (c is Panel || c is GroupBox) SetLabelsTransparentRecursive(c);
+            }
+        }
+        private void SetLabelsTransparentRecursive(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is Label) c.BackColor = Color.Transparent;
+                if (c.HasChildren) SetLabelsTransparentRecursive(c);
+            }
+        }
+
+        private void AplicarEstilosVisuales()
+        {
+            ConfigurarBoton(btnNuevo, Color.FromArgb(37, 99, 235));
+            ConfigurarBoton(btnGuardar, Color.FromArgb(16, 185, 129));
+            ConfigurarBoton(btnEditar, Color.FromArgb(245, 158, 11));
+            ConfigurarBoton(btnEliminar, Color.FromArgb(225, 29, 72));
+            ConfigurarBoton(btnCancelar, Color.FromArgb(75, 85, 99));
+
+            dgvLista.BackgroundColor = Color.White;
+            dgvLista.BorderStyle = BorderStyle.None;
+            dgvLista.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvLista.RowHeadersVisible = false;
+            dgvLista.EnableHeadersVisualStyles = false;
+            dgvLista.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(31, 41, 55);
+            dgvLista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvLista.ColumnHeadersHeight = 35;
+        }
+
+        private void ConfigurarBoton(Button btn, Color backColor)
+        {
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.BackColor = backColor;
+            btn.ForeColor = Color.White;
+            btn.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btn.Cursor = Cursors.Hand;
+            btn.Image = null;
+        }
+
+        private void ListarServicios(string filtro = "")
+        {
+            var lista = Repositorio<Servicio>.Listar().Where(s => s.activo == true).ToList();
+            if (!string.IsNullOrEmpty(filtro))
+                lista = lista.Where(s => s.nombre.Contains(filtro)).ToList();
+
+            dgvLista.DataSource = lista;
+            dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            if (dgvLista.Columns["id"] != null) dgvLista.Columns["id"].Visible = false;
+            if (dgvLista.Columns["activo"] != null) dgvLista.Columns["activo"].Visible = false;
+            if (dgvLista.Columns["HorarioClase"] != null) dgvLista.Columns["HorarioClase"].Visible = false;
+        }
+
+        private void EstadoInicialBotones()
+        {
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnNuevo.Enabled = true;
+            HabilitarCampos(false);
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            esNuevo = true;
+            LimpiarCampos();
+            HabilitarCampos(true);
+            btnGuardar.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnNuevo.Enabled = false;
+            txtNombre.Focus();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (!ValidarCampos()) return;
+
+            int nuevaCapacidad = int.Parse(txtCapacidad.Text.Trim());
+
+            // Validación adicional al editar: la capacidad no puede ser menor que las reservas futuras
+            if (!esNuevo)
+            {
+                DateTime hoy = DateTime.Today;
+                // Obtener todos los horarios activos de este servicio
+                var horarios = Repositorio<HorarioClase>.Listar()
+                    .Where(h => h.id_servicio == idSeleccionado && h.activo == true)
+                    .Select(h => h.id)
+                    .ToList();
+
+                if (horarios.Any())
+                {
+                    // Contar reservas confirmadas para esos horarios en fecha >= hoy
+                    int maxReservas = Repositorio<Reserva>.Listar()
+                        .Where(r => horarios.Contains(r.id_horarioclase)
+                                 && r.fecha_reserva >= hoy
+                                 && r.estado == "Confirmada")
+                        .GroupBy(r => r.id_horarioclase)
+                        .Max(g => g.Count());
+
+                    if (maxReservas > nuevaCapacidad)
+                    {
+                        MessageBox.Show(
+                            $"No se puede reducir la capacidad a {nuevaCapacidad} porque hay un horario con {maxReservas} reservas confirmadas.\n" +
+                            "Primero cancele o reubique las reservas excedentes.",
+                            "Capacidad insuficiente",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
+
+            if (esNuevo)
+            {
+                var serv = new Servicio
+                {
+                    nombre = txtNombre.Text.Trim(),
+                    descripcion = txtDescripcion.Text.Trim(),
+                    capacidad_maxima = nuevaCapacidad,
+                    activo = true
+                };
+                Repositorio<Servicio>.Crear(serv);
+            }
+            else
+            {
+                var serv = Repositorio<Servicio>.ObtenerUno(idSeleccionado);
+                serv.nombre = txtNombre.Text.Trim();
+                serv.descripcion = txtDescripcion.Text.Trim();
+                serv.capacidad_maxima = nuevaCapacidad;
+                Repositorio<Servicio>.Modificar(serv);
+            }
+
+            ListarServicios();
+            CancelarOperacion();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (idSeleccionado == 0) return;
+            esNuevo = false;
+            var s_db = Repositorio<Servicio>.ObtenerUno(idSeleccionado);
+            txtNombre.Text = s_db.nombre;
+            txtDescripcion.Text = s_db.descripcion;
+            txtCapacidad.Text = s_db.capacidad_maxima.ToString();
+            HabilitarCampos(true);
+            btnGuardar.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnNuevo.Enabled = false;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (idSeleccionado == 0) return;
+            if (MessageBox.Show("¿Eliminar este servicio?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                var s_db = Repositorio<Servicio>.ObtenerUno(idSeleccionado);
+                s_db.activo = false;
+                Repositorio<Servicio>.Modificar(s_db);
+                ListarServicios();
+                CancelarOperacion();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e) => CancelarOperacion();
+
+        private void CancelarOperacion()
+        {
+            esNuevo = false;
+            idSeleccionado = 0;
+            LimpiarCampos();
+            EstadoInicialBotones();
+        }
+
+        private void LimpiarCampos()
+        {
+            txtNombre.Clear();
+            txtDescripcion.Clear();
+            txtCapacidad.Clear();
+            erpServicio.Clear();
+        }
+
+        private void HabilitarCampos(bool habilitar)
+        {
+            txtNombre.Enabled = habilitar;
+            txtDescripcion.Enabled = habilitar;
+            txtCapacidad.Enabled = habilitar;
+        }
+
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+            erpServicio.Clear();
+            if (string.IsNullOrWhiteSpace(txtNombre.Text)) { erpServicio.SetError(txtNombre, "Requerido"); ok = false; }
+            if (!int.TryParse(txtCapacidad.Text, out _)) { erpServicio.SetError(txtCapacidad, "Debe ser un número válido"); ok = false; }
+            return ok;
         }
 
         private void dgvLista_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                var fila = dgvLista.Rows[e.RowIndex].DataBoundItem as Horario;
-                if (fila != null)
-                {
-                    //cboServicio.SelectedValue = fila.id_servicio;
-                    //cboEntrenador.SelectedValue = fila.id_entrenador;
-                    // ... resto de tus asignaciones
-                }
-            }
-        }
-        private void dgvLista_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            // Verificamos si estamos en la columna que quieres mostrar
-            if (dgvLista.Columns[e.ColumnIndex].Name == "servicio" && e.RowIndex >= 0)
-            {
-                // Obtenemos el objeto Horario de la fila actual
-                var fila = dgvLista.Rows[e.RowIndex].DataBoundItem as Horario;
-                if (fila != null && fila.Servicio != null)
-                {
-                    // AQUÍ: Cambia 'nombre' por el nombre real de la propiedad en tu clase Servicio
-                    // (Si no sabes cuál es, busca en tu entidad Servicio la propiedad de texto)
-                    e.Value = fila.Servicio.nombre;
-                    e.FormattingApplied = true;
-                }
-            }
-
-            if (dgvLista.Columns[e.ColumnIndex].Name == "entrenador" && e.RowIndex >= 0)
-            {
-                var fila = dgvLista.Rows[e.RowIndex].DataBoundItem as Horario;
-                if (fila != null && fila.Entrenador != null)
-                {
-                    e.Value = fila.Entrenador.nombre; // Cambia 'nombre' si es necesario
-                    e.FormattingApplied = true;
-                }
-            }
-        }
-        private void GuardarServicio_Click(object sender, EventArgs e)
-        {
-            // 1. Ejecutamos la validación
-            if (!validar())
-            {
-                // Si validar() devuelve false, el "!" lo convierte en true
-                // y entramos aquí para detener todo.
-                MessageBox.Show("Por favor, corrija los errores en el formulario antes de guardar.", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // <--- ESTE "RETURN" ES LA CLAVE. Detiene la ejecución.
-            }
-
-            // 2. Si el código llega hasta aquí, es porque la validación fue exitosa.
-            Servicio servicio = new Servicio();
-            servicio.nombre = txtNombre.Text;
-            servicio.descripcion = txtDescripcion.Text;
-            if (int.TryParse(txtDuracion.Text, out int duracionConvertida))
-            {
-                // Si la conversión tuvo éxito, asignamos el valor
-                servicio.duracion = duracionConvertida;
-            }
-            else
-            {
-                // Si el usuario escribió letras en lugar de números
-                MessageBox.Show("Por favor, ingrese un valor numérico válido en la duración.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Detenemos el proceso para evitar errores
-            }
-            if (int.TryParse(txtCapacidadM.Text, out int capacidad_maximaConvertida))
-            {
-                // Si la conversión tuvo éxito, asignamos el valor
-                servicio.capacidad_maxima = capacidad_maximaConvertida;
-            }
-            else
-            {
-                // Si el usuario escribió letras en lugar de números
-                MessageBox.Show("Por favor, ingrese un valor numérico válido en la capacidad máxima.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Detenemos el proceso para evitar errores
-            }
-
-            int resultado = ServicioCln.crear(servicio);
-
-            if (resultado > 0)
-            {
-                MessageBox.Show("Guardado con éxito");
-                dgvLista.DataSource = ServicioCln.listar();
-                btnNuevo_Click(null, null);
+                idSeleccionado = Convert.ToInt32(dgvLista.Rows[e.RowIndex].Cells["id"].Value);
+                btnEditar.Enabled = true;
+                btnEliminar.Enabled = true;
             }
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            if (idServicioSeleccionado == 0)
-            {
-                MessageBox.Show("Por favor, seleccione un servicio de la lista.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            DialogResult confirmacion = MessageBox.Show("¿Está segura de que desea eliminar este servicio?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (confirmacion == DialogResult.Yes)
-            {
-                int eliminado = ServicioCln.eliminar(idServicioSeleccionado);
-
-                if (eliminado > 0)
-                {
-                    MessageBox.Show("Servicio eliminado exitosamente.");
-                    dgvLista.DataSource = ServicioCln.listar();
-                    btnNuevo_Click(null, null); // Limpiar formulario
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo eliminar. El Servicio podría tener registros relacionados (como asistencias).");
-                }
-            }
-        }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            // Cambiamos el tamaño del formulario para el nuevo registro
-            this.Size = new Size(1476, 874);
-
-            // Reiniciamos los valores
-            idServicioSeleccionado = 0;
-            txtNombre.Clear();
-            txtDescripcion.Clear();
-            txtDuracion.Clear();
-            txtCapacidadM.Clear();
-
-            // Ponemos el cursor listo para escribir
-            txtNombre.Focus();
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            if (idServicioSeleccionado == 0)
-            {
-                MessageBox.Show("Seleccione un servicio de la lista para editar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            DialogResult confirmacion = MessageBox.Show("¿Desea guardar los cambios?", "Confirmar edición", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (confirmacion == DialogResult.Yes)
-            {
-                // AUDITORÍA: Usamos la capa de negocio, no el contexto directo aquí
-                // Esto garantiza que la lógica de guardado sea consistente en todo el sistema
-                var servicio = new Servicio();
-                servicio.id = idServicioSeleccionado;
-                servicio.nombre = txtNombre.Text;
-                servicio.descripcion = txtDescripcion.Text;
-                if (int.TryParse(txtDuracion.Text, out int duracionConvertida))
-                {
-                    // Si la conversión tuvo éxito, asignamos el valor
-                    servicio.duracion = duracionConvertida;
-                }
-                else
-                {
-                    // Si el usuario escribió letras en lugar de números
-                    MessageBox.Show("Por favor, ingrese un valor numérico válido en la duración.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return; // Detenemos el proceso para evitar errores
-                }
-                if (int.TryParse(txtCapacidadM.Text, out int capacidad_maximaConvertida))
-                {
-                    // Si la conversión tuvo éxito, asignamos el valor
-                    servicio.capacidad_maxima = capacidad_maximaConvertida;
-                }
-                else
-                {
-                    // Si el usuario escribió letras en lugar de números
-                    MessageBox.Show("Por favor, ingrese un valor numérico válido en la capacidad máxima.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return; // Detenemos el proceso para evitar errores
-                }
-
-                // Llamamos a nuestra lógica probada
-                int resultado = ServicioCln.modificar(servicio);
-
-                if (resultado > 0)
-                {
-                    MessageBox.Show("Servicio editado con éxito.");
-
-                    // FORZAR REFRESH
-                    CargarLista();
-                    btnNuevo_Click(null, null);
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo guardar el cambio. El servicio podría haber sido eliminado o el ID es incorrecto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            string filtro = txtBuscar.Text;
-
-            if (string.IsNullOrWhiteSpace(filtro))
-            {
-                // Si está vacío, usamos el listar normal que devuelve objetos tipo Servicio
-                dgvLista.DataSource = ServicioCln.listar();
-            }
-            else
-            {
-                // Si tiene texto, usamos el que devuelve spServicioListar1_Result
-                dgvLista.DataSource = ServicioCln.listar(filtro);
-            }
-        }
-        private bool validar()
-        {
-            bool esValido = true;
-            erpServicio.Clear();
-
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
-            {
-                erpServicio.SetError(txtNombre, "El nombre es obligatorio");
-                esValido = false;
-            }
-            if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
-            {
-                erpServicio.SetError(txtDescripcion, "La descripción es obligatoria");
-                esValido = false;
-            }
-
-            // AQUÍ REALIZAMOS EL CAMBIO:
-            // Ya no validamos correo, ahora validamos teléfono
-            if (string.IsNullOrWhiteSpace(txtCapacidadM.Text))
-            {
-                erpServicio.SetError(txtCapacidadM, "La capacidad máxima es obligatoria");
-                esValido = false;
-            }
-
-            // Opcional: Validar que el teléfono solo tenga números (Control de calidad)
-            if (!System.Text.RegularExpressions.Regex.IsMatch(txtCapacidadM.Text, @"^\d+$"))
-            {
-                erpServicio.SetError(txtCapacidadM, "La capacidad máxima solo debe contener números");
-                esValido = false;
-            }
-
-            return esValido;
-        }
-
-        private void btnHorario_Click(object sender, EventArgs e)
-        {
-            new FormHorario().Show();
-        }
+        private void txtBuscar_TextChanged(object sender, EventArgs e) => ListarServicios(txtBuscar.Text.Trim());
     }
 }

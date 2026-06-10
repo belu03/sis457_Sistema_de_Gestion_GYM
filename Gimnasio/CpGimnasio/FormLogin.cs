@@ -1,12 +1,6 @@
 ﻿using ClnGimnasio;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CpGimnasio
@@ -18,41 +12,57 @@ namespace CpGimnasio
             InitializeComponent();
         }
 
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.gym_login;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            pbLogo.Image = Properties.Resources.gym_logo_2;
+            pbLogo.SizeMode = PictureBoxSizeMode.Zoom;
+
+            btnIngresar.FlatStyle = FlatStyle.Flat;
+            btnIngresar.FlatAppearance.BorderSize = 0;
+            btnIngresar.BackColor = Color.FromArgb(37, 99, 235);
+            btnIngresar.ForeColor = Color.White;
+            btnIngresar.Cursor = Cursors.Hand;
+            btnIngresar.Image = null;
+
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.BackColor = Color.FromArgb(225, 29, 72);
+            btnSalir.ForeColor = Color.White;
+            btnSalir.Cursor = Cursors.Hand;
+            btnSalir.Image = null;
+
+            SetLabelsTransparent();
+        }
+
+        private void SetLabelsTransparent()
+        {
+            foreach (Control c in this.Controls)
+                if (c is Label) c.BackColor = Color.Transparent;
+        }
+
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            // 1. Obtenemos lo que la recepcionista escribió
-            string usuario = txtUsuarioS.Text.Trim();
-            string contrasena = txtContraseña.Text.Trim();
-
-            // 2. Validamos que no deje los campos vacíos
-            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contrasena))
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text))
             {
-                MessageBox.Show("Por favor, ingrese el usuario y la contraseña.", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ingrese usuario y contraseña", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            // 3. Llamamos a nuestra capa de negocio
-            var usuarioLogueado = UsuarioSistemaCln.ValidarLogin(usuario, contrasena);
-
-            // 4. Verificamos el resultado
-            if (usuarioLogueado != null)
+            var usuarioValido = AuthCln.ValidarLogin(txtUsuario.Text.Trim(), txtContraseña.Text.Trim());
+            if (usuarioValido != null)
             {
-                MessageBox.Show($"¡Bienvenido(a) al sistema, {usuarioLogueado.nombre}!", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Abrimos el menú principal (Asegúrate de tener un Form llamado FormPrincipal)
-                FormPrincipal formPrincipal = new FormPrincipal();
-                formPrincipal.Show();
-
-                // Ocultamos la ventana de Login
+                new FormPrincipal(usuarioValido.nombre_usuario, usuarioValido.rol).Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos. Intente nuevamente.", "Error de Acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtContraseña.Clear(); // Limpiamos el campo respetando la ñ
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtContraseña.Clear();
                 txtContraseña.Focus();
             }
-         
         }
+
+        private void btnSalir_Click(object sender, EventArgs e) => Application.Exit();
     }
 }

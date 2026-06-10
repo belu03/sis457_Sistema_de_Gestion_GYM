@@ -2,130 +2,116 @@
 {
     partial class FormLogin
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblContraseña;
+        private System.Windows.Forms.PictureBox pbLogo;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            this.txtUsuarioS = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
-            this.lblUsuarioS = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtUsuarioS
-            // 
-            this.txtUsuarioS.Location = new System.Drawing.Point(224, 213);
-            this.txtUsuarioS.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUsuarioS.Name = "txtUsuarioS";
-            this.txtUsuarioS.Size = new System.Drawing.Size(167, 20);
-            this.txtUsuarioS.TabIndex = 0;
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Location = new System.Drawing.Point(224, 241);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(167, 20);
-            this.txtContraseña.TabIndex = 1;
-            // 
-            // btnIngresar
-            // 
-            this.btnIngresar.BackColor = System.Drawing.Color.DarkRed;
-            this.btnIngresar.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Image = global::CpGimnasio.Properties.Resources.ingresar_blanco;
-            this.btnIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIngresar.Location = new System.Drawing.Point(179, 274);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(155, 52);
-            this.btnIngresar.TabIndex = 2;
-            this.btnIngresar.Text = "Iniciar Sesión";
-            this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
-            // 
-            // lblUsuarioS
-            // 
-            this.lblUsuarioS.AutoSize = true;
-            this.lblUsuarioS.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuarioS.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioS.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUsuarioS.Location = new System.Drawing.Point(152, 209);
-            this.lblUsuarioS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUsuarioS.Name = "lblUsuarioS";
-            this.lblUsuarioS.Size = new System.Drawing.Size(68, 26);
-            this.lblUsuarioS.TabIndex = 3;
-            this.lblUsuarioS.Text = "Usario";
-            // 
+
+            // pbLogo
+            this.pbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogo.Location = new System.Drawing.Point(75, 20);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(200, 100);
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+
+            // lblTitulo
+            this.lblTitulo.Text = "ACCESO AL SISTEMA";
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 130);
+            this.lblTitulo.Size = new System.Drawing.Size(350, 40);
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+            // lblUsuario
+            this.lblUsuario.Text = "Usuario:";
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Location = new System.Drawing.Point(50, 190);
+            this.lblUsuario.Size = new System.Drawing.Size(80, 20);
+
+            // txtUsuario
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtUsuario.Location = new System.Drawing.Point(50, 215);
+            this.txtUsuario.Size = new System.Drawing.Size(250, 25);
+
             // lblContraseña
-            // 
-            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Text = "Contraseña:";
+            this.lblContraseña.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblContraseña.ForeColor = System.Drawing.Color.White;
             this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
-            this.lblContraseña.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblContraseña.Location = new System.Drawing.Point(106, 235);
-            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(114, 26);
-            this.lblContraseña.TabIndex = 4;
-            this.lblContraseña.Text = "Contraseña";
-            // 
+            this.lblContraseña.Location = new System.Drawing.Point(50, 255);
+            this.lblContraseña.Size = new System.Drawing.Size(100, 20);
+
+            // txtContraseña
+            this.txtContraseña.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtContraseña.Location = new System.Drawing.Point(50, 280);
+            this.txtContraseña.Size = new System.Drawing.Size(250, 25);
+            this.txtContraseña.PasswordChar = '*';
+
+            // btnIngresar
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnIngresar.Location = new System.Drawing.Point(50, 330);
+            this.btnIngresar.Size = new System.Drawing.Size(120, 45);
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+
+            // btnSalir
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSalir.Location = new System.Drawing.Point(180, 330);
+            this.btnSalir.Size = new System.Drawing.Size(120, 45);
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+
             // FormLogin
-            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.BackgroundImage = global::CpGimnasio.Properties.Resources.gym_login;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(514, 337);
+            this.ClientSize = new System.Drawing.Size(350, 420);
+            this.Controls.Add(this.pbLogo);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
-            this.Controls.Add(this.lblUsuarioS);
-            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtContraseña);
-            this.Controls.Add(this.txtUsuarioS);
-            this.ForeColor = System.Drawing.SystemColors.Control;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormLogin";
+            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.btnSalir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GYM LA PLATA";
+            this.Text = "Login - Gimnasio";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
-
-        #endregion
-
-        private System.Windows.Forms.TextBox txtUsuarioS;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Label lblUsuarioS;
-        private System.Windows.Forms.Label lblContraseña;
     }
 }

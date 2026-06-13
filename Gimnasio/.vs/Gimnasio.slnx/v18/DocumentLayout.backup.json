@@ -1,81 +1,88 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\",
+  "WorkspaceRootPath": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|d:\\sis 457 t\\sis457_sistema_de_gestion_gym\\gimnasio\\clngimnasio\\authcln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|solutionrelative:clngimnasio\\authcln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SIS 457 T\\Gimnasio\\Gimnasio\\ddl_dml_gimnasio.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\formusuariosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formusuariosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\formregistroacceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formregistroacceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\ultimo intento\\sis457_sistema_de_gestion_gym\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D31E03D-45EE-49E3-AB2D-34731E1EF012}|CadGimnasio\\CadGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cadgimnasio\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{7D31E03D-45EE-49E3-AB2D-34731E1EF012}|CadGimnasio\\CadGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cadgimnasio\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{7D31E03D-45EE-49E3-AB2D-34731E1EF012}|CadGimnasio\\CadGimnasio.csproj|solutionrelative:cadgimnasio\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formusuariosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formusuariosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formregistroacceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formregistroacceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formentrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formentrenador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\formentrenador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\formentrenador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -131,241 +138,253 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "FormPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormPrincipal.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "CpGimnasio\\FormPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:07:16.213Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormInscripcion.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FormInscripcion.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs",
-              "RelativeToolTip": "CpGimnasio\\FormInscripcion.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAA9wNkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:09:23.291Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormInscripcion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FormInscripcion.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FormInscripcion.cs [Dise\u00F1o]",
+              "Title": "AuthCln.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\AuthCln.cs",
+              "RelativeDocumentMoniker": "ClnGimnasio\\AuthCln.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\AuthCln.cs",
+              "RelativeToolTip": "ClnGimnasio\\AuthCln.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:09:19.882Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-13T19:39:00.974Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormAgenda.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAgenda.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FormAgenda.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAgenda.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FormAgenda.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:09:15.466Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "FormUsuarioSistema.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuarioSistema.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuarioSistema.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormUsuarioSistema.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuarioSistema.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuarioSistema.cs [Dise\u00F1o]",
               "RelativeToolTip": "CpGimnasio\\FormUsuarioSistema.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:09:12.225Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-10T21:09:12.225Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormHorarioClase.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FormHorarioClase.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FormHorarioClase.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:01:10.075Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "Title": "Modelo.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.edmx",
+              "RelativeDocumentMoniker": "CadGimnasio\\Modelo.edmx",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.edmx [Diagram1]",
+              "RelativeToolTip": "CadGimnasio\\Modelo.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-05-31T09:25:27.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 1,
+              "Title": "ddl_dml_gimnasio.sql",
+              "DocumentMoniker": "D:\\SIS 457 T\\Gimnasio\\Gimnasio\\ddl_dml_gimnasio.sql",
+              "RelativeDocumentMoniker": "..\\..\\Gimnasio\\Gimnasio\\ddl_dml_gimnasio.sql",
+              "ToolTip": "D:\\SIS 457 T\\Gimnasio\\Gimnasio\\ddl_dml_gimnasio.sql",
+              "RelativeToolTip": "..\\..\\Gimnasio\\Gimnasio\\ddl_dml_gimnasio.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-13T19:37:36.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormAgenda.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAgenda.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FormAgenda.cs",
+              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAgenda.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAgenda.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T21:09:15.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormInscripcion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FormInscripcion.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpGimnasio\\FormInscripcion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T21:09:19.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormInscripcion.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FormInscripcion.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormInscripcion.cs",
+              "RelativeToolTip": "CpGimnasio\\FormInscripcion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T21:09:23.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormHorarioClase.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FormHorarioClase.cs",
+              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T21:01:10.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "HorarioCln.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioCln.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioCln.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioCln.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioCln.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioCln.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioCln.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T03:36:05.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "FormEntrenador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormEntrenador.cs",
               "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FormEntrenador.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T02:53:14.442Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-01T02:53:14.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "FormHorarioClase.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormHorarioClase.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorarioClase.cs",
               "RelativeToolTip": "CpGimnasio\\FormHorarioClase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:08:22.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-10T21:08:22.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "FormReserva.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:07:48.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "FormServicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormServicio.cs",
               "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FormServicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T02:07:59.607Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-01T02:07:59.607Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "FormRegistroAcceso.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormRegistroAcceso.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormRegistroAcceso.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormRegistroAcceso.cs",
               "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormRegistroAcceso.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FormRegistroAcceso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormRegistroAcceso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T21:08:39.401Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-10T21:08:39.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "FormPago.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T03:19:09.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Modelo.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.edmx",
-              "RelativeDocumentMoniker": "CadGimnasio\\Modelo.edmx",
-              "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.edmx [Diagram1]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2026-05-31T09:25:27.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "FormReserva.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormReserva.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T03:25:09.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "FormAsistencia.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAEwC8AAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:19:50.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T03:19:50.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "FormHorario.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:57:20.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "FormAsistencia.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormAsistencia.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:08:43.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "FormMembresia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormMembresia.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:07:00.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "FormPrincipal.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormPrincipal.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPrincipal.cs",
               "RelativeToolTip": "CpGimnasio\\FormPrincipal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -373,23 +392,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "FormPago.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormPago.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAvwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T03:01:14.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FormMembresia.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormMembresia.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormMembresia.cs",
               "RelativeToolTip": "CpGimnasio\\FormMembresia.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAvwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -397,109 +416,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "FormServicio.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormServicio.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormServicio.cs",
               "RelativeToolTip": "CpGimnasio\\FormServicio.cs",
               "ViewState": "AgIAAP4AAAAAAAAAAAAtwBsBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T02:55:31.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T02:55:31.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "FormUsuario.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAswKYAAAAJAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T02:15:31.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T02:15:31.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "FormUsuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T03:09:26.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "FormHorario.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.cs",
               "ViewState": "AgIAADIBAAAAAAAAAAAawEoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:58:50.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FormEntrenador.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormEntrenador.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.cs",
               "RelativeToolTip": "CpGimnasio\\FormEntrenador.cs",
               "ViewState": "AgIAAOAAAAAAAAAAAIA7wPcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T02:53:58.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T02:53:58.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "FormUsuario.Designer.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.Designer.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.Designer.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.Designer.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.Designer.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormUsuario.Designer.cs",
               "ViewState": "AgIAAFcBAAAAAAAAAAAtwGIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:44:20.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "FormHorario.Designer.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.Designer.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.Designer.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.Designer.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.Designer.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormHorario.Designer.cs",
               "ViewState": "AgIAAKEAAAAAAAAAAAAtwLcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-31T20:10:38.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "EntrenadorCln.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwFYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-31T16:33:07.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\Program.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\Program.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\Program.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\Program.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\Program.cs",
               "RelativeToolTip": "CpGimnasio\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -507,36 +522,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "FormEntrenador.Designer.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.Designer.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.Designer.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormEntrenador.Designer.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.Designer.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormEntrenador.Designer.cs",
               "RelativeToolTip": "CpGimnasio\\FormEntrenador.Designer.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAtwD0AAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T16:26:22.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T16:26:22.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "UsuarioSistemaCln.cs",
               "DocumentMoniker": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\UsuarioSistemaCln.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\UsuarioSistemaCln.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\UsuarioSistemaCln.cs",
               "ToolTip": "D:\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\UsuarioSistemaCln.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\UsuarioSistemaCln.cs",
+              "RelativeToolTip": "..\\..\\..\\3ER INTENTO\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\UsuarioSistemaCln.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-31T09:39:14.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FormLogin.Designer.cs",
-              "DocumentMoniker": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormLogin.Designer.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormLogin.Designer.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FormLogin.Designer.cs",
-              "ToolTip": "D:\\ULTIMO INTENTO\\sis457_Sistema_de_Gestion_GYM\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormLogin.Designer.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FormLogin.Designer.cs",
               "RelativeToolTip": "CpGimnasio\\FormLogin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

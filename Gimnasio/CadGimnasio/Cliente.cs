@@ -28,8 +28,9 @@ namespace CadGimnasio
         public string apellido { get; set; }
         public string telefono { get; set; }
         public string correo { get; set; }
-        public System.DateTime fecha_registro { get; set; }
-        public bool activo { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Inscripcion> Inscripcion { get; set; }

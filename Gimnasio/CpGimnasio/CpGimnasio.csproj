@@ -36,6 +36,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.Win.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Ribbon.2, Version=2.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.Ribbon.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -47,6 +52,8 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,95 +65,119 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAgenda.cs">
+    <Compile Include="EstilosUI.cs" />
+    <Compile Include="FrmAutenticacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAgenda.Designer.cs">
-      <DependentUpon>FormAgenda.cs</DependentUpon>
+    <Compile Include="FrmAutenticacion.Designer.cs">
+      <DependentUpon>FrmAutenticacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEntrenador.cs">
+    <Compile Include="FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEntrenador.Designer.cs">
-      <DependentUpon>FormEntrenador.cs</DependentUpon>
+    <Compile Include="FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormHorarioClase.cs">
+    <Compile Include="FrmEntrenador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHorarioClase.Designer.cs">
-      <DependentUpon>FormHorarioClase.cs</DependentUpon>
+    <Compile Include="FrmEntrenador.Designer.cs">
+      <DependentUpon>FrmEntrenador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInscripcion.cs">
+    <Compile Include="FrmHorarioClase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormInscripcion.Designer.cs">
-      <DependentUpon>FormInscripcion.cs</DependentUpon>
+    <Compile Include="FrmHorarioClase.Designer.cs">
+      <DependentUpon>FrmHorarioClase.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="FrmInscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <Compile Include="FrmInscripcion.Designer.cs">
+      <DependentUpon>FrmInscripcion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMembresia.cs">
+    <Compile Include="FrmMembresia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMembresia.Designer.cs">
-      <DependentUpon>FormMembresia.cs</DependentUpon>
+    <Compile Include="FrmMembresia.Designer.cs">
+      <DependentUpon>FrmMembresia.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipal.cs">
+    <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistroAcceso.cs">
+    <Compile Include="FrmRegistroAcceso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistroAcceso.Designer.cs">
-      <DependentUpon>FormRegistroAcceso.cs</DependentUpon>
+    <Compile Include="FrmRegistroAcceso.Designer.cs">
+      <DependentUpon>FrmRegistroAcceso.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormServicio.cs">
+    <Compile Include="FrmReporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormServicio.Designer.cs">
-      <DependentUpon>FormServicio.cs</DependentUpon>
+    <Compile Include="FrmReporte.Designer.cs">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUsuarioSistema.cs">
+    <Compile Include="FrmReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUsuarioSistema.Designer.cs">
-      <DependentUpon>FormUsuarioSistema.cs</DependentUpon>
+    <Compile Include="FrmReserva.Designer.cs">
+      <DependentUpon>FrmReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicio.Designer.cs">
+      <DependentUpon>FrmServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioSistema.Designer.cs">
+      <DependentUpon>FrmUsuarioSistema.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAgenda.resx">
-      <DependentUpon>FormAgenda.cs</DependentUpon>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="FrmAutenticacion.resx">
+      <DependentUpon>FrmAutenticacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEntrenador.resx">
-      <DependentUpon>FormEntrenador.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHorarioClase.resx">
-      <DependentUpon>FormHorarioClase.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEntrenador.resx">
+      <DependentUpon>FrmEntrenador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInscripcion.resx">
-      <DependentUpon>FormInscripcion.cs</DependentUpon>
+    <EmbeddedResource Include="FrmHorarioClase.resx">
+      <DependentUpon>FrmHorarioClase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmInscripcion.resx">
+      <DependentUpon>FrmInscripcion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMembresia.resx">
-      <DependentUpon>FormMembresia.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMembresia.resx">
+      <DependentUpon>FrmMembresia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistroAcceso.resx">
-      <DependentUpon>FormRegistroAcceso.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormServicio.resx">
-      <DependentUpon>FormServicio.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistroAcceso.resx">
+      <DependentUpon>FrmRegistroAcceso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUsuarioSistema.resx">
-      <DependentUpon>FormUsuarioSistema.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReporte.resx">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReserva.resx">
+      <DependentUpon>FrmReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicio.resx">
+      <DependentUpon>FrmServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioSistema.resx">
+      <DependentUpon>FrmUsuarioSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

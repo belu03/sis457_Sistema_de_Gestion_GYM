@@ -54,9 +54,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthCln.cs" />
+    <Compile Include="ClienteCln.cs" />
+    <Compile Include="EntrenadorCln.cs" />
+    <Compile Include="HorarioClaseCln.cs" />
+    <Compile Include="InscripcionCln.cs" />
+    <Compile Include="MembresiaCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorio.cs" />
+    <Compile Include="RegistroAccesoCln.cs" />
+    <Compile Include="ReporteCln.cs" />
+    <Compile Include="ReservaCln.cs" />
+    <Compile Include="ServicioCln.cs" />
+    <Compile Include="UsuarioSistemaCln.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

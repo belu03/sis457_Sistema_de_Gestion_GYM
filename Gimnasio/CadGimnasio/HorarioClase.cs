@@ -27,7 +27,9 @@ namespace CadGimnasio
         public System.TimeSpan hora_inicio { get; set; }
         public System.TimeSpan hora_fin { get; set; }
         public int cupos_reservados { get; set; }
-        public bool activo { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         public virtual Entrenador Entrenador { get; set; }
         public virtual Servicio Servicio { get; set; }

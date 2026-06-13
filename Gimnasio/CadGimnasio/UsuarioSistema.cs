@@ -19,6 +19,8 @@ namespace CadGimnasio
         public string contraseña { get; set; }
         public string salt { get; set; }
         public string rol { get; set; }
-        public bool activo { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     }
 }

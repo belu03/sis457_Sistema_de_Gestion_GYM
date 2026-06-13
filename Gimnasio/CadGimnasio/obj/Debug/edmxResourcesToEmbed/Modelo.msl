@@ -10,8 +10,9 @@
           <ScalarProperty Name="apellido" ColumnName="apellido" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="correo" ColumnName="correo" />
-          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
-          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -23,7 +24,9 @@
           <ScalarProperty Name="apellido" ColumnName="apellido" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="especialidad" ColumnName="especialidad" />
-          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -37,7 +40,9 @@
           <ScalarProperty Name="hora_inicio" ColumnName="hora_inicio" />
           <ScalarProperty Name="hora_fin" ColumnName="hora_fin" />
           <ScalarProperty Name="cupos_reservados" ColumnName="cupos_reservados" />
-          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -52,6 +57,9 @@
           <ScalarProperty Name="monto_pagado" ColumnName="monto_pagado" />
           <ScalarProperty Name="metodo_pago" ColumnName="metodo_pago" />
           <ScalarProperty Name="fecha_transaccion" ColumnName="fecha_transaccion" />
+          <ScalarProperty Name="estado_inscripcion" ColumnName="estado_inscripcion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -63,7 +71,9 @@
           <ScalarProperty Name="tipo" ColumnName="tipo" />
           <ScalarProperty Name="precio" ColumnName="precio" />
           <ScalarProperty Name="duracion_dias" ColumnName="duracion_dias" />
-          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -74,6 +84,9 @@
           <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
           <ScalarProperty Name="fecha_hora" ColumnName="fecha_hora" />
           <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -85,6 +98,9 @@
           <ScalarProperty Name="id_horarioclase" ColumnName="id_horarioclase" />
           <ScalarProperty Name="fecha_reserva" ColumnName="fecha_reserva" />
           <ScalarProperty Name="asistio" ColumnName="asistio" />
+          <ScalarProperty Name="estado_reserva" ColumnName="estado_reserva" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -96,7 +112,9 @@
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="descripcion" ColumnName="descripcion" />
           <ScalarProperty Name="capacidad_maxima" ColumnName="capacidad_maxima" />
-          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -108,9 +126,163 @@
           <ScalarProperty Name="contraseña" ColumnName="contraseña" />
           <ScalarProperty Name="salt" ColumnName="salt" />
           <ScalarProperty Name="rol" ColumnName="rol" />
-          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="paClienteListar" FunctionName="GimnasioModel.Store.paClienteListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paClienteListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paEntrenadorListar" FunctionName="GimnasioModel.Store.paEntrenadorListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paEntrenadorListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="especialidad" ColumnName="especialidad" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paInscripcionListar" FunctionName="GimnasioModel.Store.paInscripcionListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paInscripcionListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_membresia" ColumnName="id_membresia" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="tipo_membresia" ColumnName="tipo_membresia" />
+          <ScalarProperty Name="fecha_inicio" ColumnName="fecha_inicio" />
+          <ScalarProperty Name="fecha_fin" ColumnName="fecha_fin" />
+          <ScalarProperty Name="monto_pagado" ColumnName="monto_pagado" />
+          <ScalarProperty Name="metodo_pago" ColumnName="metodo_pago" />
+          <ScalarProperty Name="estado_inscripcion" ColumnName="estado_inscripcion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paMembresiaListar" FunctionName="GimnasioModel.Store.paMembresiaListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paMembresiaListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="duracion_dias" ColumnName="duracion_dias" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paServicioListar" FunctionName="GimnasioModel.Store.paServicioListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paServicioListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="capacidad_maxima" ColumnName="capacidad_maxima" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paRegistroAccesoListar" FunctionName="GimnasioModel.Store.paRegistroAccesoListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paRegistroAccesoListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="fecha_hora" ColumnName="fecha_hora" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paHorarioClaseListar" FunctionName="GimnasioModel.Store.paHorarioClaseListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paHorarioClaseListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_servicio" ColumnName="id_servicio" />
+          <ScalarProperty Name="id_entrenador" ColumnName="id_entrenador" />
+          <ScalarProperty Name="servicio" ColumnName="servicio" />
+          <ScalarProperty Name="entrenador" ColumnName="entrenador" />
+          <ScalarProperty Name="dia_semana" ColumnName="dia_semana" />
+          <ScalarProperty Name="hora_inicio" ColumnName="hora_inicio" />
+          <ScalarProperty Name="hora_fin" ColumnName="hora_fin" />
+          <ScalarProperty Name="cupos_reservados" ColumnName="cupos_reservados" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReservaListar" FunctionName="GimnasioModel.Store.paReservaListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paReservaListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_horarioclase" ColumnName="id_horarioclase" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="clase" ColumnName="clase" />
+          <ScalarProperty Name="fecha_reserva" ColumnName="fecha_reserva" />
+          <ScalarProperty Name="asistio" ColumnName="asistio" />
+          <ScalarProperty Name="estado_reserva" ColumnName="estado_reserva" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paUsuarioSistemaListar" FunctionName="GimnasioModel.Store.paUsuarioSistemaListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paUsuarioSistemaListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteIngresos" FunctionName="GimnasioModel.Store.paReporteIngresos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GimnasioModel.paReporteIngresos_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="plan_membresia" ColumnName="plan_membresia" />
+          <ScalarProperty Name="fecha_transaccion" ColumnName="fecha_transaccion" />
+          <ScalarProperty Name="monto_pagado" ColumnName="monto_pagado" />
+          <ScalarProperty Name="metodo_pago" ColumnName="metodo_pago" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

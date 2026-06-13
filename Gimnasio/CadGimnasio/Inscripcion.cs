@@ -22,7 +22,10 @@ namespace CadGimnasio
         public decimal monto_pagado { get; set; }
         public string metodo_pago { get; set; }
         public System.DateTime fecha_transaccion { get; set; }
-        public string estado { get; set; }
+        public string estado_inscripcion { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         public virtual Cliente Cliente { get; set; }
         public virtual Membresia Membresia { get; set; }

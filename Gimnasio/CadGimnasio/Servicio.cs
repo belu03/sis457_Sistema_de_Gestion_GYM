@@ -24,7 +24,9 @@ namespace CadGimnasio
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public int capacidad_maxima { get; set; }
-        public bool activo { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HorarioClase> HorarioClase { get; set; }

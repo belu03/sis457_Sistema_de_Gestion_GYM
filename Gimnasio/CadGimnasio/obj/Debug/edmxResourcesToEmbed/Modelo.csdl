@@ -10,11 +10,12 @@
     <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="fecha_registro" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="activo" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="Inscripcion" Relationship="Self.FK__Inscripci__id_cl__5EBF139D" FromRole="Cliente" ToRole="Inscripcion" />
-    <NavigationProperty Name="RegistroAcceso" Relationship="Self.FK__RegistroA__id_cl__6477ECF3" FromRole="Cliente" ToRole="RegistroAcceso" />
-    <NavigationProperty Name="Reserva" Relationship="Self.FK__Reserva__id_clie__6EF57B66" FromRole="Cliente" ToRole="Reserva" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Inscripcion" Relationship="Self.fk_Inscripcion_Cliente" FromRole="Cliente" ToRole="Inscripcion" />
+    <NavigationProperty Name="RegistroAcceso" Relationship="Self.fk_RegistroAcceso_Cliente" FromRole="Cliente" ToRole="RegistroAcceso" />
+    <NavigationProperty Name="Reserva" Relationship="Self.fk_Reserva_Cliente" FromRole="Cliente" ToRole="Reserva" />
   </EntityType>
   <EntityType Name="Entrenador">
     <Key>
@@ -25,8 +26,10 @@
     <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="especialidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="activo" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="HorarioClase" Relationship="Self.FK__HorarioCl__id_en__6A30C649" FromRole="Entrenador" ToRole="HorarioClase" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HorarioClase" Relationship="Self.fk_HorarioClase_Entrenador" FromRole="Entrenador" ToRole="HorarioClase" />
   </EntityType>
   <EntityType Name="HorarioClase">
     <Key>
@@ -39,10 +42,12 @@
     <Property Name="hora_inicio" Type="Time" Nullable="false" Precision="7" />
     <Property Name="hora_fin" Type="Time" Nullable="false" Precision="7" />
     <Property Name="cupos_reservados" Type="Int32" Nullable="false" />
-    <Property Name="activo" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="Entrenador" Relationship="Self.FK__HorarioCl__id_en__6A30C649" FromRole="HorarioClase" ToRole="Entrenador" />
-    <NavigationProperty Name="Servicio" Relationship="Self.FK__HorarioCl__id_se__693CA210" FromRole="HorarioClase" ToRole="Servicio" />
-    <NavigationProperty Name="Reserva" Relationship="Self.FK__Reserva__id_hora__6FE99F9F" FromRole="HorarioClase" ToRole="Reserva" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Entrenador" Relationship="Self.fk_HorarioClase_Entrenador" FromRole="HorarioClase" ToRole="Entrenador" />
+    <NavigationProperty Name="Servicio" Relationship="Self.fk_HorarioClase_Servicio" FromRole="HorarioClase" ToRole="Servicio" />
+    <NavigationProperty Name="Reserva" Relationship="Self.fk_Reserva_HorarioClase" FromRole="HorarioClase" ToRole="Reserva" />
   </EntityType>
   <EntityType Name="Inscripcion">
     <Key>
@@ -56,9 +61,12 @@
     <Property Name="monto_pagado" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="metodo_pago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fecha_transaccion" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Cliente" Relationship="Self.FK__Inscripci__id_cl__5EBF139D" FromRole="Inscripcion" ToRole="Cliente" />
-    <NavigationProperty Name="Membresia" Relationship="Self.FK__Inscripci__id_me__5FB337D6" FromRole="Inscripcion" ToRole="Membresia" />
+    <Property Name="estado_inscripcion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.fk_Inscripcion_Cliente" FromRole="Inscripcion" ToRole="Cliente" />
+    <NavigationProperty Name="Membresia" Relationship="Self.fk_Inscripcion_Membresia" FromRole="Inscripcion" ToRole="Membresia" />
   </EntityType>
   <EntityType Name="Membresia">
     <Key>
@@ -68,8 +76,10 @@
     <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="duracion_dias" Type="Int32" Nullable="false" />
-    <Property Name="activo" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="Inscripcion" Relationship="Self.FK__Inscripci__id_me__5FB337D6" FromRole="Membresia" ToRole="Inscripcion" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Inscripcion" Relationship="Self.fk_Inscripcion_Membresia" FromRole="Membresia" ToRole="Inscripcion" />
   </EntityType>
   <EntityType Name="RegistroAcceso">
     <Key>
@@ -79,7 +89,10 @@
     <Property Name="id_cliente" Type="Int32" Nullable="false" />
     <Property Name="fecha_hora" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="tipo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Cliente" Relationship="Self.FK__RegistroA__id_cl__6477ECF3" FromRole="RegistroAcceso" ToRole="Cliente" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.fk_RegistroAcceso_Cliente" FromRole="RegistroAcceso" ToRole="Cliente" />
   </EntityType>
   <EntityType Name="Reserva">
     <Key>
@@ -90,9 +103,12 @@
     <Property Name="id_horarioclase" Type="Int32" Nullable="false" />
     <Property Name="fecha_reserva" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="asistio" Type="Boolean" Nullable="false" />
-    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Cliente" Relationship="Self.FK__Reserva__id_clie__6EF57B66" FromRole="Reserva" ToRole="Cliente" />
-    <NavigationProperty Name="HorarioClase" Relationship="Self.FK__Reserva__id_hora__6FE99F9F" FromRole="Reserva" ToRole="HorarioClase" />
+    <Property Name="estado_reserva" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.fk_Reserva_Cliente" FromRole="Reserva" ToRole="Cliente" />
+    <NavigationProperty Name="HorarioClase" Relationship="Self.fk_Reserva_HorarioClase" FromRole="Reserva" ToRole="HorarioClase" />
   </EntityType>
   <EntityType Name="Servicio">
     <Key>
@@ -102,8 +118,10 @@
     <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="capacidad_maxima" Type="Int32" Nullable="false" />
-    <Property Name="activo" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="HorarioClase" Relationship="Self.FK__HorarioCl__id_se__693CA210" FromRole="Servicio" ToRole="HorarioClase" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HorarioClase" Relationship="Self.fk_HorarioClase_Servicio" FromRole="Servicio" ToRole="HorarioClase" />
   </EntityType>
   <EntityType Name="UsuarioSistema">
     <Key>
@@ -114,9 +132,11 @@
     <Property Name="contraseña" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="salt" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="rol" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
   </EntityType>
-  <Association Name="FK__Inscripci__id_cl__5EBF139D">
+  <Association Name="fk_Inscripcion_Cliente">
     <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
     <End Role="Inscripcion" Type="Self.Inscripcion" Multiplicity="*" />
     <ReferentialConstraint>
@@ -128,7 +148,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__RegistroA__id_cl__6477ECF3">
+  <Association Name="fk_RegistroAcceso_Cliente">
     <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
     <End Role="RegistroAcceso" Type="Self.RegistroAcceso" Multiplicity="*" />
     <ReferentialConstraint>
@@ -140,7 +160,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Reserva__id_clie__6EF57B66">
+  <Association Name="fk_Reserva_Cliente">
     <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
     <End Role="Reserva" Type="Self.Reserva" Multiplicity="*" />
     <ReferentialConstraint>
@@ -152,7 +172,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__HorarioCl__id_en__6A30C649">
+  <Association Name="fk_HorarioClase_Entrenador">
     <End Role="Entrenador" Type="Self.Entrenador" Multiplicity="1" />
     <End Role="HorarioClase" Type="Self.HorarioClase" Multiplicity="*" />
     <ReferentialConstraint>
@@ -164,7 +184,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__HorarioCl__id_se__693CA210">
+  <Association Name="fk_HorarioClase_Servicio">
     <End Role="Servicio" Type="Self.Servicio" Multiplicity="1" />
     <End Role="HorarioClase" Type="Self.HorarioClase" Multiplicity="*" />
     <ReferentialConstraint>
@@ -176,7 +196,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Reserva__id_hora__6FE99F9F">
+  <Association Name="fk_Reserva_HorarioClase">
     <End Role="HorarioClase" Type="Self.HorarioClase" Multiplicity="1" />
     <End Role="Reserva" Type="Self.Reserva" Multiplicity="*" />
     <ReferentialConstraint>
@@ -188,7 +208,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Inscripci__id_me__5FB337D6">
+  <Association Name="fk_Inscripcion_Membresia">
     <End Role="Membresia" Type="Self.Membresia" Multiplicity="1" />
     <End Role="Inscripcion" Type="Self.Inscripcion" Multiplicity="*" />
     <ReferentialConstraint>
@@ -210,33 +230,176 @@
     <EntitySet Name="Reserva" EntityType="Self.Reserva" />
     <EntitySet Name="Servicio" EntityType="Self.Servicio" />
     <EntitySet Name="UsuarioSistema" EntityType="Self.UsuarioSistema" />
-    <AssociationSet Name="FK__Inscripci__id_cl__5EBF139D" Association="Self.FK__Inscripci__id_cl__5EBF139D">
+    <AssociationSet Name="fk_Inscripcion_Cliente" Association="Self.fk_Inscripcion_Cliente">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Inscripcion" EntitySet="Inscripcion" />
     </AssociationSet>
-    <AssociationSet Name="FK__RegistroA__id_cl__6477ECF3" Association="Self.FK__RegistroA__id_cl__6477ECF3">
+    <AssociationSet Name="fk_RegistroAcceso_Cliente" Association="Self.fk_RegistroAcceso_Cliente">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="RegistroAcceso" EntitySet="RegistroAcceso" />
     </AssociationSet>
-    <AssociationSet Name="FK__Reserva__id_clie__6EF57B66" Association="Self.FK__Reserva__id_clie__6EF57B66">
+    <AssociationSet Name="fk_Reserva_Cliente" Association="Self.fk_Reserva_Cliente">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Reserva" EntitySet="Reserva" />
     </AssociationSet>
-    <AssociationSet Name="FK__HorarioCl__id_en__6A30C649" Association="Self.FK__HorarioCl__id_en__6A30C649">
+    <AssociationSet Name="fk_HorarioClase_Entrenador" Association="Self.fk_HorarioClase_Entrenador">
       <End Role="Entrenador" EntitySet="Entrenador" />
       <End Role="HorarioClase" EntitySet="HorarioClase" />
     </AssociationSet>
-    <AssociationSet Name="FK__HorarioCl__id_se__693CA210" Association="Self.FK__HorarioCl__id_se__693CA210">
+    <AssociationSet Name="fk_HorarioClase_Servicio" Association="Self.fk_HorarioClase_Servicio">
       <End Role="Servicio" EntitySet="Servicio" />
       <End Role="HorarioClase" EntitySet="HorarioClase" />
     </AssociationSet>
-    <AssociationSet Name="FK__Reserva__id_hora__6FE99F9F" Association="Self.FK__Reserva__id_hora__6FE99F9F">
+    <AssociationSet Name="fk_Reserva_HorarioClase" Association="Self.fk_Reserva_HorarioClase">
       <End Role="HorarioClase" EntitySet="HorarioClase" />
       <End Role="Reserva" EntitySet="Reserva" />
     </AssociationSet>
-    <AssociationSet Name="FK__Inscripci__id_me__5FB337D6" Association="Self.FK__Inscripci__id_me__5FB337D6">
+    <AssociationSet Name="fk_Inscripcion_Membresia" Association="Self.fk_Inscripcion_Membresia">
       <End Role="Membresia" EntitySet="Membresia" />
       <End Role="Inscripcion" EntitySet="Inscripcion" />
     </AssociationSet>
+    <FunctionImport Name="paClienteListar" ReturnType="Collection(GimnasioModel.paClienteListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paEntrenadorListar" ReturnType="Collection(GimnasioModel.paEntrenadorListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paInscripcionListar" ReturnType="Collection(GimnasioModel.paInscripcionListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paMembresiaListar" ReturnType="Collection(GimnasioModel.paMembresiaListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paServicioListar" ReturnType="Collection(GimnasioModel.paServicioListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paRegistroAccesoListar" ReturnType="Collection(GimnasioModel.paRegistroAccesoListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paHorarioClaseListar" ReturnType="Collection(GimnasioModel.paHorarioClaseListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paReservaListar" ReturnType="Collection(GimnasioModel.paReservaListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paUsuarioSistemaListar" ReturnType="Collection(GimnasioModel.paUsuarioSistemaListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteIngresos" ReturnType="Collection(GimnasioModel.paReporteIngresos_Result)">
+      <Parameter Name="fechaInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="fechaFin" Mode="In" Type="DateTime" />
+    </FunctionImport>
   </EntityContainer>
+  <ComplexType Name="paClienteListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="ci" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="telefono" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="correo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paEntrenadorListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="telefono" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="especialidad" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paInscripcionListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="id_cliente" Nullable="false" />
+    <Property Type="Int32" Name="id_membresia" Nullable="false" />
+    <Property Type="String" Name="ci" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="tipo_membresia" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_inicio" Nullable="false" />
+    <Property Type="DateTime" Name="fecha_fin" Nullable="false" />
+    <Property Type="Decimal" Name="monto_pagado" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="metodo_pago" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="estado_inscripcion" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paMembresiaListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="tipo" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="precio" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="Int32" Name="duracion_dias" Nullable="false" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paServicioListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="255" />
+    <Property Type="Int32" Name="capacidad_maxima" Nullable="false" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paRegistroAccesoListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="ci" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellido" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_hora" Nullable="false" Precision="23" />
+    <Property Type="String" Name="tipo" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paHorarioClaseListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="id_servicio" Nullable="false" />
+    <Property Type="Int32" Name="id_entrenador" Nullable="false" />
+    <Property Type="String" Name="servicio" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="entrenador" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="dia_semana" Nullable="false" MaxLength="20" />
+    <Property Type="Time" Name="hora_inicio" Nullable="false" />
+    <Property Type="Time" Name="hora_fin" Nullable="false" />
+    <Property Type="Int32" Name="cupos_reservados" Nullable="false" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paReservaListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="id_cliente" Nullable="false" />
+    <Property Type="Int32" Name="id_horarioclase" Nullable="false" />
+    <Property Type="String" Name="ci" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="cliente" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="clase" Nullable="true" MaxLength="79" />
+    <Property Type="DateTime" Name="fecha_reserva" Nullable="false" />
+    <Property Type="Boolean" Name="asistio" Nullable="false" />
+    <Property Type="String" Name="estado_reserva" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paUsuarioSistemaListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombre_usuario" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="rol" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paReporteIngresos_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="ci" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="cliente" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="plan_membresia" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_transaccion" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="monto_pagado" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="metodo_pago" Nullable="false" MaxLength="50" />
+  </ComplexType>
 </Schema>

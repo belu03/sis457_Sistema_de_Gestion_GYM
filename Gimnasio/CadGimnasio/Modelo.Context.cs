@@ -12,6 +12,8 @@ namespace CadGimnasio
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class GimnasioEntities : DbContext
     {
@@ -34,5 +36,99 @@ namespace CadGimnasio
         public virtual DbSet<Reserva> Reserva { get; set; }
         public virtual DbSet<Servicio> Servicio { get; set; }
         public virtual DbSet<UsuarioSistema> UsuarioSistema { get; set; }
+    
+        public virtual ObjectResult<paClienteListar_Result> paClienteListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paClienteListar_Result>("paClienteListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paEntrenadorListar_Result> paEntrenadorListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paEntrenadorListar_Result>("paEntrenadorListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paInscripcionListar_Result> paInscripcionListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paInscripcionListar_Result>("paInscripcionListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paMembresiaListar_Result> paMembresiaListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paMembresiaListar_Result>("paMembresiaListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paServicioListar_Result> paServicioListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paServicioListar_Result>("paServicioListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paRegistroAccesoListar_Result> paRegistroAccesoListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paRegistroAccesoListar_Result>("paRegistroAccesoListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paHorarioClaseListar_Result> paHorarioClaseListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paHorarioClaseListar_Result>("paHorarioClaseListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paReservaListar_Result> paReservaListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paReservaListar_Result>("paReservaListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paUsuarioSistemaListar_Result> paUsuarioSistemaListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paUsuarioSistemaListar_Result>("paUsuarioSistemaListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paReporteIngresos_Result> paReporteIngresos(Nullable<System.DateTime> fechaInicio, Nullable<System.DateTime> fechaFin)
+        {
+            var fechaInicioParameter = fechaInicio.HasValue ?
+                new ObjectParameter("fechaInicio", fechaInicio) :
+                new ObjectParameter("fechaInicio", typeof(System.DateTime));
+    
+            var fechaFinParameter = fechaFin.HasValue ?
+                new ObjectParameter("fechaFin", fechaFin) :
+                new ObjectParameter("fechaFin", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paReporteIngresos_Result>("paReporteIngresos", fechaInicioParameter, fechaFinParameter);
+        }
     }
 }

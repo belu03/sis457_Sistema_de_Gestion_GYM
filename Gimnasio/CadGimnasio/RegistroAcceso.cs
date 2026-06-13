@@ -18,6 +18,9 @@ namespace CadGimnasio
         public int id_cliente { get; set; }
         public System.DateTime fecha_hora { get; set; }
         public string tipo { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         public virtual Cliente Cliente { get; set; }
     }

@@ -24,7 +24,9 @@ namespace CadGimnasio
         public string tipo { get; set; }
         public decimal precio { get; set; }
         public int duracion_dias { get; set; }
-        public bool activo { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Inscripcion> Inscripcion { get; set; }

@@ -19,7 +19,10 @@ namespace CadGimnasio
         public int id_horarioclase { get; set; }
         public System.DateTime fecha_reserva { get; set; }
         public bool asistio { get; set; }
-        public string estado { get; set; }
+        public string estado_reserva { get; set; }
+        public string usuarioRegistro { get; set; }
+        public System.DateTime fechaRegistro { get; set; }
+        public int estado { get; set; }
     
         public virtual Cliente Cliente { get; set; }
         public virtual HorarioClase HorarioClase { get; set; }

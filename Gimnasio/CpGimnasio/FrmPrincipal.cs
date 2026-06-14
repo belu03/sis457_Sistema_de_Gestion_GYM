@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CpGimnasio
@@ -15,6 +16,7 @@ namespace CpGimnasio
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+           
             // Mostramos quién entró al sistema en la barra inferior
             if (Util.usuario != null)
             {

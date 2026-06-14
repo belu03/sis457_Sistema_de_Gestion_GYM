@@ -35,9 +35,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gym-icono.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.Win.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
     <Reference Include="C1.Win.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
-    <Reference Include="C1.Win.C1Command.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Ribbon.2, Version=2.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.Ribbon.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
@@ -295,7 +300,73 @@
     <None Include="Resources\eliminar31.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fondos\gym fondo.jpg" />
+    <None Include="Resources\WhatsApp Image 2026-06-13 at 16.02.02.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym logo pequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-13 at 17.19.16.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym logo 2 copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym logoazuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.jpg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym logoazuk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-13 at 17.19.161.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-13 at 16.02.021.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.jpg1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo4.jpg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quitale_la_iluminacion_de_la_202606131749.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-13 at 17.58.52.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-06-13 at 18.05.20.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gym-icono.ico" />
+    <None Include="Resources\cancelar blanco.png" />
+    <None Include="Resources\buscar azul1.png" />
+    <None Include="Resources\bloquear blanco1.png" />
+    <None Include="Resources\bloquear blanco.png" />
+    <None Include="Resources\guardar azul1.png" />
+    <None Include="Resources\nuevo azul2.png" />
+    <None Include="Resources\editar azul copia.png" />
+    <None Include="Resources\eliminar azul1.png" />
+    <None Include="Resources\cerrar azul.png" />
+    <None Include="Resources\cancelar azul.png" />
+    <None Include="Resources\buscar azul.png" />
+    <None Include="Resources\nuevo azul1.png" />
+    <None Include="Resources\buscar  azul.png" />
+    <None Include="Resources\nuevo azul.png" />
+    <None Include="Resources\editar azul.png" />
+    <None Include="Resources\eliminar azul.png" />
+    <None Include="Resources\cerrar  azul.png" />
+    <None Include="Resources\guardar azul.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

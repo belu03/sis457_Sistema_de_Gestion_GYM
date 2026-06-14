@@ -2,15 +2,8 @@
 {
     partial class FrmHorarioClase
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +13,8 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -71,41 +60,47 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("HP Simplified", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(12, 19);
+            this.lblTitulo.Location = new System.Drawing.Point(27, 25);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(242, 32);
-            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Size = new System.Drawing.Size(266, 36);
+            this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Gestión de Horarios";
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscar.Location = new System.Drawing.Point(14, 61);
+            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuscar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBuscar.Location = new System.Drawing.Point(27, 92);
+            this.lblBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(123, 19);
-            this.lblBuscar.TabIndex = 2;
+            this.lblBuscar.Size = new System.Drawing.Size(150, 21);
+            this.lblBuscar.TabIndex = 1;
             this.lblBuscar.Text = "Buscar en historial:";
             // 
             // txtParametro
             // 
-            this.txtParametro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParametro.Location = new System.Drawing.Point(143, 61);
+            this.txtParametro.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParametro.Location = new System.Drawing.Point(213, 89);
+            this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(400, 25);
-            this.txtParametro.TabIndex = 3;
+            this.txtParametro.Size = new System.Drawing.Size(532, 27);
+            this.txtParametro.TabIndex = 2;
             this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(559, 61);
+            this.btnBuscar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = global::CpGimnasio.Properties.Resources.buscar_azul;
+            this.btnBuscar.Location = new System.Drawing.Point(773, 76);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 30);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Size = new System.Drawing.Size(61, 49);
+            this.btnBuscar.TabIndex = 3;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -115,11 +110,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbxLista.Controls.Add(this.dgvLista);
-            this.gbxLista.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxLista.Location = new System.Drawing.Point(5, 100);
+            this.gbxLista.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxLista.Location = new System.Drawing.Point(27, 135);
+            this.gbxLista.Margin = new System.Windows.Forms.Padding(4);
             this.gbxLista.Name = "gbxLista";
-            this.gbxLista.Size = new System.Drawing.Size(1288, 300);
-            this.gbxLista.TabIndex = 5;
+            this.gbxLista.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxLista.Size = new System.Drawing.Size(1632, 308);
+            this.gbxLista.TabIndex = 4;
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Catálogo de Horarios";
             // 
@@ -132,12 +129,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(15, 25);
+            this.dgvLista.Location = new System.Drawing.Point(20, 30);
+            this.dgvLista.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 62;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(1258, 260);
+            this.dgvLista.Size = new System.Drawing.Size(1592, 258);
             this.dgvLista.TabIndex = 0;
             // 
             // pnlAcciones
@@ -149,52 +147,69 @@
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Location = new System.Drawing.Point(5, 406);
+            this.pnlAcciones.Location = new System.Drawing.Point(27, 455);
+            this.pnlAcciones.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(1244, 50);
-            this.pnlAcciones.TabIndex = 6;
+            this.pnlAcciones.Size = new System.Drawing.Size(1632, 62);
+            this.pnlAcciones.TabIndex = 5;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(740, 10);
+            this.btnCerrar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Image = global::CpGimnasio.Properties.Resources.cerrar_azul;
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.Location = new System.Drawing.Point(987, 12);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(100, 35);
+            this.btnCerrar.Size = new System.Drawing.Size(143, 43);
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(630, 10);
+            this.btnEliminar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Image = global::CpGimnasio.Properties.Resources.eliminar_azul1;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(840, 12);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 35);
+            this.btnEliminar.Size = new System.Drawing.Size(143, 43);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(520, 10);
+            this.btnEditar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Image = global::CpGimnasio.Properties.Resources.editar_azul_copia;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(693, 12);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(100, 35);
+            this.btnEditar.Size = new System.Drawing.Size(143, 43);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(410, 10);
+            this.btnNuevo.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Image = global::CpGimnasio.Properties.Resources.nuevo_azul2;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(547, 12);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(100, 35);
+            this.btnNuevo.Size = new System.Drawing.Size(143, 43);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -202,6 +217,7 @@
             // 
             this.gbxDatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
             this.gbxDatos.Controls.Add(this.btnCancelar);
             this.gbxDatos.Controls.Add(this.btnGuardar);
             this.gbxDatos.Controls.Add(this.txtHoraFin);
@@ -214,117 +230,146 @@
             this.gbxDatos.Controls.Add(this.lblEntrenador);
             this.gbxDatos.Controls.Add(this.cbxServicio);
             this.gbxDatos.Controls.Add(this.lblServicio);
-            this.gbxDatos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxDatos.Location = new System.Drawing.Point(5, 462);
+            this.gbxDatos.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbxDatos.Location = new System.Drawing.Point(27, 530);
+            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(1297, 210);
-            this.gbxDatos.TabIndex = 7;
+            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxDatos.Size = new System.Drawing.Size(1632, 258);
+            this.gbxDatos.TabIndex = 6;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Detalles del Horario";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(940, 150);
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.Image = global::CpGimnasio.Properties.Resources.cancelar_blanco;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(1253, 185);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(143, 43);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(820, 150);
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGuardar.Image = global::CpGimnasio.Properties.Resources.guardar_azul1;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(1093, 185);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 35);
+            this.btnGuardar.Size = new System.Drawing.Size(143, 43);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtHoraFin
             // 
-            this.txtHoraFin.Location = new System.Drawing.Point(620, 97);
+            this.txtHoraFin.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraFin.Location = new System.Drawing.Point(827, 119);
+            this.txtHoraFin.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoraFin.Name = "txtHoraFin";
-            this.txtHoraFin.Size = new System.Drawing.Size(100, 25);
+            this.txtHoraFin.Size = new System.Drawing.Size(132, 27);
             this.txtHoraFin.TabIndex = 9;
             // 
             // lblHoraFin
             // 
             this.lblHoraFin.AutoSize = true;
-            this.lblHoraFin.Location = new System.Drawing.Point(540, 100);
+            this.lblHoraFin.Location = new System.Drawing.Point(720, 123);
+            this.lblHoraFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoraFin.Name = "lblHoraFin";
-            this.lblHoraFin.Size = new System.Drawing.Size(64, 19);
+            this.lblHoraFin.Size = new System.Drawing.Size(74, 21);
             this.lblHoraFin.TabIndex = 8;
             this.lblHoraFin.Text = "Hora Fin:";
             // 
             // txtHoraInicio
             // 
-            this.txtHoraInicio.Location = new System.Drawing.Point(420, 97);
+            this.txtHoraInicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoraInicio.Location = new System.Drawing.Point(560, 119);
+            this.txtHoraInicio.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoraInicio.Name = "txtHoraInicio";
-            this.txtHoraInicio.Size = new System.Drawing.Size(100, 25);
+            this.txtHoraInicio.Size = new System.Drawing.Size(132, 27);
             this.txtHoraInicio.TabIndex = 7;
             // 
             // lblHoraInicio
             // 
             this.lblHoraInicio.AutoSize = true;
-            this.lblHoraInicio.Location = new System.Drawing.Point(340, 100);
+            this.lblHoraInicio.Location = new System.Drawing.Point(453, 123);
+            this.lblHoraInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoraInicio.Name = "lblHoraInicio";
-            this.lblHoraInicio.Size = new System.Drawing.Size(78, 19);
+            this.lblHoraInicio.Size = new System.Drawing.Size(90, 21);
             this.lblHoraInicio.TabIndex = 6;
             this.lblHoraInicio.Text = "Hora Inicio:";
             // 
             // cbxDia
             // 
             this.cbxDia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxDia.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxDia.FormattingEnabled = true;
-            this.cbxDia.Location = new System.Drawing.Point(120, 97);
+            this.cbxDia.Location = new System.Drawing.Point(160, 119);
+            this.cbxDia.Margin = new System.Windows.Forms.Padding(4);
             this.cbxDia.Name = "cbxDia";
-            this.cbxDia.Size = new System.Drawing.Size(200, 25);
+            this.cbxDia.Size = new System.Drawing.Size(265, 28);
             this.cbxDia.TabIndex = 5;
             // 
             // lblDia
             // 
             this.lblDia.AutoSize = true;
-            this.lblDia.Location = new System.Drawing.Point(30, 100);
+            this.lblDia.Location = new System.Drawing.Point(40, 123);
+            this.lblDia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDia.Name = "lblDia";
-            this.lblDia.Size = new System.Drawing.Size(32, 19);
+            this.lblDia.Size = new System.Drawing.Size(38, 21);
             this.lblDia.TabIndex = 4;
             this.lblDia.Text = "Día:";
             // 
             // cbxEntrenador
             // 
             this.cbxEntrenador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxEntrenador.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEntrenador.FormattingEnabled = true;
-            this.cbxEntrenador.Location = new System.Drawing.Point(420, 42);
+            this.cbxEntrenador.Location = new System.Drawing.Point(560, 52);
+            this.cbxEntrenador.Margin = new System.Windows.Forms.Padding(4);
             this.cbxEntrenador.Name = "cbxEntrenador";
-            this.cbxEntrenador.Size = new System.Drawing.Size(300, 25);
+            this.cbxEntrenador.Size = new System.Drawing.Size(399, 28);
             this.cbxEntrenador.TabIndex = 3;
             // 
             // lblEntrenador
             // 
             this.lblEntrenador.AutoSize = true;
-            this.lblEntrenador.Location = new System.Drawing.Point(340, 45);
+            this.lblEntrenador.Location = new System.Drawing.Point(453, 55);
+            this.lblEntrenador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEntrenador.Name = "lblEntrenador";
-            this.lblEntrenador.Size = new System.Drawing.Size(80, 19);
+            this.lblEntrenador.Size = new System.Drawing.Size(99, 21);
             this.lblEntrenador.TabIndex = 2;
             this.lblEntrenador.Text = "Entrenador:";
             // 
             // cbxServicio
             // 
             this.cbxServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxServicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxServicio.FormattingEnabled = true;
-            this.cbxServicio.Location = new System.Drawing.Point(120, 42);
+            this.cbxServicio.Location = new System.Drawing.Point(160, 52);
+            this.cbxServicio.Margin = new System.Windows.Forms.Padding(4);
             this.cbxServicio.Name = "cbxServicio";
-            this.cbxServicio.Size = new System.Drawing.Size(200, 25);
+            this.cbxServicio.Size = new System.Drawing.Size(265, 28);
             this.cbxServicio.TabIndex = 1;
             // 
             // lblServicio
             // 
             this.lblServicio.AutoSize = true;
-            this.lblServicio.Location = new System.Drawing.Point(30, 45);
+            this.lblServicio.Location = new System.Drawing.Point(40, 55);
+            this.lblServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblServicio.Name = "lblServicio";
-            this.lblServicio.Size = new System.Drawing.Size(58, 19);
+            this.lblServicio.Size = new System.Drawing.Size(73, 21);
             this.lblServicio.TabIndex = 0;
             this.lblServicio.Text = "Servicio:";
             // 
@@ -346,9 +391,11 @@
             // 
             // FrmHorarioClase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 657);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::CpGimnasio.Properties.Resources.WhatsApp_Image_2026_06_13_at_17_58_52;
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);
@@ -356,7 +403,9 @@
             this.Controls.Add(this.txtParametro);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.lblTitulo);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmHorarioClase";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Horarios - Gimnasio :::";
             this.Load += new System.EventHandler(this.FrmHorarioClase_Load);
             this.gbxLista.ResumeLayout(false);

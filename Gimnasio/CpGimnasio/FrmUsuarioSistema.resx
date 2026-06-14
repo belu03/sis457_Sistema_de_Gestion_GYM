@@ -121,9 +121,9 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="erpClave.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>137, 20</value>
+    <value>170, 17</value>
   </metadata>
   <metadata name="erpRol.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>235, 22</value>
+    <value>305, 17</value>
   </metadata>
 </root>

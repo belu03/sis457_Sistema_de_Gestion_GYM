@@ -1,39 +1,213 @@
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmAutenticacion.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmCliente.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmEntrenador.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmHorarioClase.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmInscripcion.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmMembresia.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmPrincipal.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmRegistroAcceso.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReporte.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReserva.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmServicio.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmUsuarioSistema.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.licenses
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe.config
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.pdb
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.dll
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Command.4.dll
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.dll
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.dll
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormUsuario.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.pdb
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll.config
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.pdb
 D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll.config
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.xml
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Command.4.xml
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.xml
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
-D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormEntrenador.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormAsistencia.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormReserva.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormServicio.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormHorario.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormMembresia.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormPago.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormPrincipal.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormAsistencia.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormEntrenador.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormLogin.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormReserva.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormServicio.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormUsuario.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormHorario.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormMembresia.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormPago.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormPrincipal.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe.config
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.pdb
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.dll
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.pdb
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll.config
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.pdb
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll.config
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+D:\3ER INTENTO\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe.config
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.pdb
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.dll
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.pdb
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll.config
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.pdb
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll.config
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormAgenda.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormEntrenador.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormHorarioClase.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormInscripcion.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormLogin.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormMembresia.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormRegistroAcceso.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormServicio.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FormUsuarioSistema.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+D:\ULTIMO INTENTO\sis457_Sistema_de_Gestion_GYM\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmPrincipal.resources
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe.config
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll.config
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll.config
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmAutenticacion.resources
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.licenses
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.2.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.2.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.4.dll
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.2.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.4.xml
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.config
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmCliente.resources
+C:\Users\luisi\OneDrive\Desktop\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmRegistroAcceso.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmAutenticacion.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmCliente.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmEntrenador.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmHorarioClase.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmInscripcion.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmMembresia.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmPrincipal.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmRegistroAcceso.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReporte.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReserva.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmServicio.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmUsuarioSistema.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.licenses
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe.config
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.2.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.4.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.2.dll
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll.config
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll.config
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.2.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.4.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+C:\Users\luisi\OneDrive\Desktop\Gimnasio-20260612T144512Z-3-001 (1)\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.config
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe.config
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.exe
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\CpGimnasio.pdb
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.4.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.2.dll
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.pdb
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\CadGimnasio.dll.config
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.pdb
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\ClnGimnasio.dll.config
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.4.5.2.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.2.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.C1Ribbon.4.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\C1.Win.Ribbon.4.5.2.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmAutenticacion.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmCliente.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmEntrenador.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmHorarioClase.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmInscripcion.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmMembresia.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmPrincipal.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmRegistroAcceso.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReporte.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReserva.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmServicio.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmUsuarioSistema.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.licenses
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.Up2Date
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb

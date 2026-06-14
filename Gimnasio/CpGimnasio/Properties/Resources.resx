@@ -121,17 +121,47 @@
   <data name="PAGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosdepagina\PAGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gym_fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondos\gym fondo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buscar azul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar azul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2026-06-13 at 16.021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2026-06-13 at 16.02.021.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2026-06-13 at 18.05.20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2026-06-13 at 18.05.20.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buscar_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botones\buscar rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bloquear blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bloquear blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondos\gym login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buscar_rojo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\buscar rojo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cancelar azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelar azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eliminar_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\eliminar rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ASISTENCIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logosdepagina\ASISTENCIA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym_fondo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondos\gym fondo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="editar_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\editar rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guardar_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botones\guardar rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gym_fondo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondos\gym fondo4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,17 +172,59 @@
   <data name="nuevo_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\nuevo rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="guardar azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cerrar  azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar  azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HORARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosdepagina\HORARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MEMBRESIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosdepagina\MEMBRESIA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nuevo azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo azul2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo azul2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="editar4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\editar4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gym logo 2 copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym logo 2 copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eliminar azul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eliminar azul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym logoazuk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym logoazuk1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo3.jpg1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo4.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo4.jpg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buscar azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gym_logo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosdepagina\gym logo 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2026-06-13 at 17.191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2026-06-13 at 17.19.161.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bloquear blanco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bloquear blanco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eliminar azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eliminar azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym logoazuk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym logoazuk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RESERVA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosdepagina\RESERVA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,14 +232,20 @@
   <data name="Gemini_Generated_Image_repjchrepjchrepj_copiaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondos\Gemini_Generated_Image_repjchrepjchrepj copiaa.jpg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guardar_blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botones\guardar blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gym logo pequeño" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym logo pequeño.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guardar azul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar azul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eliminar3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\eliminar3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buscar_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botones\buscar rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buscar  azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar  azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo azul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo azul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ingresar_blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\ingresar blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,28 +256,49 @@
   <data name="gym_fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondos\gym fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cerrar azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ASISTENCIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logosdepagina\ASISTENCIA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gym_fondo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondos\gym fondo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gym_fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondos\gym fondo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gym_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondos\gym login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2026-06-13 at 17.19.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2026-06-13 at 17.19.16.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guardar_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botones\guardar rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2026-06-13 at 16.02.02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2026-06-13 at 16.02.02.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="editar azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editar azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SERVICIOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosdepagina\SERVICIOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quitale_la_iluminacion_de_la_202606131749" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quitale_la_iluminacion_de_la_202606131749.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="editar azul copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editar azul copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo3.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo3.jpg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eliminar31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botones\eliminar31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gym fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondos\gym fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2026-06-13 at 17.58.52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2026-06-13 at 17.58.52.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guardar_blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botones\guardar blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelar blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelar blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

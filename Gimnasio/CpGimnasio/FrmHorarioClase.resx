@@ -121,12 +121,12 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="erpEntrenador.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>125, 18</value>
+    <value>171, 17</value>
   </metadata>
   <metadata name="erpDia.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>262, 22</value>
+    <value>351, 17</value>
   </metadata>
   <metadata name="erpHora.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>364, 18</value>
+    <value>470, 17</value>
   </metadata>
 </root>

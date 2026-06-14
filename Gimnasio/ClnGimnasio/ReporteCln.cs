@@ -44,7 +44,7 @@ namespace ClnGimnasio
             }
         }
 
-
+    
         public class AlertaVencimientoResult
         {
             public int IdCliente { get; set; }
@@ -62,7 +62,7 @@ namespace ClnGimnasio
 
                 var vencimientos = context.Inscripcion
                     .Where(i => i.estado == 1 && i.estado_inscripcion == "Activa" && i.fecha_fin >= hoy && i.fecha_fin <= fechaLimite)
-                    .ToList();
+                    .ToList(); 
 
                 return vencimientos.Select(i => new AlertaVencimientoResult
                 {

@@ -46,6 +46,7 @@ namespace CpGimnasio
             dgvReporte.Columns["metodo_pago"].HeaderText = "Método";
 
             decimal total = lista.Sum(x => x.monto_pagado);
+            lblTotal.Text = $"TOTAL INGRESOS: {total:0.00} Bs.";
         }
 
         private void btnCerrar_Click(object sender, EventArgs e) => Close();

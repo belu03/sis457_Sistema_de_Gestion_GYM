@@ -2,32 +2,12 @@
 {
     partial class FrmPrincipal
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        protected override void Dispose(bool disposing) { if (disposing && (components != null)) components.Dispose(); base.Dispose(disposing); }
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonAppMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -62,14 +42,15 @@
             // 
             // Ribbon1
             // 
+            this.Ribbon1.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
             this.Ribbon1.ApplicationMenuHolder = this.ribbonAppMenu;
-            this.Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar;
+            this.Ribbon1.Font = new System.Drawing.Font("HP Simplified", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ribbon1.Location = new System.Drawing.Point(0, 0);
             this.Ribbon1.Name = "Ribbon1";
             this.Ribbon1.QatHolder = this.ribbonQat;
-            this.Ribbon1.Size = new System.Drawing.Size(800, 161);
+            this.Ribbon1.Size = new System.Drawing.Size(1200, 201);
             this.Ribbon1.Tabs.Add(this.tabCatalogos);
             this.Ribbon1.Tabs.Add(this.tabOperaciones);
             this.Ribbon1.Tabs.Add(this.tabGerencia);
@@ -228,26 +209,31 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblUsuarioLogueado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 674);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Size = new System.Drawing.Size(1200, 26);
+            this.statusStrip1.TabIndex = 0;
             // 
             // lblUsuarioLogueado
             // 
             this.lblUsuarioLogueado.Name = "lblUsuarioLogueado";
-            this.lblUsuarioLogueado.Size = new System.Drawing.Size(68, 17);
+            this.lblUsuarioLogueado.Size = new System.Drawing.Size(83, 20);
             this.lblUsuarioLogueado.Text = "Cargando...";
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::CpGimnasio.Properties.Resources.fondo4_jpg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.Ribbon1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Gimnasio Master - Panel de Control :::";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Ribbon1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
@@ -257,35 +243,33 @@
 
         }
 
-        #endregion
-
         private C1.Win.Ribbon.C1Ribbon Ribbon1;
         private C1.Win.Ribbon.RibbonApplicationMenu ribbonAppMenu;
-        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar;
         private C1.Win.Ribbon.RibbonQat ribbonQat;
         private C1.Win.Ribbon.RibbonTab tabCatalogos;
+        private C1.Win.Ribbon.RibbonTab tabOperaciones;
+        private C1.Win.Ribbon.RibbonTab tabGerencia;
         private C1.Win.Ribbon.RibbonGroup grpCatalogosBase;
+        private C1.Win.Ribbon.RibbonGroup grpUsuarios;
+        private C1.Win.Ribbon.RibbonGroup grpVentas;
+        private C1.Win.Ribbon.RibbonGroup grpAgenda;
+        private C1.Win.Ribbon.RibbonGroup grpReportes;
+        private C1.Win.Ribbon.RibbonGroup grpSistema;
         private C1.Win.Ribbon.RibbonButton btnCaClientes;
         private C1.Win.Ribbon.RibbonButton btnCaMembresias;
         private C1.Win.Ribbon.RibbonButton btnCaServicios;
         private C1.Win.Ribbon.RibbonButton btnCaEntrenadores;
-        private C1.Win.Ribbon.RibbonGroup grpUsuarios;
         private C1.Win.Ribbon.RibbonButton btnCaUsuarios;
-        private C1.Win.Ribbon.RibbonTab tabOperaciones;
-        private C1.Win.Ribbon.RibbonGroup grpVentas;
         private C1.Win.Ribbon.RibbonButton btnOpInscripcion;
         private C1.Win.Ribbon.RibbonButton btnOpAccesos;
-        private C1.Win.Ribbon.RibbonGroup grpAgenda;
         private C1.Win.Ribbon.RibbonButton btnOpHorarios;
         private C1.Win.Ribbon.RibbonButton btnOpReservas;
-        private C1.Win.Ribbon.RibbonTab tabGerencia;
-        private C1.Win.Ribbon.RibbonGroup grpReportes;
         private C1.Win.Ribbon.RibbonButton btnGerenciaReportes;
-        private C1.Win.Ribbon.RibbonGroup grpSistema;
         private C1.Win.Ribbon.RibbonButton btnSalir;
-        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblUsuarioLogueado;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
     }
 }

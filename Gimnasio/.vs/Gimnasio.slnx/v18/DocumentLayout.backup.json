@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D31E03D-45EE-49E3-AB2D-34731E1EF012}|CadGimnasio\\CadGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym\\gimnasio\\cadgimnasio\\modelo.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D31E03D-45EE-49E3-AB2D-34731E1EF012}|CadGimnasio\\CadGimnasio.csproj|solutionrelative:cadgimnasio\\modelo.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Modelo.Context.cs",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.Context.cs",
+              "RelativeDocumentMoniker": "CadGimnasio\\Modelo.Context.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CadGimnasio\\Modelo.Context.cs",
+              "RelativeToolTip": "CadGimnasio\\Modelo.Context.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T20:43:26.515Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -111,21 +111,25 @@
             // 
             this.btnCaClientes.Name = "btnCaClientes";
             this.btnCaClientes.Text = "Clientes";
+            this.btnCaClientes.Click += new System.EventHandler(this.btnCaClientes_Click);
             // 
             // btnCaMembresias
             // 
             this.btnCaMembresias.Name = "btnCaMembresias";
             this.btnCaMembresias.Text = "Planes Membresía";
+            this.btnCaMembresias.Click += new System.EventHandler(this.btnCaMembresias_Click);
             // 
             // btnCaServicios
             // 
             this.btnCaServicios.Name = "btnCaServicios";
             this.btnCaServicios.Text = "Servicios";
+            this.btnCaServicios.Click += new System.EventHandler(this.btnCaServicios_Click);
             // 
             // btnCaEntrenadores
             // 
             this.btnCaEntrenadores.Name = "btnCaEntrenadores";
             this.btnCaEntrenadores.Text = "Entrenadores";
+            this.btnCaEntrenadores.Click += new System.EventHandler(this.btnCaEntrenadores_Click);
             // 
             // grpUsuarios
             // 
@@ -137,6 +141,7 @@
             // 
             this.btnCaUsuarios.Name = "btnCaUsuarios";
             this.btnCaUsuarios.Text = "Usuarios";
+            this.btnCaUsuarios.Click += new System.EventHandler(this.btnCaUsuarios_Click);
             // 
             // tabOperaciones
             // 
@@ -156,11 +161,13 @@
             // 
             this.btnOpInscripcion.Name = "btnOpInscripcion";
             this.btnOpInscripcion.Text = "Punto de Venta";
+            this.btnOpInscripcion.Click += new System.EventHandler(this.btnOpInscripcion_Click);
             // 
             // btnOpAccesos
             // 
             this.btnOpAccesos.Name = "btnOpAccesos";
             this.btnOpAccesos.Text = "Monitor Ingreso";
+            this.btnOpAccesos.Click += new System.EventHandler(this.btnOpAccesos_Click);
             // 
             // grpAgenda
             // 
@@ -173,11 +180,13 @@
             // 
             this.btnOpHorarios.Name = "btnOpHorarios";
             this.btnOpHorarios.Text = "Programar Horarios";
+            this.btnOpHorarios.Click += new System.EventHandler(this.btnOpHorarios_Click);
             // 
             // btnOpReservas
             // 
             this.btnOpReservas.Name = "btnOpReservas";
             this.btnOpReservas.Text = "Reservas";
+            this.btnOpReservas.Click += new System.EventHandler(this.btnOpReservas_Click);
             // 
             // tabGerencia
             // 
@@ -196,6 +205,7 @@
             // 
             this.btnGerenciaReportes.Name = "btnGerenciaReportes";
             this.btnGerenciaReportes.Text = "Reporte Ingresos";
+            this.btnGerenciaReportes.Click += new System.EventHandler(this.btnGerenciaReportes_Click);
             // 
             // grpSistema
             // 
@@ -207,6 +217,7 @@
             // 
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Text = "Salir del Sistema";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // ribbonTopToolBar1
             // 

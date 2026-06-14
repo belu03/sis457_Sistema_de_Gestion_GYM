@@ -214,3 +214,26 @@ D:\SIS 457 T\Gimnasio\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
 D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
 D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
 D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmAutenticacion.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmCliente.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmRegistroAcceso.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.licenses
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.AssemblyReference.cache
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmAutenticacion.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmCliente.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmRegistroAcceso.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.Properties.Resources.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.GenerateResource.cache
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe.licenses
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.csproj.CoreCompileInputs.cache
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.exe
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.pdb
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmEntrenador.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmHorarioClase.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmInscripcion.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmMembresia.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmPrincipal.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReporte.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmReserva.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmServicio.resources
+D:\SIS457\sis457_Sistema_de_Gestion_GYM.6\Gimnasio\CpGimnasio\obj\Debug\CpGimnasio.FrmUsuarioSistema.resources

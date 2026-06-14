@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\",
+  "WorkspaceRootPath": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym\\gimnasio\\clngimnasio\\reportecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|solutionrelative:clngimnasio\\reportecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis457\\sis457_sistema_de_gestion_gym.6\\gimnasio\\cpgimnasio\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +42,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReporteCln.cs",
-              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\ReporteCln.cs",
-              "RelativeDocumentMoniker": "ClnGimnasio\\ReporteCln.cs",
-              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\ReporteCln.cs",
-              "RelativeToolTip": "ClnGimnasio\\ReporteCln.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FrmServicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmServicio.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmServicio.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmServicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpGimnasio\\FrmServicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T01:20:42.468Z",
+              "WhenOpened": "2026-06-14T04:52:50.925Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmReserva.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmReserva.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmReserva.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmReserva.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpGimnasio\\FrmReserva.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:52:43.603Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmPrincipal.Designer.cs",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmPrincipal.Designer.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmPrincipal.Designer.cs",
+              "RelativeToolTip": "CpGimnasio\\FrmPrincipal.Designer.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowEEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:42:22.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmReporte.cs",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmReporte.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmReporte.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmReporte.cs",
+              "RelativeToolTip": "CpGimnasio\\FrmReporte.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAhwC8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:09:00.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmReporte.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmReporte.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmReporte.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmReporte.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpGimnasio\\FrmReporte.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:06:10.921Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmPrincipal.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmPrincipal.cs",
+              "RelativeToolTip": "CpGimnasio\\FrmPrincipal.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAArwBQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:02:23.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmPrincipal.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpGimnasio\\FrmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:01:14.108Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmAutenticacion.cs",
+              "DocumentMoniker": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmAutenticacion.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmAutenticacion.cs",
+              "ToolTip": "D:\\SIS457\\sis457_Sistema_de_Gestion_GYM.6\\Gimnasio\\CpGimnasio\\FrmAutenticacion.cs",
+              "RelativeToolTip": "CpGimnasio\\FrmAutenticacion.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwE8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:18:12.857Z",
               "EditorCaption": ""
             }
           ]

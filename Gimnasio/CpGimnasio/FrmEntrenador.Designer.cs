@@ -2,8 +2,15 @@
 {
     partial class FrmEntrenador
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -13,8 +20,12 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -56,42 +67,38 @@
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(30, 31);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(432, 48);
-            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Size = new System.Drawing.Size(295, 32);
+            this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Gestión de Entrenadores";
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscar.Location = new System.Drawing.Point(30, 115);
-            this.lblBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBuscar.Location = new System.Drawing.Point(14, 50);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(173, 28);
-            this.lblBuscar.TabIndex = 1;
+            this.lblBuscar.Size = new System.Drawing.Size(123, 19);
+            this.lblBuscar.TabIndex = 2;
             this.lblBuscar.Text = "Buscar en historial:";
             // 
             // txtParametro
             // 
             this.txtParametro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParametro.Location = new System.Drawing.Point(240, 111);
-            this.txtParametro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtParametro.Location = new System.Drawing.Point(143, 47);
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(598, 34);
-            this.txtParametro.TabIndex = 2;
+            this.txtParametro.Size = new System.Drawing.Size(400, 25);
+            this.txtParametro.TabIndex = 3;
             this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(870, 108);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuscar.Location = new System.Drawing.Point(574, 47);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(150, 46);
-            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Size = new System.Drawing.Size(100, 30);
+            this.btnBuscar.TabIndex = 4;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -103,12 +110,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbxLista.Controls.Add(this.dgvLista);
             this.gbxLista.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxLista.Location = new System.Drawing.Point(30, 169);
-            this.gbxLista.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxLista.Location = new System.Drawing.Point(10, 100);
             this.gbxLista.Name = "gbxLista";
-            this.gbxLista.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbxLista.Size = new System.Drawing.Size(1836, 385);
-            this.gbxLista.TabIndex = 4;
+            this.gbxLista.Size = new System.Drawing.Size(1133, 279);
+            this.gbxLista.TabIndex = 5;
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Catálogo de Entrenadores";
             // 
@@ -121,13 +126,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(22, 38);
-            this.dgvLista.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvLista.Location = new System.Drawing.Point(15, 25);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 62;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(1791, 323);
+            this.dgvLista.Size = new System.Drawing.Size(1103, 239);
             this.dgvLista.TabIndex = 0;
             // 
             // pnlAcciones
@@ -139,19 +143,17 @@
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Location = new System.Drawing.Point(30, 569);
-            this.pnlAcciones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlAcciones.Location = new System.Drawing.Point(10, 385);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(1836, 77);
-            this.pnlAcciones.TabIndex = 5;
+            this.pnlAcciones.Size = new System.Drawing.Size(1166, 50);
+            this.pnlAcciones.TabIndex = 6;
             // 
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(1110, 15);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(740, 10);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(150, 54);
+            this.btnCerrar.Size = new System.Drawing.Size(100, 35);
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -160,10 +162,9 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(945, 15);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminar.Location = new System.Drawing.Point(630, 10);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(150, 54);
+            this.btnEliminar.Size = new System.Drawing.Size(100, 35);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -172,10 +173,9 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(780, 15);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEditar.Location = new System.Drawing.Point(520, 10);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(150, 54);
+            this.btnEditar.Size = new System.Drawing.Size(100, 35);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -184,10 +184,9 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(615, 15);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnNuevo.Location = new System.Drawing.Point(410, 10);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(150, 54);
+            this.btnNuevo.Size = new System.Drawing.Size(100, 35);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -208,21 +207,18 @@
             this.gbxDatos.Controls.Add(this.txtNombre);
             this.gbxDatos.Controls.Add(this.lblNombre);
             this.gbxDatos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxDatos.Location = new System.Drawing.Point(30, 662);
-            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxDatos.Location = new System.Drawing.Point(10, 452);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbxDatos.Size = new System.Drawing.Size(1836, 323);
-            this.gbxDatos.TabIndex = 6;
+            this.gbxDatos.Size = new System.Drawing.Size(1090, 210);
+            this.gbxDatos.TabIndex = 7;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos del Entrenador";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(1410, 231);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Location = new System.Drawing.Point(940, 150);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(150, 54);
+            this.btnCancelar.Size = new System.Drawing.Size(100, 35);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -230,10 +226,9 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(1230, 231);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGuardar.Location = new System.Drawing.Point(820, 150);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(150, 54);
+            this.btnGuardar.Size = new System.Drawing.Size(100, 35);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -243,73 +238,65 @@
             // 
             this.cbxEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxEspecialidad.FormattingEnabled = true;
-            this.cbxEspecialidad.Location = new System.Drawing.Point(630, 149);
-            this.cbxEspecialidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbxEspecialidad.Location = new System.Drawing.Point(420, 97);
             this.cbxEspecialidad.Name = "cbxEspecialidad";
-            this.cbxEspecialidad.Size = new System.Drawing.Size(373, 36);
+            this.cbxEspecialidad.Size = new System.Drawing.Size(250, 25);
             this.cbxEspecialidad.TabIndex = 7;
             // 
             // lblEspecialidad
             // 
             this.lblEspecialidad.AutoSize = true;
-            this.lblEspecialidad.Location = new System.Drawing.Point(480, 154);
-            this.lblEspecialidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEspecialidad.Location = new System.Drawing.Point(320, 100);
             this.lblEspecialidad.Name = "lblEspecialidad";
-            this.lblEspecialidad.Size = new System.Drawing.Size(124, 28);
+            this.lblEspecialidad.Size = new System.Drawing.Size(85, 19);
             this.lblEspecialidad.TabIndex = 6;
             this.lblEspecialidad.Text = "Especialidad:";
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(180, 149);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTelefono.Location = new System.Drawing.Point(120, 97);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(268, 34);
+            this.txtTelefono.Size = new System.Drawing.Size(180, 25);
             this.txtTelefono.TabIndex = 5;
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(45, 154);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefono.Location = new System.Drawing.Point(30, 100);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(90, 28);
+            this.lblTelefono.Size = new System.Drawing.Size(63, 19);
             this.lblTelefono.TabIndex = 4;
             this.lblTelefono.Text = "Teléfono:";
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(780, 65);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtApellido.Location = new System.Drawing.Point(520, 42);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(373, 34);
+            this.txtApellido.Size = new System.Drawing.Size(250, 25);
             this.txtApellido.TabIndex = 3;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(660, 69);
-            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApellido.Location = new System.Drawing.Point(440, 45);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(98, 28);
+            this.lblApellido.Size = new System.Drawing.Size(67, 19);
             this.lblApellido.TabIndex = 2;
             this.lblApellido.Text = "Apellidos:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(180, 65);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Location = new System.Drawing.Point(120, 42);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(373, 34);
+            this.txtNombre.Size = new System.Drawing.Size(250, 25);
             this.txtNombre.TabIndex = 1;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(45, 69);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(30, 45);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(97, 28);
+            this.lblNombre.Size = new System.Drawing.Size(68, 19);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombres:";
             // 
@@ -323,10 +310,9 @@
             // 
             // FrmEntrenador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CpGimnasio.Properties.Resources.gym_fondo3;
-            this.ClientSize = new System.Drawing.Size(1896, 1048);
+            this.ClientSize = new System.Drawing.Size(1003, 749);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);
@@ -334,9 +320,7 @@
             this.Controls.Add(this.txtParametro);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmEntrenador";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Entrenadores - Gimnasio :::";
             this.Load += new System.EventHandler(this.FrmEntrenador_Load);
             this.gbxLista.ResumeLayout(false);

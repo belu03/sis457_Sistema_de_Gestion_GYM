@@ -33,9 +33,7 @@
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtHoraFin = new System.Windows.Forms.TextBox();
             this.lblHoraFin = new System.Windows.Forms.Label();
-            this.txtHoraInicio = new System.Windows.Forms.TextBox();
             this.lblHoraInicio = new System.Windows.Forms.Label();
             this.cbxDia = new System.Windows.Forms.ComboBox();
             this.lblDia = new System.Windows.Forms.Label();
@@ -47,6 +45,8 @@
             this.erpEntrenador = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpDia = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpHora = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbHoraInicio = new System.Windows.Forms.ComboBox();
+            this.cmbHoraFin = new System.Windows.Forms.ComboBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -219,11 +219,11 @@
             this.gbxDatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbxDatos.BackColor = System.Drawing.Color.Transparent;
+            this.gbxDatos.Controls.Add(this.cmbHoraFin);
+            this.gbxDatos.Controls.Add(this.cmbHoraInicio);
             this.gbxDatos.Controls.Add(this.btnCancelar);
             this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.Controls.Add(this.txtHoraFin);
             this.gbxDatos.Controls.Add(this.lblHoraFin);
-            this.gbxDatos.Controls.Add(this.txtHoraInicio);
             this.gbxDatos.Controls.Add(this.lblHoraInicio);
             this.gbxDatos.Controls.Add(this.cbxDia);
             this.gbxDatos.Controls.Add(this.lblDia);
@@ -233,7 +233,7 @@
             this.gbxDatos.Controls.Add(this.lblServicio);
             this.gbxDatos.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gbxDatos.Location = new System.Drawing.Point(27, 530);
+            this.gbxDatos.Location = new System.Drawing.Point(29, 530);
             this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Name = "gbxDatos";
             this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
@@ -273,15 +273,6 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // txtHoraFin
-            // 
-            this.txtHoraFin.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraFin.Location = new System.Drawing.Point(827, 119);
-            this.txtHoraFin.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHoraFin.Name = "txtHoraFin";
-            this.txtHoraFin.Size = new System.Drawing.Size(132, 27);
-            this.txtHoraFin.TabIndex = 9;
-            // 
             // lblHoraFin
             // 
             this.lblHoraFin.AutoSize = true;
@@ -291,15 +282,6 @@
             this.lblHoraFin.Size = new System.Drawing.Size(74, 21);
             this.lblHoraFin.TabIndex = 8;
             this.lblHoraFin.Text = "Hora Fin:";
-            // 
-            // txtHoraInicio
-            // 
-            this.txtHoraInicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraInicio.Location = new System.Drawing.Point(560, 119);
-            this.txtHoraInicio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHoraInicio.Name = "txtHoraInicio";
-            this.txtHoraInicio.Size = new System.Drawing.Size(132, 27);
-            this.txtHoraInicio.TabIndex = 7;
             // 
             // lblHoraInicio
             // 
@@ -390,6 +372,26 @@
             // 
             this.erpHora.ContainerControl = this;
             // 
+            // cmbHoraInicio
+            // 
+            this.cmbHoraInicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHoraInicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbHoraInicio.FormattingEnabled = true;
+            this.cmbHoraInicio.Location = new System.Drawing.Point(560, 120);
+            this.cmbHoraInicio.Name = "cmbHoraInicio";
+            this.cmbHoraInicio.Size = new System.Drawing.Size(132, 28);
+            this.cmbHoraInicio.TabIndex = 12;
+            // 
+            // cmbHoraFin
+            // 
+            this.cmbHoraFin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHoraFin.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbHoraFin.FormattingEnabled = true;
+            this.cmbHoraFin.Location = new System.Drawing.Point(820, 121);
+            this.cmbHoraFin.Name = "cmbHoraFin";
+            this.cmbHoraFin.Size = new System.Drawing.Size(132, 28);
+            this.cmbHoraFin.TabIndex = 13;
+            // 
             // FrmHorarioClase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -440,9 +442,7 @@
         private System.Windows.Forms.GroupBox gbxDatos;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.TextBox txtHoraFin;
         private System.Windows.Forms.Label lblHoraFin;
-        private System.Windows.Forms.TextBox txtHoraInicio;
         private System.Windows.Forms.Label lblHoraInicio;
         private System.Windows.Forms.ComboBox cbxDia;
         private System.Windows.Forms.Label lblDia;
@@ -454,5 +454,7 @@
         private System.Windows.Forms.ErrorProvider erpEntrenador;
         private System.Windows.Forms.ErrorProvider erpDia;
         private System.Windows.Forms.ErrorProvider erpHora;
+        private System.Windows.Forms.ComboBox cmbHoraFin;
+        private System.Windows.Forms.ComboBox cmbHoraInicio;
     }
 }

@@ -220,11 +220,11 @@ INSERT INTO Servicio (nombre, descripcion, capacidad_maxima) VALUES
 ('CrossFit', 'Entrenamiento funcional de alta intensidad', 20),
 ('Yoga', 'Relajación y flexibilidad', 15),
 ('Boxeo', 'Técnica y combate', 10),
-('Diaria', 20.00, 1),
-('Mensual Básica', 120.00, 30),
-('Mensual Premium', 200.00, 30),
-('Familiar', 300.00, 30),
-('Estudiante', 80.00, 30);
+('Pilates', 'Ejercicios de fortalecimiento y flexibilidad', 15),
+('Funcional', 'Entrenamiento funcional grupal', 20),
+('Aeróbicos', 'Clases de acondicionamiento cardiovascular', 25),
+('TRX', 'Entrenamiento en suspensión', 12),
+('Kick Boxing', 'Entrenamiento de boxeo y acondicionamiento físico', 15);
 
 INSERT INTO Entrenador (nombre, apellido, telefono, especialidad) VALUES 
 ('Carlos', 'López', '77712345', 'Musculación'), 

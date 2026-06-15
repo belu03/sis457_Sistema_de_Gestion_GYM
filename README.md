@@ -1,95 +1,119 @@
-# sis457_Sistema_de_Gestion_GYM
-Sistema de Gestión de Gimnasio - Plataforma Web
+# Sistema de Gestión de Gimnasio – GYM La Plata
 
-Descripción del Negocio
+## Descripción General
 
-Somos un gimnasio que ofrece una plataforma web para la gestión eficiente de sus servicios, permitiendo a los usuarios acceder a clases como zumba, pilates y entrenamiento físico, así como realizar reservas en horarios disponibles. El sistema busca optimizar la administración del gimnasio y mejorar la experiencia de los clientes.
+El Sistema de Gestión de Gimnasio es una aplicación de escritorio desarrollada en C# con Windows Forms y SQL Server, orientada a la administración integral de un gimnasio. Permite gestionar clientes, membresías, servicios, entrenadores, horarios, reservas e inscripciones, además de controlar el acceso de los clientes y generar reportes gerenciales.
 
-Objetivo del Sistema
+## Objetivo del Sistema
 
-Desarrollar una página web que permita gestionar usuarios, servicios, horarios, reservas, pagos y asistencia, facilitando la organización y control de actividades del gimnasio.
+Desarrollar una solución informática que permita automatizar los procesos administrativos y operativos del gimnasio, optimizando el control de clientes, membresías, reservas y accesos, así como proporcionando información útil para la toma de decisiones mediante reportes gerenciales.
 
-Funcionalidades Principales
+## Tecnologías Utilizadas
 
-- Registro e inicio de sesión de usuarios
-- Visualización de servicios (zumba, pilates, etc.)
-- Consulta de horarios disponibles
-- Reserva de clases
-- Gestión de membresías
-- Registro de pagos
-- Control de asistencia
-- Panel de administración
+* Lenguaje de programación: C#
+* Framework: .NET Framework
+* Interfaz gráfica: Windows Forms
+* Base de datos: Microsoft SQL Server
+* ORM: Entity Framework Database First
+* IDE: Visual Studio 2022
 
-Entidades del Sistema (8 tablas)
+## Arquitectura del Proyecto
 
-1. Usuario
+El sistema se desarrolló utilizando una arquitectura en capas:
 
-- id_usuario
-- nombre
-- apellido
-- correo
-- contraseña
-- tipo (cliente/admin)
+### CadGimnasio
 
-2. Entrenador
+Capa de acceso a datos encargada de la comunicación con la base de datos mediante Entity Framework.
 
-- id_entrenador
-- nombre
-- apellido
-- telefono
-- especialidad
-- correo
+### ClnGimnasio
 
-3. Servicio
+Capa de lógica de negocio donde se implementan las reglas y procesos del sistema.
 
-- id_servicio
-- nombre
-- descripcion
-- duracion
-- capacidad_maxima
+### CpGimnasio
 
-4. Horario
+Capa de presentación que contiene los formularios y la interfaz gráfica para el usuario.
 
-- id_horario
-- dia
-- hora_inicio
-- hora_fin
-- id_servicio
-- id_entrenador
+## Funcionalidades Principales
 
-5. Reserva
+### Gestión de Clientes
 
-- id_reserva
-- fecha
-- estado
-- id_usuario
-- id_horario
+* Registro de clientes.
+* Modificación de información.
+* Búsqueda de clientes.
+* Baja lógica de registros.
 
-6. Membresia
+### Gestión de Membresías
 
-- id_membresia
-- tipo
-- precio
-- duracion
-- id_usuario
+* Registro y administración de planes de membresía.
+* Configuración de precios y duración.
 
-7. Pago
+### Gestión de Servicios
 
-- id_pago
-- monto
-- fecha
-- metodo_pago
-- id_usuario
-- id_membresia
+* Administración de servicios ofrecidos por el gimnasio.
+* Control de capacidad máxima.
 
-8. Asistencia
+### Gestión de Entrenadores
 
-- id_asistencia
-- fecha
-- estado (asistió / no asistió)
-- id_usuario
-- id_horario
+* Registro y administración de entrenadores.
+* Control de especialidades.
 
-Alcance del Proyecto
+### Gestión de Inscripciones
 
-El sistema permitirá gestionar reservas, pagos y control de asistencia dentro del gimnasio, mejorando la organización, control de usuarios y eficiencia administrativa.
+* Inscripción de clientes a membresías.
+* Registro de pagos.
+* Control de vigencia de membresías.
+
+### Gestión de Horarios y Clases
+
+* Programación de horarios.
+* Asignación de entrenadores.
+* Control de cupos.
+
+### Gestión de Reservas
+
+* Reserva de clases por parte de los clientes.
+* Control de asistencia y estado de reservas.
+
+### Control de Acceso
+
+* Registro de ingresos de clientes al gimnasio.
+* Historial de accesos.
+
+### Seguridad y Usuarios
+
+* Autenticación mediante usuario y contraseña.
+* Roles de Administrador y Recepcionista.
+* Contraseñas almacenadas mediante hash SHA-256 con salt.
+
+### Reportes Gerenciales
+
+* Reporte de ingresos por rango de fechas.
+* Consultas gerenciales para apoyo a la toma de decisiones.
+
+## Modelo de Datos
+
+El sistema está compuesto por las siguientes entidades principales:
+
+* UsuarioSistema
+* Cliente
+* Membresia
+* Inscripcion
+* Servicio
+* Entrenador
+* HorarioClase
+* Reserva
+* RegistroAcceso
+
+## Roles del Sistema
+
+### Administrador
+
+Puede gestionar todos los módulos del sistema.
+
+### Recepcionista
+
+Puede realizar operaciones relacionadas con clientes, inscripciones, reservas y control de acceso.
+
+## Alcance del Proyecto
+
+El sistema permite administrar las operaciones esenciales de un gimnasio, incluyendo la gestión de clientes, membresías, servicios, entrenadores, horarios, reservas y accesos. Asimismo, proporciona mecanismos de autenticación y reportes gerenciales que facilitan el control operativo y la toma de decisiones dentro de la organización.

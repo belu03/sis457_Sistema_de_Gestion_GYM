@@ -54,6 +54,15 @@ namespace CpGimnasio
 
             cbxDia.Items.Clear();
             cbxDia.Items.AddRange(new string[] { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" });
+
+            cmbHoraInicio.Items.Clear();
+            cmbHoraFin.Items.Clear();
+
+            for (int hora = 6; hora <= 22; hora++)
+            {
+                cmbHoraInicio.Items.Add($"{hora:00}:00");
+                cmbHoraFin.Items.Add($"{hora:00}:00");
+            }
         }
 
         private void FrmHorarioClase_Load(object sender, EventArgs e)
@@ -84,8 +93,8 @@ namespace CpGimnasio
             cbxServicio.SelectedIndex = -1;
             cbxEntrenador.SelectedIndex = -1;
             cbxDia.SelectedIndex = -1;
-            txtHoraInicio.Clear();
-            txtHoraFin.Clear();
+            cmbHoraInicio.SelectedIndex = -1;
+            cmbHoraFin.SelectedIndex = -1;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -126,8 +135,8 @@ namespace CpGimnasio
             cbxServicio.SelectedValue = horario.id_servicio;
             cbxEntrenador.SelectedValue = horario.id_entrenador;
             cbxDia.Text = horario.dia_semana;
-            txtHoraInicio.Text = horario.hora_inicio.ToString(@"hh\:mm");
-            txtHoraFin.Text = horario.hora_fin.ToString(@"hh\:mm");
+            cmbHoraInicio.Text = horario.hora_inicio.ToString(@"hh\:mm");
+            cmbHoraFin.Text = horario.hora_fin.ToString(@"hh\:mm");
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -152,8 +161,8 @@ namespace CpGimnasio
                 id_servicio = (int)cbxServicio.SelectedValue,
                 id_entrenador = (int)cbxEntrenador.SelectedValue,
                 dia_semana = cbxDia.Text,
-                hora_inicio = TimeSpan.Parse(txtHoraInicio.Text.Trim()),
-                hora_fin = TimeSpan.Parse(txtHoraFin.Text.Trim()),
+                hora_inicio = TimeSpan.Parse(cmbHoraInicio.Text),
+                hora_fin = TimeSpan.Parse(cmbHoraFin.Text),
                 usuarioRegistro = Util.usuario != null ? Util.usuario.nombre_usuario : "admin"
             };
 

@@ -202,21 +202,52 @@ INSERT INTO UsuarioSistema (nombre_usuario, contraseña, salt, rol) VALUES ('adm
 INSERT INTO UsuarioSistema (nombre_usuario, contraseña, salt, rol) VALUES ('recep', @passRecepcionista, @salt, 'Recepcionista');
 
 INSERT INTO Membresia (tipo, precio, duracion_dias) VALUES 
-('Mensual Regular', 150.00, 30), ('Trimestral VIP', 400.00, 90), ('Anual Premium', 1200.00, 365), ('Semanal', 50.00, 7);
+('Mensual Regular', 150.00, 30),
+('Mensual Estudiante', 120.00, 30),
+('Trimestral Básico', 400.00, 90),
+('Trimestral VIP', 550.00, 90),
+('Semestral', 800.00, 180),
+('Anual Básico', 1200.00, 365),
+('Anual Premium', 1500.00, 365),
+('Semanal', 50.00, 7),
+('Día Pase', 10.00, 1),
+('Familiar Mensual', 250.00, 30);
 
 INSERT INTO Servicio (nombre, descripcion, capacidad_maxima) VALUES 
-('Musculación', 'Acceso a la sala de pesas y máquinas', 50), ('Spinning', 'Clase guiada de bicicleta estática', 15),
-('Zumba', 'Baile coreográfico aeróbico', 25), ('CrossFit', 'Entrenamiento funcional de alta intensidad', 20),
-('Yoga', 'Relajación y flexibilidad', 15), ('Boxeo', 'Técnica y combate', 10);
+('Musculación', 'Acceso a la sala de pesas y máquinas', 50),
+('Spinning', 'Clase guiada de bicicleta estática', 15),
+('Zumba', 'Baile coreográfico aeróbico', 25),
+('CrossFit', 'Entrenamiento funcional de alta intensidad', 20),
+('Yoga', 'Relajación y flexibilidad', 15),
+('Boxeo', 'Técnica y combate', 10),
+('Diaria', 20.00, 1),
+('Mensual Básica', 120.00, 30),
+('Mensual Premium', 200.00, 30),
+('Familiar', 300.00, 30),
+('Estudiante', 80.00, 30);
 
 INSERT INTO Entrenador (nombre, apellido, telefono, especialidad) VALUES 
-('Carlos', 'López', '77712345', 'Musculación'), ('María', 'Fernández', '77798765', 'Cardio y Zumba'),
-('Luis', 'García', '77765432', 'CrossFit'), ('Ana', 'Martínez', '77711223', 'Yoga y Pilates');
+('Carlos', 'López', '77712345', 'Musculación'), 
+('María', 'Fernández', '77798765', 'Cardio y Zumba'),
+('Luis', 'García', '77765432', 'CrossFit'), 
+('Ana', 'Martínez', '77711223', 'Yoga y Pilates'),
+('Roberto', 'Quispe', '77722334', 'Boxeo'),
+('Fernanda', 'Cruz', '77733445', 'Yoga'),
+('Diego', 'Paredes', '77744556', 'Musculación'),
+('Carla', 'Flores', '77755667', 'Zumba'),
+('Andrés', 'Choque', '77766778', 'CrossFit');
 
 INSERT INTO Cliente (ci, nombre, apellido, telefono, correo) VALUES
 ('12345678', 'Juan', 'Pérez', '70011111', 'juan.perez@gmail.com'),
 ('23456789', 'María', 'Rodríguez', '70022222', 'maria.rodriguez@hotmail.com'),
-('34567890', 'Pedro', 'González', '70033333', 'pedro.gonzalez@gmail.com');
+('34567890', 'Pedro', 'González', '70033333', 'pedro.gonzalez@gmail.com'),
+('45678902', 'Ana', 'Quispe', '70044004', 'ana.quispe@gmail.com'),
+('56789013', 'Luis', 'Mamani', '70055005', 'luis.mamani@yahoo.com'),
+('67890124', 'Carla', 'Flores', '70066006', 'carla.flores@gmail.com'),
+('78901235', 'Diego', 'Choque', '70077007', 'diego.choque@hotmail.com'),
+('89012346', 'Fernanda', 'Cruz', '70088008', 'fernanda.cruz@gmail.com'),
+('90123457', 'Roberto', 'Vargas', '70099009', 'roberto.vargas@gmail.com'),
+('11223345', 'Sofía', 'Mendoza', '70111010', 'sofia.mendoza@gmail.com');
 
 INSERT INTO Inscripcion (id_cliente, id_membresia, fecha_inicio, fecha_fin, monto_pagado, metodo_pago, estado_inscripcion)
 VALUES 
@@ -225,7 +256,16 @@ VALUES
 (3, 1, DATEADD(DAY, -35, GETDATE()), DATEADD(DAY, -1, GETDATE()), 150.00, 'QR', 'Vencida');
 
 INSERT INTO HorarioClase (id_servicio, id_entrenador, dia_semana, hora_inicio, hora_fin, cupos_reservados) VALUES
-(1, 1, 'Lunes', '08:00', '09:00', 0), (4, 2, 'Lunes', '10:00', '11:00', 0);
+(1, 1, 'Lunes', '08:00', '09:00', 0),
+(4, 2, 'Lunes', '10:00', '11:00', 0),
+(2, 2, 'Lunes', '09:00', '10:00', 8),
+(3, 3, 'Martes', '10:00', '11:00', 12),
+(1, 2, 'Martes', '18:00', '19:00', 15),
+(2, 1, 'Miércoles', '07:00', '08:00', 10),
+(3, 3, 'Miércoles', '19:00', '20:00', 20),
+(1, 3, 'Jueves', '16:00', '17:00', 12),
+(2, 2, 'Viernes', '17:00', '18:00', 14);
+
 
 USE Gimnasio;
 GO

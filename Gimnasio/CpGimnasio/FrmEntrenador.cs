@@ -44,7 +44,32 @@ namespace CpGimnasio
             gbxDatos.Visible = false;
 
             cbxEspecialidad.Items.Clear();
-            cbxEspecialidad.Items.AddRange(new string[] { "Musculación", "Crossfit", "Cardio / Spinning", "Zumba / Aeróbicos", "Entrenador Personal" });
+            cbxEspecialidad.Items.AddRange(new string[] { 
+                "Musculación", 
+                "Crossfit", 
+                "Cardio / Spinning",
+                "Zumba / Aeróbicos", 
+                "Entrenador Personal" ,
+                "Yoga",
+                "Pilates",
+                "Natación",
+                "Artes Marciales",
+                "Funcional",
+                "Nutrición Deportiva",
+                "Rehabilitación Física",
+                "Powerlifting",
+                "Calistenia",
+                "HIIT (Entrenamiento de Alta Intensidad)",
+                "Entrenamiento de Fuerza",
+                "Entrenamiento de Resistencia",
+                "Entrenamiento de Aumento de Masa Muscular",
+                "Entrenamiento de Pérdida de Peso",
+                "Entrenamiento Deportivo (Atletas)",
+                "Entrenamiento de Alto Rendimiento",
+                "Movilidad y Flexibilidad",
+                "Stretching (Estiramiento)",
+                "Acondicionamiento Físico General"
+            });
             cbxEspecialidad.SelectedIndex = 0;
 
             listar();

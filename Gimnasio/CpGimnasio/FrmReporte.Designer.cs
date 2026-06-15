@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReporte));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.dtpInicio = new System.Windows.Forms.DateTimePicker();
@@ -194,6 +195,7 @@
             this.Controls.Add(this.dtpInicio);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmReporte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

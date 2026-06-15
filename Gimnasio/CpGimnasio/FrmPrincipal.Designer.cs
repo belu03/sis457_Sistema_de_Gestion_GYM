@@ -44,6 +44,7 @@
             // 
             this.Ribbon1.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
             this.Ribbon1.ApplicationMenuHolder = this.ribbonAppMenu;
+            this.Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar;
             this.Ribbon1.Font = new System.Drawing.Font("HP Simplified", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -231,7 +232,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "::: Gimnasio Master - Panel de Control :::";
+            this.Text = "::: Gimnasio La Plata - Panel de Control :::";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);

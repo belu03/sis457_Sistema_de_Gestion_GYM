@@ -39,7 +39,6 @@
     <ApplicationIcon>gym-icono.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
     <Reference Include="C1.Win.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.C1Ribbon.2, Version=2.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
@@ -349,6 +348,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gym-icono.ico" />
+    <None Include="Resources\logout %281%29.png" />
+    <None Include="Resources\button.png" />
+    <None Include="Resources\report1.png" />
+    <None Include="Resources\authentication.png" />
+    <None Include="Resources\schedule %281%29.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\alarm-clock.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\payment.png" />
+    <None Include="Resources\patient %282%291.png" />
+    <None Include="Resources\fitness.png" />
+    <None Include="Resources\dumbbell.png" />
+    <None Include="Resources\loyalty-program.png" />
+    <None Include="Resources\membership.png" />
+    <None Include="Resources\membership %281%29.png" />
+    <None Include="Resources\gym.png" />
+    <None Include="Resources\crm.png" />
+    <None Include="Resources\patient %282%29.png" />
+    <None Include="Resources\patient %281%29.png" />
     <None Include="Resources\cancelar blanco.png" />
     <None Include="Resources\buscar azul1.png" />
     <None Include="Resources\bloquear blanco1.png" />

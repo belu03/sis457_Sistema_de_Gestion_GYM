@@ -44,6 +44,7 @@
             // 
             this.Ribbon1.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
             this.Ribbon1.ApplicationMenuHolder = this.ribbonAppMenu;
+            this.Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar;
             this.Ribbon1.Font = new System.Drawing.Font("HP Simplified", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,24 +91,28 @@
             // 
             // btnCaClientes
             // 
+            this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnCaClientes.IconSet")))));
             this.btnCaClientes.Name = "btnCaClientes";
             this.btnCaClientes.Text = "Clientes";
             this.btnCaClientes.Click += new System.EventHandler(this.btnCaClientes_Click);
             // 
             // btnCaMembresias
             // 
+            this.btnCaMembresias.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnCaMembresias.IconSet")))));
             this.btnCaMembresias.Name = "btnCaMembresias";
             this.btnCaMembresias.Text = "Planes Membresía";
             this.btnCaMembresias.Click += new System.EventHandler(this.btnCaMembresias_Click);
             // 
             // btnCaServicios
             // 
+            this.btnCaServicios.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnCaServicios.IconSet")))));
             this.btnCaServicios.Name = "btnCaServicios";
             this.btnCaServicios.Text = "Servicios";
             this.btnCaServicios.Click += new System.EventHandler(this.btnCaServicios_Click);
             // 
             // btnCaEntrenadores
             // 
+            this.btnCaEntrenadores.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnCaEntrenadores.IconSet")))));
             this.btnCaEntrenadores.Name = "btnCaEntrenadores";
             this.btnCaEntrenadores.Text = "Entrenadores";
             this.btnCaEntrenadores.Click += new System.EventHandler(this.btnCaEntrenadores_Click);
@@ -120,6 +125,7 @@
             // 
             // btnCaUsuarios
             // 
+            this.btnCaUsuarios.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnCaUsuarios.IconSet")))));
             this.btnCaUsuarios.Name = "btnCaUsuarios";
             this.btnCaUsuarios.Text = "Usuarios";
             this.btnCaUsuarios.Click += new System.EventHandler(this.btnCaUsuarios_Click);
@@ -140,12 +146,14 @@
             // 
             // btnOpInscripcion
             // 
+            this.btnOpInscripcion.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnOpInscripcion.IconSet")))));
             this.btnOpInscripcion.Name = "btnOpInscripcion";
             this.btnOpInscripcion.Text = "Punto de Venta";
             this.btnOpInscripcion.Click += new System.EventHandler(this.btnOpInscripcion_Click);
             // 
             // btnOpAccesos
             // 
+            this.btnOpAccesos.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnOpAccesos.IconSet")))));
             this.btnOpAccesos.Name = "btnOpAccesos";
             this.btnOpAccesos.Text = "Monitor Ingreso";
             this.btnOpAccesos.Click += new System.EventHandler(this.btnOpAccesos_Click);
@@ -159,12 +167,14 @@
             // 
             // btnOpHorarios
             // 
+            this.btnOpHorarios.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnOpHorarios.IconSet")))));
             this.btnOpHorarios.Name = "btnOpHorarios";
             this.btnOpHorarios.Text = "Programar Horarios";
             this.btnOpHorarios.Click += new System.EventHandler(this.btnOpHorarios_Click);
             // 
             // btnOpReservas
             // 
+            this.btnOpReservas.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnOpReservas.IconSet")))));
             this.btnOpReservas.Name = "btnOpReservas";
             this.btnOpReservas.Text = "Reservas";
             this.btnOpReservas.Click += new System.EventHandler(this.btnOpReservas_Click);
@@ -184,6 +194,7 @@
             // 
             // btnGerenciaReportes
             // 
+            this.btnGerenciaReportes.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnGerenciaReportes.IconSet")))));
             this.btnGerenciaReportes.Name = "btnGerenciaReportes";
             this.btnGerenciaReportes.Text = "Reporte Ingresos";
             this.btnGerenciaReportes.Click += new System.EventHandler(this.btnGerenciaReportes_Click);
@@ -196,6 +207,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(64, 64), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("btnSalir.IconSet")))));
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Text = "Salir del Sistema";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);

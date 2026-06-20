@@ -140,6 +140,22 @@ namespace CpGimnasio
             {
                 if (esNuevo)
                 {
+                    string nombreUsuario = txtNombreUsuario.Text.Trim();
+
+                    bool existe = db.UsuarioSistema.Any(x =>
+                        x.nombre_usuario == nombreUsuario &&
+                        x.estado == 1);
+
+                    if (existe)
+                    {
+                        MessageBox.Show(
+                            "El nombre de usuario ya se encuentra registrado.",
+                            "Validación",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        txtNombreUsuario.Focus();
+                        return;
+                    }
                     string saltStatico = "SaltSeguro2026";
                     var us = new UsuarioSistema
                     {

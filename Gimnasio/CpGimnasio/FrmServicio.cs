@@ -1,8 +1,9 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-using CadGimnasio;
+﻿using CadGimnasio;
 using ClnGimnasio;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace CpGimnasio
 {
@@ -112,16 +113,64 @@ namespace CpGimnasio
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            erpNombre.Clear(); erpCapacidad.Clear();
-            if (string.IsNullOrWhiteSpace(txtNombre.Text)) { erpNombre.SetError(txtNombre, "Obligatorio"); return; }
-            if (nudCapacidad.Value <= 0) { erpCapacidad.SetError(nudCapacidad, "Mayor a 0"); return; }
+            erpNombre.Clear();
+            erpCapacidad.Clear();
+
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                erpNombre.SetError(txtNombre, "Obligatorio");
+                txtNombre.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
+            {
+                MessageBox.Show(
+                    "Debe ingresar una descripción para el servicio.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                txtDescripcion.Focus();
+                return;
+            }
+
+            if (nudCapacidad.Value <= 0)
+            {
+                erpCapacidad.SetError(nudCapacidad, "Mayor a 0");
+                nudCapacidad.Focus();
+                return;
+            }
+
+            if (esNuevo)
+            {
+                var lista = ServicioCln.listarPa("");
+
+                var servicioExistente = lista.FirstOrDefault(x =>
+                    x.nombre.Trim().ToUpper() ==
+                    txtNombre.Text.Trim().ToUpper());
+
+                if (servicioExistente != null)
+                {
+                    MessageBox.Show(
+                        $"El servicio {servicioExistente.nombre} ya se encuentra registrado con capacidad máxima de {servicioExistente.capacidad_maxima} personas.",
+                        "Validación",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    txtNombre.Focus();
+                    return;
+                }
+            }
 
             var servicio = new Servicio()
             {
                 nombre = txtNombre.Text.Trim(),
                 descripcion = txtDescripcion.Text.Trim(),
                 capacidad_maxima = (int)nudCapacidad.Value,
-                usuarioRegistro = Util.usuario != null ? Util.usuario.nombre_usuario : "admin"
+                usuarioRegistro = Util.usuario != null
+                    ? Util.usuario.nombre_usuario
+                    : "admin"
             };
 
             if (esNuevo)
@@ -138,7 +187,12 @@ namespace CpGimnasio
 
             listar();
             btnCancelar.PerformClick();
-            MessageBox.Show("Servicio guardado", "::: Mensaje :::", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show(
+                "Servicio guardado correctamente.",
+                "::: Mensaje :::",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

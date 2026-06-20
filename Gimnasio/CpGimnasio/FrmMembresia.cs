@@ -1,8 +1,9 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-using CadGimnasio;
+﻿using CadGimnasio;
 using ClnGimnasio;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace CpGimnasio
 {
@@ -128,10 +129,51 @@ namespace CpGimnasio
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            erpTipo.Clear(); erpPrecio.Clear(); erpDuracion.Clear();
-            if (string.IsNullOrWhiteSpace(txtTipo.Text)) { erpTipo.SetError(txtTipo, "Obligatorio"); return; }
-            if (nudPrecio.Value <= 0) { erpPrecio.SetError(nudPrecio, "Mayor a 0"); return; }
-            if (nudDuracion.Value <= 0) { erpDuracion.SetError(nudDuracion, "Mayor a 0"); return; }
+            erpTipo.Clear();
+            erpPrecio.Clear();
+            erpDuracion.Clear();
+
+            if (string.IsNullOrWhiteSpace(txtTipo.Text))
+            {
+                erpTipo.SetError(txtTipo, "Obligatorio");
+                txtTipo.Focus();
+                return;
+            }
+
+            if (nudPrecio.Value <= 0)
+            {
+                erpPrecio.SetError(nudPrecio, "Mayor a 0");
+                nudPrecio.Focus();
+                return;
+            }
+
+            if (nudDuracion.Value <= 0)
+            {
+                erpDuracion.SetError(nudDuracion, "Mayor a 0");
+                nudDuracion.Focus();
+                return;
+            }
+
+            if (esNuevo)
+            {
+                var lista = MembresiaCln.listarPa("");
+
+                var membresiaExistente = lista.FirstOrDefault(x =>
+                    x.tipo.Trim().ToUpper() ==
+                    txtTipo.Text.Trim().ToUpper());
+
+                if (membresiaExistente != null)
+                {
+                    MessageBox.Show(
+                        $"La membresía '{membresiaExistente.tipo}' ya se encuentra registrada con un precio de Bs. {membresiaExistente.precio:N2} y una duración de {membresiaExistente.duracion_dias} días.",
+                        "Validación",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    txtTipo.Focus();
+                    return;
+                }
+            }
 
             var membresia = new Membresia()
             {
@@ -155,7 +197,12 @@ namespace CpGimnasio
 
             listar();
             btnCancelar.PerformClick();
-            MessageBox.Show("Membresía guardada", "::: Mensaje :::", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show(
+                "Membresía guardada",
+                "::: Mensaje :::",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

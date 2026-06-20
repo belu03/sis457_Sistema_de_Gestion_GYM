@@ -1,8 +1,9 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-using CadGimnasio;
+﻿using CadGimnasio;
 using ClnGimnasio;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace CpGimnasio
 {
@@ -132,7 +133,6 @@ namespace CpGimnasio
             cbxEspecialidad.Text = entrenador.especialidad;
             txtNombre.Focus();
         }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             gbxDatos.Visible = false;
@@ -159,14 +159,23 @@ namespace CpGimnasio
 
             if (esNuevo)
             {
-                entrenador.fechaRegistro = DateTime.Now;
-                entrenador.estado = 1;
-                EntrenadorCln.crear(entrenador);
-            }
-            else
-            {
-                entrenador.id = (int)dgvLista.CurrentRow.Cells["id"].Value;
-                EntrenadorCln.modificar(entrenador);
+                var lista = EntrenadorCln.listarPa("");
+
+                var entrenadorExistente = lista.FirstOrDefault(x =>
+                x.nombre.Trim().ToUpper() == txtNombre.Text.Trim().ToUpper() &&
+                x.apellido.Trim().ToUpper() == txtApellido.Text.Trim().ToUpper());
+
+                if (entrenadorExistente != null)
+                {
+                    MessageBox.Show(
+                        $"El entrenador {entrenadorExistente.nombre} {entrenadorExistente.apellido} ya se encuentra registrado con la especialidad {entrenadorExistente.especialidad}.",
+                        "Validación",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
+                    txtNombre.Focus();
+                    return;
+                }
             }
 
             listar();

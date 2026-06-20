@@ -248,7 +248,7 @@
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancelar.Image = global::CpGimnasio.Properties.Resources.cancelar_blanco;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(1253, 185);
+            this.btnCancelar.Location = new System.Drawing.Point(1438, 188);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(143, 43);
@@ -264,7 +264,7 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardar.Image = global::CpGimnasio.Properties.Resources.guardar_azul1;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(1093, 185);
+            this.btnGuardar.Location = new System.Drawing.Point(1278, 188);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(143, 43);

@@ -40,7 +40,13 @@ namespace ClnGimnasio
         {
             using (var context = new GimnasioEntities())
             {
-                return context.paInscripcionListar(parametro.Trim()).ToList();
+                return context.paInscripcionListar(parametro.Trim())
+                    .OrderBy(x =>
+                        x.estado_inscripcion == "Activa" ? 1 :
+                        x.estado_inscripcion == "Vencida" ? 2 : 3)
+                    .ThenByDescending(x => x.fecha_inicio)
+                    .ThenByDescending(x => x.fechaRegistro)
+                    .ToList();
             }
         }
     }

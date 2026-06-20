@@ -176,18 +176,29 @@ AS
   ORDER BY apellido, nombre;
 GO
 
+USE Gimnasio;
+GO
 DROP PROC IF EXISTS paInscripcionListar;
 GO
+
 CREATE PROC paInscripcionListar @parametro VARCHAR(50)
 AS
-  SELECT i.id, i.id_cliente, i.id_membresia, c.ci, c.nombre, c.apellido, m.tipo AS tipo_membresia, 
-         i.fecha_inicio, i.fecha_fin, i.monto_pagado, i.metodo_pago, i.estado_inscripcion, 
-         i.usuarioRegistro, i.fechaRegistro, i.estado
-  FROM Inscripcion i
-  INNER JOIN Cliente c ON c.id = i.id_cliente
-  INNER JOIN Membresia m ON m.id = i.id_membresia
-  WHERE i.estado=1 AND c.ci+c.nombre+c.apellido+m.tipo LIKE '%'+REPLACE(@parametro,' ','%')+'%'
-  ORDER BY i.fecha_fin DESC;
+SELECT
+    i.id, i.id_cliente, i.id_membresia, c.ci, c.nombre, c.apellido, m.tipo AS tipo_membresia, i.fecha_inicio,
+    i.fecha_fin, i.monto_pagado, i.metodo_pago, i.estado_inscripcion, i.usuarioRegistro, i.fechaRegistro, i.estado
+FROM Inscripcion i
+INNER JOIN Cliente c ON c.id = i.id_cliente
+INNER JOIN Membresia m ON m.id = i.id_membresia
+WHERE i.estado = 1
+  AND c.ci + c.nombre + c.apellido + m.tipo
+      LIKE '%' + REPLACE(@parametro,' ','%') + '%'
+ORDER BY
+    CASE i.estado_inscripcion
+        WHEN 'Activa' THEN 1
+        WHEN 'Vencida' THEN 2
+        ELSE 3
+    END,
+    i.fecha_inicio DESC;
 GO
 
 -- ==========================================
@@ -267,8 +278,7 @@ INSERT INTO HorarioClase (id_servicio, id_entrenador, dia_semana, hora_inicio, h
 (2, 2, 'Viernes', '17:00', '18:00', 14);
 
 
-USE Gimnasio;
-GO
+
 DROP PROC IF EXISTS paRegistroAccesoListar;
 GO
 CREATE PROC paRegistroAccesoListar @parametro VARCHAR(50)
@@ -285,18 +295,30 @@ GO
 
 DROP PROC IF EXISTS paHorarioClaseListar;
 GO
+
 CREATE PROC paHorarioClaseListar @parametro VARCHAR(50)
 AS
-  SELECT h.id, h.id_servicio, h.id_entrenador, 
-         s.nombre AS servicio, 
+  SELECT h.id, h.id_servicio, h.id_entrenador,
+         s.nombre AS servicio,
          e.nombre + ' ' + e.apellido AS entrenador,
          h.dia_semana, h.hora_inicio, h.hora_fin, h.cupos_reservados,
          h.usuarioRegistro, h.fechaRegistro, h.estado
   FROM HorarioClase h
   INNER JOIN Servicio s ON s.id = h.id_servicio
   INNER JOIN Entrenador e ON e.id = h.id_entrenador
-  WHERE h.estado=1 AND (s.nombre + e.nombre + e.apellido + h.dia_semana LIKE '%'+REPLACE(@parametro,' ','%')+'%')
-  ORDER BY h.dia_semana, h.hora_inicio;
+  WHERE h.estado=1
+    AND (s.nombre + e.nombre + e.apellido + h.dia_semana LIKE '%'+REPLACE(@parametro,' ','%')+'%')
+  ORDER BY
+    CASE h.dia_semana
+        WHEN 'Lunes' THEN 1
+        WHEN 'Martes' THEN 2
+        WHEN 'Miércoles' THEN 3
+        WHEN 'Jueves' THEN 4
+        WHEN 'Viernes' THEN 5
+        WHEN 'Sábado' THEN 6
+        WHEN 'Domingo' THEN 7
+    END,
+    h.hora_inicio;
 GO
 
 DROP PROC IF EXISTS paReservaListar;
@@ -365,3 +387,6 @@ AS
     AND CAST(i.fecha_transaccion AS DATE) BETWEEN @fechaInicio AND @fechaFin
   ORDER BY i.fecha_transaccion DESC;
 GO
+
+
+

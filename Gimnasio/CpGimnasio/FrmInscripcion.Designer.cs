@@ -239,7 +239,7 @@
             // 
             this.lblEstadoMembresia.AutoSize = true;
             this.lblEstadoMembresia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstadoMembresia.Location = new System.Drawing.Point(453, 55);
+            this.lblEstadoMembresia.Location = new System.Drawing.Point(448, 55);
             this.lblEstadoMembresia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstadoMembresia.Name = "lblEstadoMembresia";
             this.lblEstadoMembresia.Size = new System.Drawing.Size(0, 25);
@@ -252,7 +252,7 @@
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancelar.Image = global::CpGimnasio.Properties.Resources.cancelar_blanco;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(1306, 185);
+            this.btnCancelar.Location = new System.Drawing.Point(1433, 180);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(143, 43);
@@ -268,7 +268,7 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardar.Image = global::CpGimnasio.Properties.Resources.guardar_azul1;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(1103, 185);
+            this.btnGuardar.Location = new System.Drawing.Point(1230, 180);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(180, 43);
@@ -282,7 +282,7 @@
             // 
             this.dtpInicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpInicio.Location = new System.Drawing.Point(1133, 119);
+            this.dtpInicio.Location = new System.Drawing.Point(1337, 117);
             this.dtpInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(199, 27);
@@ -292,7 +292,7 @@
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblInicio.Location = new System.Drawing.Point(1013, 123);
+            this.lblInicio.Location = new System.Drawing.Point(1217, 121);
             this.lblInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(97, 21);
@@ -304,7 +304,7 @@
             this.cbxMetodoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMetodoPago.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMetodoPago.FormattingEnabled = true;
-            this.cbxMetodoPago.Location = new System.Drawing.Point(787, 119);
+            this.cbxMetodoPago.Location = new System.Drawing.Point(978, 117);
             this.cbxMetodoPago.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMetodoPago.Name = "cbxMetodoPago";
             this.cbxMetodoPago.Size = new System.Drawing.Size(199, 28);
@@ -314,7 +314,7 @@
             // 
             this.lblMetodoPago.AutoSize = true;
             this.lblMetodoPago.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMetodoPago.Location = new System.Drawing.Point(653, 123);
+            this.lblMetodoPago.Location = new System.Drawing.Point(844, 121);
             this.lblMetodoPago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMetodoPago.Name = "lblMetodoPago";
             this.lblMetodoPago.Size = new System.Drawing.Size(109, 21);
@@ -326,7 +326,7 @@
             this.lblMonto.AutoSize = true;
             this.lblMonto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMonto.ForeColor = System.Drawing.Color.Cyan;
-            this.lblMonto.Location = new System.Drawing.Point(520, 120);
+            this.lblMonto.Location = new System.Drawing.Point(521, 121);
             this.lblMonto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMonto.Name = "lblMonto";
             this.lblMonto.Size = new System.Drawing.Size(81, 28);
@@ -370,7 +370,7 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(1107, 52);
+            this.txtApellido.Location = new System.Drawing.Point(1337, 53);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(239, 27);
@@ -380,7 +380,7 @@
             // 
             this.lblApellido.AutoSize = true;
             this.lblApellido.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblApellido.Location = new System.Drawing.Point(1013, 55);
+            this.lblApellido.Location = new System.Drawing.Point(1243, 56);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(73, 21);
@@ -390,7 +390,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(747, 52);
+            this.txtNombre.Location = new System.Drawing.Point(977, 53);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(239, 27);
@@ -400,7 +400,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNombre.Location = new System.Drawing.Point(653, 55);
+            this.lblNombre.Location = new System.Drawing.Point(883, 56);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(74, 21);

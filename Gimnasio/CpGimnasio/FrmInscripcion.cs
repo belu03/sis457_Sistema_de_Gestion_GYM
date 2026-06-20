@@ -125,7 +125,7 @@ namespace CpGimnasio
                 {
                     int dias = (ultimaInscripcion.fecha_fin - DateTime.Now.Date).Days;
                     lblEstadoMembresia.Text = $"PLAN ACTIVO: Quedan {dias} días.";
-                    lblEstadoMembresia.ForeColor = Color.Green;
+                    lblEstadoMembresia.ForeColor = ColorTranslator.FromHtml("#63FF47");
 
                     RegistroAccesoCln.crear(new RegistroAcceso
                     {
@@ -143,13 +143,13 @@ namespace CpGimnasio
                 else
                 {
                     lblEstadoMembresia.Text = "PLAN VENCIDO. Requiere renovación.";
-                    lblEstadoMembresia.ForeColor = Color.Red;
+                    lblEstadoMembresia.ForeColor = ColorTranslator.FromHtml("#F73B14");
                 }
             }
             else
             {
                 lblEstadoMembresia.Text = "CLIENTE NUEVO. Complete datos.";
-                lblEstadoMembresia.ForeColor = Color.Blue;
+                lblEstadoMembresia.ForeColor = ColorTranslator.FromHtml("#ECFF4A");
                 txtNombre.Focus();
             }
         }

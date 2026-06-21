@@ -165,6 +165,13 @@ namespace CpGimnasio
                 MessageBox.Show("Cliente y Horario son obligatorios", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            // Validación adicional: La fecha de la reserva no puede ser anterior a la fecha actual para nuevas reservas
+            if (esNuevo && dtpFecha.Value.Date < DateTime.Now.Date)
+            {
+                MessageBox.Show("La fecha de la reserva no puede ser anterior a hoy.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpFecha.Focus();
+                return;
+            }
 
             using (var db = new GimnasioEntities())
             {

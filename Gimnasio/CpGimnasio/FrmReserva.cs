@@ -166,6 +166,14 @@ namespace CpGimnasio
                 return;
             }
 
+            // VALIDACIÓN CRÍTICA: No permitir reservas para fechas pasadas
+            if (esNuevo && dtpFecha.Value.Date < DateTime.Now.Date)
+            {
+                MessageBox.Show("La fecha de la reserva no puede ser anterior a hoy.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpFecha.Focus();
+                return;
+            }
+
             using (var db = new GimnasioEntities())
             {
                 if (esNuevo)

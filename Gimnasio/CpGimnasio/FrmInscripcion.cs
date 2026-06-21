@@ -10,6 +10,7 @@ namespace CpGimnasio
     public partial class FrmInscripcion : Form
     {
         private Cliente clienteActual = null;
+        private decimal montoMembresiaActual = 0m;
 
         public FrmInscripcion()
         {
@@ -160,7 +161,50 @@ namespace CpGimnasio
             if (cbxMembresia.SelectedValue != null && int.TryParse(cbxMembresia.SelectedValue.ToString(), out int idMem))
             {
                 var mem = MembresiaCln.obtenerUno(idMem);
-                if (mem != null) lblMonto.Text = $"{mem.precio:0.00} Bs";
+                if (mem != null)
+                {
+                    montoMembresiaActual = mem.precio;
+                    lblMonto.Text = $"{mem.precio:0.00} Bs";
+                    calcularCambio();
+                }
+            }
+        }
+
+
+        private void cbxMetodoPago_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            bool esEfectivo = cbxMetodoPago.Text == "Efectivo";
+            lblTextoRecibido.Visible = esEfectivo;
+            txtMontoRecibido.Visible = esEfectivo;
+            lblTextoCambio.Visible = esEfectivo;
+            lblCambio.Visible = esEfectivo;
+
+            if (esEfectivo)
+            {
+                txtMontoRecibido.Focus();
+            }
+            else
+            {
+                txtMontoRecibido.Clear();
+                lblCambio.Text = "0.00 Bs";
+            }
+        }
+
+        private void txtMontoRecibido_TextChanged_1(object sender, EventArgs e) => calcularCambio();
+
+        // Método para calcular el cambio en tiempo real
+        private void calcularCambio()
+        {
+            if (decimal.TryParse(txtMontoRecibido.Text, out decimal montoRecibido))
+            {
+                decimal cambio = montoRecibido - montoMembresiaActual;
+                lblCambio.Text = $"{(cambio < 0 ? 0 : cambio):0.00} Bs";
+                lblCambio.ForeColor = cambio < 0 ? Color.Red : Color.Lime;
+            }
+            else
+            {
+                lblCambio.Text = "0.00 Bs";
+                lblCambio.ForeColor = Color.Lime;
             }
         }
 
@@ -178,6 +222,35 @@ namespace CpGimnasio
 
                 dtpInicio.Focus();
                 return;
+            }
+
+            // Validar que la fecha de inicio no sea anterior a hoy
+            if (dtpInicio.Value.Date < DateTime.Now.Date)
+            {
+                MessageBox.Show("La fecha de inicio de la membresía no puede ser anterior a hoy.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpInicio.Focus();
+                return;
+            }
+
+            // Validar monto recibido si el método de pago es efectivo
+            decimal cambio = 0m;
+            if (cbxMetodoPago.Text == "Efectivo")
+            {
+                if (!decimal.TryParse(txtMontoRecibido.Text, out decimal montoRecibido) || montoRecibido <= 0)
+                {
+                    MessageBox.Show("Ingrese el monto recibido en efectivo.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtMontoRecibido.Focus();
+                    return;
+                }
+
+                if (montoRecibido < montoMembresiaActual)
+                {
+                    MessageBox.Show($"El monto recibido (Bs {montoRecibido:0.00}) es menor al monto a pagar (Bs {montoMembresiaActual:0.00}).", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtMontoRecibido.Focus();
+                    return;
+                }
+
+                cambio = montoRecibido - montoMembresiaActual;
             }
 
             string usuarioApp = Util.usuario != null ? Util.usuario.nombre_usuario : "admin";

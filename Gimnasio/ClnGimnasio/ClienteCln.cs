@@ -87,6 +87,23 @@ namespace ClnGimnasio
             }
         }
 
+        public static List<Cliente> listarConMembresiaActiva()
+        {
+            using (var context = new GimnasioEntities())
+            {
+                var clientes = context.Cliente
+                    .Where(c => c.estado == 1)
+                    .Where(c => context.Inscripcion.Any(i =>
+                        i.id_cliente == c.id &&
+                        i.estado == 1 &&
+                        i.estado_inscripcion == "Activa"))
+                    .OrderBy(c => c.apellido)
+                    .ToList();
+
+                return clientes;
+            }
+        }
+
         public static List<paClienteListar_Result> listarPa(string parametro)
         {
             using (var context = new GimnasioEntities())

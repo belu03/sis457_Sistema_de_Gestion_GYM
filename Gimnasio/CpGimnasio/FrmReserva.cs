@@ -46,7 +46,7 @@ namespace CpGimnasio
 
         private void cargarCombos()
         {
-            var clientes = ClienteCln.listar().Select(c => new { c.id, nombreCompleto = $"{c.nombre} {c.apellido} ({c.ci})" }).ToList();
+            var clientes = ClienteCln.listarConMembresiaActiva().Select(c => new{c.id,nombreCompleto = $"{c.nombre} {c.apellido} ({c.ci})"}).ToList();
             cbxCliente.DataSource = clientes;
             cbxCliente.DisplayMember = "nombreCompleto";
             cbxCliente.ValueMember = "id";
@@ -58,7 +58,7 @@ namespace CpGimnasio
             }).Select(h => {
                 var serv = ServicioCln.obtenerUno(h.id_servicio);
                 int disponibles = serv.capacidad_maxima - h.cupos_reservados;
-                return new { h.id, descripcion = $"{serv.nombre} - {h.dia_semana} {h.hora_inicio.ToString(@"hh\:mm")} (Quedan {disponibles} cupos)" };
+                return new { h.id, descripcion = $"{serv.nombre} - {h.dia_semana} {h.hora_inicio:hh\\:mm} (Quedan {disponibles} cupos)" };
             }).ToList();
 
             cbxHorario.DataSource = horarios;
@@ -68,6 +68,70 @@ namespace CpGimnasio
 
             cbxEstado.Items.Clear();
             cbxEstado.Items.AddRange(new string[] { "Confirmada", "Pendiente" });
+
+            cbxCliente.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbxCliente.AutoCompleteSource = AutoCompleteSource.ListItems;
+        }
+
+        private void cargarHorariosPorFecha()
+        {
+            string diaSemana = "";
+
+            switch (dtpFecha.Value.DayOfWeek)
+            {
+                case DayOfWeek.Monday:
+                    diaSemana = "Lunes";
+                    break;
+
+                case DayOfWeek.Tuesday:
+                    diaSemana = "Martes";
+                    break;
+
+                case DayOfWeek.Wednesday:
+                    diaSemana = "Miércoles";
+                    break;
+
+                case DayOfWeek.Thursday:
+                    diaSemana = "Jueves";
+                    break;
+
+                case DayOfWeek.Friday:
+                    diaSemana = "Viernes";
+                    break;
+
+                case DayOfWeek.Saturday:
+                    diaSemana = "Sábado";
+                    break;
+
+                case DayOfWeek.Sunday:
+                    diaSemana = "Domingo";
+                    break;
+            }
+
+            var horarios = HorarioClaseCln.listar()
+                .Where(h => h.dia_semana == diaSemana)
+                .Where(h =>
+                {
+                    var serv = ServicioCln.obtenerUno(h.id_servicio);
+                    return h.cupos_reservados < serv.capacidad_maxima;
+                })
+                .Select(h =>
+                {
+                    var serv = ServicioCln.obtenerUno(h.id_servicio);
+                    int disponibles = serv.capacidad_maxima - h.cupos_reservados;
+
+                    return new
+                    {
+                        h.id,
+                        descripcion = $"{serv.nombre} - {h.dia_semana} {h.hora_inicio:hh\\:mm} (Quedan {disponibles} cupos)"
+                    };
+                })
+                .ToList();
+
+            cbxHorario.DataSource = horarios;
+            cbxHorario.DisplayMember = "descripcion";
+            cbxHorario.ValueMember = "id";
+            cbxHorario.SelectedIndex = -1;
         }
 
         private void FrmReserva_Load(object sender, EventArgs e)
@@ -118,6 +182,7 @@ namespace CpGimnasio
 
             cargarCombos();
             limpiar();
+            cargarHorariosPorFecha();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -165,11 +230,52 @@ namespace CpGimnasio
                 MessageBox.Show("Cliente y Horario son obligatorios", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            // Validación adicional: La fecha de la reserva no puede ser anterior a la fecha actual para nuevas reservas
-            if (esNuevo && dtpFecha.Value.Date < DateTime.Now.Date)
+
+            var horarioSeleccionado = HorarioClaseCln.obtenerUno((int)cbxHorario.SelectedValue);
+
+            string diaHorario = horarioSeleccionado.dia_semana;
+
+            string diaFecha = "";
+
+            switch (dtpFecha.Value.DayOfWeek)
             {
-                MessageBox.Show("La fecha de la reserva no puede ser anterior a hoy.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dtpFecha.Focus();
+                case DayOfWeek.Monday:
+                    diaFecha = "Lunes";
+                    break;
+
+                case DayOfWeek.Tuesday:
+                    diaFecha = "Martes";
+                    break;
+
+                case DayOfWeek.Wednesday:
+                    diaFecha = "Miércoles";
+                    break;
+
+                case DayOfWeek.Thursday:
+                    diaFecha = "Jueves";
+                    break;
+
+                case DayOfWeek.Friday:
+                    diaFecha = "Viernes";
+                    break;
+
+                case DayOfWeek.Saturday:
+                    diaFecha = "Sábado";
+                    break;
+
+                case DayOfWeek.Sunday:
+                    diaFecha = "Domingo";
+                    break;
+            }
+
+            if (diaHorario != diaFecha)
+            {
+                MessageBox.Show(
+                    $"La fecha seleccionada corresponde a {diaFecha}, pero la clase está programada para {diaHorario}.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
                 return;
             }
 
@@ -177,6 +283,19 @@ namespace CpGimnasio
             {
                 if (esNuevo)
                 {
+                    if (ReservaCln.ExisteReserva(
+                    (int)cbxCliente.SelectedValue,
+                    (int)cbxHorario.SelectedValue,
+                    dtpFecha.Value.Date))
+                    {
+                        MessageBox.Show(
+                            "El cliente ya tiene una reserva registrada para esta clase y fecha.",
+                            "Validación",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
+                        return;
+                    }
                     int idHorario = (int)cbxHorario.SelectedValue;
                     var horarioDB = db.HorarioClase.Find(idHorario);
                     var servicioDB = db.Servicio.Find(horarioDB.id_servicio);
@@ -256,5 +375,10 @@ namespace CpGimnasio
         }
 
         private void btnCerrar_Click(object sender, EventArgs e) => Close();
+
+        private void dtpFecha_ValueChanged(object sender, EventArgs e)
+        {
+            cargarHorariosPorFecha();
+        }
     }
 }

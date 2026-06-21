@@ -113,5 +113,17 @@ namespace ClnGimnasio
                 return context.paReservaListar(parametro.Trim()).Where(x => x.estado == 1).ToList();
             }
         }
+
+        public static bool ExisteReserva(int idCliente, int idHorario, DateTime fecha)
+        {
+            using (var context = new GimnasioEntities())
+            {
+                return context.Reserva.Any(r =>
+                    r.estado == 1 &&
+                    r.id_cliente == idCliente &&
+                    r.id_horarioclase == idHorario &&
+                    r.fecha_reserva == fecha);
+            }
+        }
     }
 }

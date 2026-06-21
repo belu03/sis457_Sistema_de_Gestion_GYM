@@ -10,6 +10,7 @@ namespace CpGimnasio
     public partial class FrmHorarioClase : Form
     {
         private bool esNuevo = false;
+        private bool formularioCargado = false;
 
         public FrmHorarioClase()
         {
@@ -64,6 +65,30 @@ namespace CpGimnasio
                 cmbHoraFin.Items.Add($"{hora:00}:00");
             }
         }
+        private void cargarEntrenadoresPorServicio()
+        {
+            var servicio = cbxServicio.SelectedItem as Servicio;
+
+            if (servicio == null)
+                return;
+
+            var entrenadores = EntrenadorCln.listar()
+                .Where(x => x.especialidad.Trim().ToUpper() ==
+                            servicio.nombre.Trim().ToUpper())
+                .Select(x => new
+                {
+                    x.id,
+                    nombreCompleto = x.nombre + " " + x.apellido
+                })
+                .ToList();
+
+            cbxEntrenador.DataSource = entrenadores;
+            cbxEntrenador.DisplayMember = "nombreCompleto";
+            cbxEntrenador.ValueMember = "id";
+            cbxEntrenador.SelectedIndex = -1;
+
+         
+        }
 
         private void FrmHorarioClase_Load(object sender, EventArgs e)
         {
@@ -77,6 +102,10 @@ namespace CpGimnasio
 
             listar();
             cargarCombos();
+
+            formularioCargado = true;
+
+
             EstilosUI.FormatearGrilla(dgvLista);
         }
 
@@ -156,13 +185,61 @@ namespace CpGimnasio
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(cmbHoraInicio.Text) || string.IsNullOrWhiteSpace(cmbHoraFin.Text))
+            {
+                MessageBox.Show(
+                    "Debe seleccionar la hora de inicio y fin.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            TimeSpan horaInicio = TimeSpan.Parse(cmbHoraInicio.Text);
+            TimeSpan horaFin = TimeSpan.Parse(cmbHoraFin.Text);
+
+            if (horaFin <= horaInicio)
+            {
+                MessageBox.Show(
+                    "La hora de fin debe ser mayor que la hora de inicio.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                cmbHoraFin.Focus();
+                return;
+            }
+
+            int idHorario = 0;
+
+            if (!esNuevo)
+            {
+                idHorario = (int)dgvLista.CurrentRow.Cells["id"].Value;
+            }
+
+            if (HorarioClaseCln.ExisteCruceHorario(
+                    (int)cbxEntrenador.SelectedValue,
+                    cbxDia.Text,
+                    horaInicio,
+                    horaFin,
+                    idHorario))
+            {
+                MessageBox.Show(
+                    "El entrenador ya tiene un horario registrado que se cruza con el rango seleccionado.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                cbxEntrenador.Focus();
+                return;
+            }
             var horario = new HorarioClase()
             {
                 id_servicio = (int)cbxServicio.SelectedValue,
                 id_entrenador = (int)cbxEntrenador.SelectedValue,
                 dia_semana = cbxDia.Text,
-                hora_inicio = TimeSpan.Parse(cmbHoraInicio.Text),
-                hora_fin = TimeSpan.Parse(cmbHoraFin.Text),
+                hora_inicio = horaInicio,
+                hora_fin = horaFin,
                 usuarioRegistro = Util.usuario != null ? Util.usuario.nombre_usuario : "admin"
             };
 
@@ -196,5 +273,16 @@ namespace CpGimnasio
         }
 
         private void btnCerrar_Click(object sender, EventArgs e) => Close();
+
+        private void cbxServicio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!formularioCargado)
+                return;
+
+            if (cbxServicio.SelectedIndex >= 0)
+            {
+                cargarEntrenadoresPorServicio();
+            }
+        }
     }
 }

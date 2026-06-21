@@ -76,5 +76,23 @@ namespace ClnGimnasio
                 return context.paHorarioClaseListar(parametro.Trim()).ToList();
             }
         }
+        public static bool ExisteCruceHorario(
+        int idEntrenador,
+        string dia,
+        TimeSpan horaInicio,
+        TimeSpan horaFin,
+        int idHorario = 0)
+        {
+        using (var context = new GimnasioEntities())
+                {
+                    return context.HorarioClase.Any(x =>
+                    x.estado == 1 &&
+                    x.id_entrenador == idEntrenador &&
+                    x.dia_semana == dia &&
+                    x.id != idHorario &&
+                    horaInicio < x.hora_fin &&
+                    horaFin > x.hora_inicio);
+                }
+        }
     }
 }

@@ -31,6 +31,8 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.cmbHoraFin = new System.Windows.Forms.ComboBox();
+            this.cmbHoraInicio = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblHoraFin = new System.Windows.Forms.Label();
@@ -45,8 +47,6 @@
             this.erpEntrenador = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpDia = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpHora = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cmbHoraInicio = new System.Windows.Forms.ComboBox();
-            this.cmbHoraFin = new System.Windows.Forms.ComboBox();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -242,13 +242,33 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Detalles del Horario";
             // 
+            // cmbHoraFin
+            // 
+            this.cmbHoraFin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHoraFin.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbHoraFin.FormattingEnabled = true;
+            this.cmbHoraFin.Location = new System.Drawing.Point(1463, 116);
+            this.cmbHoraFin.Name = "cmbHoraFin";
+            this.cmbHoraFin.Size = new System.Drawing.Size(132, 28);
+            this.cmbHoraFin.TabIndex = 13;
+            // 
+            // cmbHoraInicio
+            // 
+            this.cmbHoraInicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHoraInicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbHoraInicio.FormattingEnabled = true;
+            this.cmbHoraInicio.Location = new System.Drawing.Point(1203, 115);
+            this.cmbHoraInicio.Name = "cmbHoraInicio";
+            this.cmbHoraInicio.Size = new System.Drawing.Size(132, 28);
+            this.cmbHoraInicio.TabIndex = 12;
+            // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancelar.Image = global::CpGimnasio.Properties.Resources.cancelar_blanco;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(1253, 185);
+            this.btnCancelar.Location = new System.Drawing.Point(1452, 175);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(143, 43);
@@ -263,7 +283,7 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardar.Image = global::CpGimnasio.Properties.Resources.guardar_azul1;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(1093, 185);
+            this.btnGuardar.Location = new System.Drawing.Point(1292, 175);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(143, 43);
@@ -276,7 +296,7 @@
             // lblHoraFin
             // 
             this.lblHoraFin.AutoSize = true;
-            this.lblHoraFin.Location = new System.Drawing.Point(720, 123);
+            this.lblHoraFin.Location = new System.Drawing.Point(1363, 118);
             this.lblHoraFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoraFin.Name = "lblHoraFin";
             this.lblHoraFin.Size = new System.Drawing.Size(74, 21);
@@ -286,7 +306,7 @@
             // lblHoraInicio
             // 
             this.lblHoraInicio.AutoSize = true;
-            this.lblHoraInicio.Location = new System.Drawing.Point(453, 123);
+            this.lblHoraInicio.Location = new System.Drawing.Point(1096, 118);
             this.lblHoraInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoraInicio.Name = "lblHoraInicio";
             this.lblHoraInicio.Size = new System.Drawing.Size(90, 21);
@@ -298,16 +318,16 @@
             this.cbxDia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxDia.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxDia.FormattingEnabled = true;
-            this.cbxDia.Location = new System.Drawing.Point(160, 119);
+            this.cbxDia.Location = new System.Drawing.Point(691, 47);
             this.cbxDia.Margin = new System.Windows.Forms.Padding(4);
             this.cbxDia.Name = "cbxDia";
-            this.cbxDia.Size = new System.Drawing.Size(265, 28);
+            this.cbxDia.Size = new System.Drawing.Size(258, 28);
             this.cbxDia.TabIndex = 5;
             // 
             // lblDia
             // 
             this.lblDia.AutoSize = true;
-            this.lblDia.Location = new System.Drawing.Point(40, 123);
+            this.lblDia.Location = new System.Drawing.Point(618, 50);
             this.lblDia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDia.Name = "lblDia";
             this.lblDia.Size = new System.Drawing.Size(38, 21);
@@ -319,7 +339,7 @@
             this.cbxEntrenador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxEntrenador.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEntrenador.FormattingEnabled = true;
-            this.cbxEntrenador.Location = new System.Drawing.Point(560, 52);
+            this.cbxEntrenador.Location = new System.Drawing.Point(1196, 50);
             this.cbxEntrenador.Margin = new System.Windows.Forms.Padding(4);
             this.cbxEntrenador.Name = "cbxEntrenador";
             this.cbxEntrenador.Size = new System.Drawing.Size(399, 28);
@@ -328,7 +348,7 @@
             // lblEntrenador
             // 
             this.lblEntrenador.AutoSize = true;
-            this.lblEntrenador.Location = new System.Drawing.Point(453, 55);
+            this.lblEntrenador.Location = new System.Drawing.Point(1089, 53);
             this.lblEntrenador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEntrenador.Name = "lblEntrenador";
             this.lblEntrenador.Size = new System.Drawing.Size(99, 21);
@@ -340,16 +360,17 @@
             this.cbxServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxServicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxServicio.FormattingEnabled = true;
-            this.cbxServicio.Location = new System.Drawing.Point(160, 52);
+            this.cbxServicio.Location = new System.Drawing.Point(161, 47);
             this.cbxServicio.Margin = new System.Windows.Forms.Padding(4);
             this.cbxServicio.Name = "cbxServicio";
-            this.cbxServicio.Size = new System.Drawing.Size(265, 28);
+            this.cbxServicio.Size = new System.Drawing.Size(379, 28);
             this.cbxServicio.TabIndex = 1;
+            this.cbxServicio.SelectedIndexChanged += new System.EventHandler(this.cbxServicio_SelectedIndexChanged);
             // 
             // lblServicio
             // 
             this.lblServicio.AutoSize = true;
-            this.lblServicio.Location = new System.Drawing.Point(40, 55);
+            this.lblServicio.Location = new System.Drawing.Point(41, 50);
             this.lblServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblServicio.Name = "lblServicio";
             this.lblServicio.Size = new System.Drawing.Size(73, 21);
@@ -371,26 +392,6 @@
             // erpHora
             // 
             this.erpHora.ContainerControl = this;
-            // 
-            // cmbHoraInicio
-            // 
-            this.cmbHoraInicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHoraInicio.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbHoraInicio.FormattingEnabled = true;
-            this.cmbHoraInicio.Location = new System.Drawing.Point(560, 120);
-            this.cmbHoraInicio.Name = "cmbHoraInicio";
-            this.cmbHoraInicio.Size = new System.Drawing.Size(132, 28);
-            this.cmbHoraInicio.TabIndex = 12;
-            // 
-            // cmbHoraFin
-            // 
-            this.cmbHoraFin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHoraFin.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbHoraFin.FormattingEnabled = true;
-            this.cmbHoraFin.Location = new System.Drawing.Point(820, 121);
-            this.cmbHoraFin.Name = "cmbHoraFin";
-            this.cmbHoraFin.Size = new System.Drawing.Size(132, 28);
-            this.cmbHoraFin.TabIndex = 13;
             // 
             // FrmHorarioClase
             // 

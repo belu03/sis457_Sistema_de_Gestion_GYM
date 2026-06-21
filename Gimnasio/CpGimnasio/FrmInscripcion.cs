@@ -10,7 +10,6 @@ namespace CpGimnasio
     public partial class FrmInscripcion : Form
     {
         private Cliente clienteActual = null;
-        private decimal montoMembresiaActual = 0m;
 
         public FrmInscripcion()
         {
@@ -60,6 +59,11 @@ namespace CpGimnasio
             pnlAcciones.Location = new Point(20, 360);
             pnlAcciones.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gbxDatos.Visible = false;
+
+            lblMontoRecibido.Visible = false;
+            txtMontoRecibido.Visible = false;
+            lblCambio.Visible = false;
+            lblValorCambio.Visible = false;
 
             listar();
             cargarCombos();
@@ -161,50 +165,7 @@ namespace CpGimnasio
             if (cbxMembresia.SelectedValue != null && int.TryParse(cbxMembresia.SelectedValue.ToString(), out int idMem))
             {
                 var mem = MembresiaCln.obtenerUno(idMem);
-                if (mem != null)
-                {
-                    montoMembresiaActual = mem.precio;
-                    lblMonto.Text = $"{mem.precio:0.00} Bs";
-                    calcularCambio();
-                }
-            }
-        }
-
-
-        private void cbxMetodoPago_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            bool esEfectivo = cbxMetodoPago.Text == "Efectivo";
-            lblTextoRecibido.Visible = esEfectivo;
-            txtMontoRecibido.Visible = esEfectivo;
-            lblTextoCambio.Visible = esEfectivo;
-            lblCambio.Visible = esEfectivo;
-
-            if (esEfectivo)
-            {
-                txtMontoRecibido.Focus();
-            }
-            else
-            {
-                txtMontoRecibido.Clear();
-                lblCambio.Text = "0.00 Bs";
-            }
-        }
-
-        private void txtMontoRecibido_TextChanged_1(object sender, EventArgs e) => calcularCambio();
-
-        // Método para calcular el cambio en tiempo real
-        private void calcularCambio()
-        {
-            if (decimal.TryParse(txtMontoRecibido.Text, out decimal montoRecibido))
-            {
-                decimal cambio = montoRecibido - montoMembresiaActual;
-                lblCambio.Text = $"{(cambio < 0 ? 0 : cambio):0.00} Bs";
-                lblCambio.ForeColor = cambio < 0 ? Color.Red : Color.Lime;
-            }
-            else
-            {
-                lblCambio.Text = "0.00 Bs";
-                lblCambio.ForeColor = Color.Lime;
+                if (mem != null) lblMonto.Text = $"{mem.precio:0.00} Bs";
             }
         }
 
@@ -223,36 +184,39 @@ namespace CpGimnasio
                 dtpInicio.Focus();
                 return;
             }
-
-            // Validar que la fecha de inicio no sea anterior a hoy
-            if (dtpInicio.Value.Date < DateTime.Now.Date)
-            {
-                MessageBox.Show("La fecha de inicio de la membresía no puede ser anterior a hoy.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dtpInicio.Focus();
-                return;
-            }
-
-            // Validar monto recibido si el método de pago es efectivo
-            decimal cambio = 0m;
             if (cbxMetodoPago.Text == "Efectivo")
             {
-                if (!decimal.TryParse(txtMontoRecibido.Text, out decimal montoRecibido) || montoRecibido <= 0)
+                decimal montoPlan = 0;
+                decimal.TryParse(
+                    lblMonto.Text.Replace("Bs", "").Trim(),
+                    out montoPlan);
+
+                decimal montoRecibido = 0;
+
+                if (!decimal.TryParse(txtMontoRecibido.Text, out montoRecibido))
                 {
-                    MessageBox.Show("Ingrese el monto recibido en efectivo.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(
+                        "Debe ingresar el monto recibido.",
+                        "Validación",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
                     txtMontoRecibido.Focus();
                     return;
                 }
 
-                if (montoRecibido < montoMembresiaActual)
+                if (montoRecibido < montoPlan)
                 {
-                    MessageBox.Show($"El monto recibido (Bs {montoRecibido:0.00}) es menor al monto a pagar (Bs {montoMembresiaActual:0.00}).", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(
+                        "El monto recibido no puede ser menor al costo del plan.",
+                        "Validación",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
                     txtMontoRecibido.Focus();
                     return;
                 }
-
-                cambio = montoRecibido - montoMembresiaActual;
             }
-
             string usuarioApp = Util.usuario != null ? Util.usuario.nombre_usuario : "admin";
 
             if (clienteActual == null)
@@ -305,5 +269,51 @@ namespace CpGimnasio
         }
 
         private void btnCerrar_Click(object sender, EventArgs e) => Close();
+
+        private void cbxMetodoPago_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bool esEfectivo = cbxMetodoPago.Text == "Efectivo";
+
+            lblMontoRecibido.Visible = esEfectivo;
+            txtMontoRecibido.Visible = esEfectivo;
+            lblCambio.Visible = esEfectivo;
+            lblValorCambio.Visible = esEfectivo;
+        }
+
+        private void txtMontoRecibido_TextChanged(object sender, EventArgs e)
+        {
+            decimal montoPlan = 0;
+
+            decimal.TryParse(
+                lblMonto.Text.Replace("Bs", "").Trim(),
+                out montoPlan);
+
+            decimal recibido = 0;
+
+            if (decimal.TryParse(txtMontoRecibido.Text, out recibido))
+            {
+                decimal cambio = recibido - montoPlan;
+
+                lblValorCambio.Text =
+                    cambio >= 0
+                    ? $"{cambio:0.00} Bs"
+                    : "0.00 Bs";
+            }
+            else
+            {
+                lblValorCambio.Text = "0.00 Bs";
+            }
+        }
+        private void txtMontoRecibido_KeyPress(
+             object sender,
+             KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar)
+                && !char.IsDigit(e.KeyChar)
+                && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -62,6 +62,7 @@ namespace CpGimnasio
 
             listar();
             cargarCombos();
+            dtpInicio.MinDate = DateTime.Today;
             EstilosUI.FormatearGrilla(dgvLista);
         }
 
@@ -167,6 +168,17 @@ namespace CpGimnasio
         {
             if (string.IsNullOrWhiteSpace(txtCI.Text) || string.IsNullOrWhiteSpace(txtNombre.Text)) { MessageBox.Show("CI y Nombre obligatorios"); return; }
             if (cbxMembresia.SelectedValue == null || string.IsNullOrWhiteSpace(cbxMetodoPago.Text)) { MessageBox.Show("Membresía y Pago obligatorios"); return; }
+            if (dtpInicio.Value.Date < DateTime.Now.Date)
+            {
+                MessageBox.Show(
+                    "La fecha de inicio no puede ser anterior a la fecha actual.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                dtpInicio.Focus();
+                return;
+            }
 
             string usuarioApp = Util.usuario != null ? Util.usuario.nombre_usuario : "admin";
 

@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\frmhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis 457 t\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\frmhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmhorarioclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,20 +31,12 @@
       "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frmservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|d:\\sis 457 t\\sis457_sistema_de_gestion_gym\\gimnasio\\clngimnasio\\horarioclasecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\clngimnasio\\horarioclasecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|solutionrelative:clngimnasio\\horarioclasecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\clngimnasio\\inscripcioncln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC8DD76-F06C-49C5-8CE9-04C4D19724A5}|ClnGimnasio\\ClnGimnasio.csproj|solutionrelative:clngimnasio\\inscripcioncln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|d:\\sis 457 t\\sis457_sistema_de_gestion_gym\\gimnasio\\cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|solutionrelative:cpgimnasio\\frminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4013CF69-509B-4697-B989-8DFAF174DD79}|CpGimnasio\\CpGimnasio.csproj|D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\cpgimnasio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,6 +134,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmHorarioClase.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmHorarioClase.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs",
+              "RelativeToolTip": "CpGimnasio\\FrmHorarioClase.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAiwBwBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T18:18:01.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmInscripcion.cs",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmInscripcion.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmInscripcion.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmInscripcion.cs",
+              "RelativeToolTip": "CpGimnasio\\FrmInscripcion.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAhwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T21:15:53.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
               "Title": "App.config",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\App.config",
@@ -147,32 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmHorarioClase.cs",
-              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FrmHorarioClase.cs",
-              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs",
-              "RelativeToolTip": "CpGimnasio\\FrmHorarioClase.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAmwBwBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T18:18:01.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmHorarioClase.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FrmHorarioClase.cs",
-              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpGimnasio\\FrmHorarioClase.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T04:01:07.956Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "FrmInscripcion.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmInscripcion.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FrmInscripcion.cs",
@@ -184,32 +185,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "FrmHorarioClase.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs",
+              "RelativeDocumentMoniker": "CpGimnasio\\FrmHorarioClase.cs",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmHorarioClase.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpGimnasio\\FrmHorarioClase.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T04:01:07.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmServicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmServicio.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FrmServicio.cs",
               "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmServicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "CpGimnasio\\FrmServicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T03:56:15.474Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-15T03:56:15.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmInscripcion.cs",
-              "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmInscripcion.cs",
-              "RelativeDocumentMoniker": "CpGimnasio\\FrmInscripcion.cs",
-              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmInscripcion.cs",
-              "RelativeToolTip": "CpGimnasio\\FrmInscripcion.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAUwJYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T21:15:53.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FrmServicio.cs",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\CpGimnasio\\FrmServicio.cs",
               "RelativeDocumentMoniker": "CpGimnasio\\FrmServicio.cs",
@@ -217,12 +215,11 @@
               "RelativeToolTip": "CpGimnasio\\FrmServicio.cs",
               "ViewState": "AgIAALEAAAAAAAAAAADwv9IAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T03:56:25.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-15T03:56:25.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "EntrenadorCln.cs",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\EntrenadorCln.cs",
               "RelativeDocumentMoniker": "ClnGimnasio\\EntrenadorCln.cs",
@@ -230,8 +227,7 @@
               "RelativeToolTip": "ClnGimnasio\\EntrenadorCln.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAYwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T19:17:16.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T19:17:16.678Z"
             },
             {
               "$type": "Document",
@@ -247,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HorarioClaseCln.cs",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\HorarioClaseCln.cs",
               "RelativeDocumentMoniker": "ClnGimnasio\\HorarioClaseCln.cs",
@@ -255,12 +251,11 @@
               "RelativeToolTip": "ClnGimnasio\\HorarioClaseCln.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAkwGEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T23:03:29.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T23:03:29.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "InscripcionCln.cs",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ClnGimnasio\\InscripcionCln.cs",
               "RelativeDocumentMoniker": "ClnGimnasio\\InscripcionCln.cs",
@@ -268,8 +263,7 @@
               "RelativeToolTip": "ClnGimnasio\\InscripcionCln.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T21:16:17.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T21:16:17.512Z"
             },
             {
               "$type": "Document",
@@ -398,8 +392,7 @@
               "RelativeToolTip": "CpGimnasio\\FrmHorarioClase.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALABAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T18:14:56.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-15T18:14:56.553Z"
             },
             {
               "$type": "Document",
@@ -418,10 +411,10 @@
               "Title": "ddl_dml_gimnasio.sql",
               "DocumentMoniker": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ddl_dml_gimnasio.sql",
               "RelativeDocumentMoniker": "ddl_dml_gimnasio.sql",
-              "ToolTip": "ddl_dml_gimnasio.sql",
+              "ToolTip": "D:\\SIS 457 T\\sis457_Sistema_de_Gestion_GYM\\Gimnasio\\ddl_dml_gimnasio.sql",
+              "RelativeToolTip": "ddl_dml_gimnasio.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-06-15T16:58:39.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-15T16:58:39.978Z"
             },
             {
               "$type": "Document",

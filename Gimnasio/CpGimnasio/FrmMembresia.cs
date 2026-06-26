@@ -37,6 +37,7 @@ namespace CpGimnasio
         {
             // 1. Configuramos el tamaño compacto del formulario
             this.ClientSize = new Size(1264, 440);
+            UtilUI.Posicionar(this);
 
             // 2. Ajustamos la lista para que SIEMPRE se vea
             gbxLista.Location = new Point(20, 110);

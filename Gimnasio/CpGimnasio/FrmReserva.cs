@@ -137,6 +137,7 @@ namespace CpGimnasio
         private void FrmReserva_Load(object sender, EventArgs e)
         {
             this.ClientSize = new Size(1264, 440);
+            UtilUI.Posicionar(this);
             gbxLista.Location = new Point(20, 110);
             gbxLista.Size = new Size(1224, 240);
             gbxLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -147,6 +148,9 @@ namespace CpGimnasio
             listar();
             cargarCombos();
             EstilosUI.FormatearGrilla(dgvLista);
+
+            dtpFecha.MinDate = DateTime.Today;
+            dtpFecha.Value = DateTime.Today;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e) => listar();
@@ -183,6 +187,8 @@ namespace CpGimnasio
             cargarCombos();
             limpiar();
             cargarHorariosPorFecha();
+
+            dtpFecha.Value = DateTime.Today;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -228,6 +234,17 @@ namespace CpGimnasio
             if (cbxCliente.SelectedValue == null || cbxHorario.SelectedValue == null)
             {
                 MessageBox.Show("Cliente y Horario son obligatorios", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dtpFecha.Value.Date < DateTime.Today)
+            {
+                MessageBox.Show(
+                    "No se permiten reservas en fechas pasadas.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
                 return;
             }
 

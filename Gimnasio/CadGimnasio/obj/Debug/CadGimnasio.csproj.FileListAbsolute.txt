@@ -94,3 +94,15 @@ D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM_Clone\Gimnasio\CadGimnasio\obj\Debug\
 D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM_Clone\Gimnasio\CadGimnasio\obj\Debug\CadGimna.753D4E1B.Up2Date
 D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM_Clone\Gimnasio\CadGimnasio\obj\Debug\CadGimnasio.dll
 D:\SIS 457 T\sis457_Sistema_de_Gestion_GYM_Clone\Gimnasio\CadGimnasio\obj\Debug\CadGimnasio.pdb
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\CadGimnasio.dll.config
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\CadGimnasio.dll
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\CadGimnasio.pdb
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\EntityFramework.dll
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\EntityFramework.SqlServer.dll
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\EntityFramework.xml
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\bin\Debug\EntityFramework.SqlServer.xml
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\obj\Debug\CadGimnasio.csproj.AssemblyReference.cache
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\obj\Debug\CadGimnasio.csproj.CoreCompileInputs.cache
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\obj\Debug\CadGimna.753D4E1B.Up2Date
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\obj\Debug\CadGimnasio.dll
+D:\MI FINAL\sis457_Sistema_de_Gestion_GYM\Gimnasio\CadGimnasio\obj\Debug\CadGimnasio.pdb

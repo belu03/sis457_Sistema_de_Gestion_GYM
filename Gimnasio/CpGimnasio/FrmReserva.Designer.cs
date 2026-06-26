@@ -150,10 +150,10 @@
             this.btnCerrar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::CpGimnasio.Properties.Resources.cerrar_azul;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(1043, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(1000, 12);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(143, 43);
+            this.btnCerrar.Size = new System.Drawing.Size(143, 46);
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -165,10 +165,10 @@
             this.btnEliminar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::CpGimnasio.Properties.Resources.cancelar_azul;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(880, 12);
+            this.btnEliminar.Location = new System.Drawing.Point(847, 12);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(143, 43);
+            this.btnEliminar.Size = new System.Drawing.Size(143, 46);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Anular";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -180,10 +180,10 @@
             this.btnEditar.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::CpGimnasio.Properties.Resources.editar_azul_copia;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(717, 12);
+            this.btnEditar.Location = new System.Drawing.Point(693, 12);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(143, 43);
+            this.btnEditar.Size = new System.Drawing.Size(143, 46);
             this.btnEditar.TabIndex = 1;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -195,12 +195,12 @@
             this.btnNuevo.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::CpGimnasio.Properties.Resources.nuevo_azul2;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(521, 12);
+            this.btnNuevo.Location = new System.Drawing.Point(539, 12);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(177, 43);
+            this.btnNuevo.Size = new System.Drawing.Size(143, 46);
             this.btnNuevo.TabIndex = 0;
-            this.btnNuevo.Text = "Nueva Reserva";
+            this.btnNuevo.Text = "Nueva ";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -238,10 +238,10 @@
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancelar.Image = global::CpGimnasio.Properties.Resources.cancelar_blanco;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(1253, 185);
+            this.btnCancelar.Location = new System.Drawing.Point(1438, 167);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(143, 43);
+            this.btnCancelar.Size = new System.Drawing.Size(143, 46);
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -253,10 +253,10 @@
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardar.Image = global::CpGimnasio.Properties.Resources.guardar_azul1;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(1093, 185);
+            this.btnGuardar.Location = new System.Drawing.Point(1251, 167);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(143, 43);
+            this.btnGuardar.Size = new System.Drawing.Size(143, 46);
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -268,7 +268,7 @@
             this.cbxEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxEstado.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEstado.FormattingEnabled = true;
-            this.cbxEstado.Location = new System.Drawing.Point(827, 119);
+            this.cbxEstado.Location = new System.Drawing.Point(1026, 106);
             this.cbxEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cbxEstado.Name = "cbxEstado";
             this.cbxEstado.Size = new System.Drawing.Size(239, 28);
@@ -277,7 +277,7 @@
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(720, 123);
+            this.lblEstado.Location = new System.Drawing.Point(919, 110);
             this.lblEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(66, 21);
@@ -287,7 +287,7 @@
             // chkAsistio
             // 
             this.chkAsistio.AutoSize = true;
-            this.chkAsistio.Location = new System.Drawing.Point(1133, 122);
+            this.chkAsistio.Location = new System.Drawing.Point(1423, 115);
             this.chkAsistio.Margin = new System.Windows.Forms.Padding(4);
             this.chkAsistio.Name = "chkAsistio";
             this.chkAsistio.Size = new System.Drawing.Size(154, 25);
@@ -299,7 +299,7 @@
             // 
             this.dtpFecha.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(160, 119);
+            this.dtpFecha.Location = new System.Drawing.Point(160, 103);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(199, 27);
@@ -309,7 +309,7 @@
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(40, 123);
+            this.lblFecha.Location = new System.Drawing.Point(40, 107);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(57, 21);
@@ -321,16 +321,16 @@
             this.cbxHorario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxHorario.Font = new System.Drawing.Font("HP Simplified", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxHorario.FormattingEnabled = true;
-            this.cbxHorario.Location = new System.Drawing.Point(827, 52);
+            this.cbxHorario.Location = new System.Drawing.Point(1026, 52);
             this.cbxHorario.Margin = new System.Windows.Forms.Padding(4);
             this.cbxHorario.Name = "cbxHorario";
-            this.cbxHorario.Size = new System.Drawing.Size(532, 28);
+            this.cbxHorario.Size = new System.Drawing.Size(551, 28);
             this.cbxHorario.TabIndex = 3;
             // 
             // lblHorario
             // 
             this.lblHorario.AutoSize = true;
-            this.lblHorario.Location = new System.Drawing.Point(720, 55);
+            this.lblHorario.Location = new System.Drawing.Point(919, 55);
             this.lblHorario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHorario.Name = "lblHorario";
             this.lblHorario.Size = new System.Drawing.Size(54, 21);
@@ -344,7 +344,7 @@
             this.cbxCliente.Location = new System.Drawing.Point(160, 52);
             this.cbxCliente.Margin = new System.Windows.Forms.Padding(4);
             this.cbxCliente.Name = "cbxCliente";
-            this.cbxCliente.Size = new System.Drawing.Size(465, 28);
+            this.cbxCliente.Size = new System.Drawing.Size(512, 28);
             this.cbxCliente.TabIndex = 1;
             // 
             // lblCliente

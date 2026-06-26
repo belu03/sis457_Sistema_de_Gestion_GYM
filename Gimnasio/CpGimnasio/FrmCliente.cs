@@ -14,6 +14,7 @@ namespace CpGimnasio
         public FrmCliente()
         {
             InitializeComponent();
+
         }
 
         private void listar()
@@ -56,7 +57,9 @@ namespace CpGimnasio
 
         private void FrmCliente_Load(object sender, EventArgs e)
         {
+          
             this.ClientSize = new Size(1264, 440);
+            UtilUI.Posicionar(this);
 
             gbxLista.Height = 250;
             gbxLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -67,6 +70,8 @@ namespace CpGimnasio
 
             listar();
             EstilosUI.FormatearGrilla(dgvLista);
+
+            
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

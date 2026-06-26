@@ -34,7 +34,11 @@ namespace CpGimnasio
         // ==========================================
         // EVENTOS DEL RIBBON (CATÁLOGOS)
         // ==========================================
-        private void btnCaClientes_Click(object sender, EventArgs e) { new FrmCliente().ShowDialog(); }
+        private void btnCaClientes_Click(object sender, EventArgs e)
+        {
+            FrmCliente frm = new FrmCliente();
+            frm.ShowDialog(this);
+        }
         private void btnCaMembresias_Click(object sender, EventArgs e) { new FrmMembresia().ShowDialog(); }
         private void btnCaServicios_Click(object sender, EventArgs e) { new FrmServicio().ShowDialog(); }
         private void btnCaEntrenadores_Click(object sender, EventArgs e) { new FrmEntrenador().ShowDialog(); }

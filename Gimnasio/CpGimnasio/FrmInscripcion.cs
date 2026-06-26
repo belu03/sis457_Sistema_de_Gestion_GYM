@@ -53,6 +53,7 @@ namespace CpGimnasio
         private void FrmInscripcion_Load(object sender, EventArgs e)
         {
             this.ClientSize = new Size(1264, 440);
+            UtilUI.Posicionar(this);
             gbxLista.Location = new Point(20, 110);
             gbxLista.Size = new Size(1224, 240);
             gbxLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
